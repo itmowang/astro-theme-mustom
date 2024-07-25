@@ -1,52 +1,84 @@
+---
+
+---
+
 <div class="card bg-base-100 shadow-xl">
   <div class="card-body">
     <h2 class="card-title">Theme</h2>
 
-    <div class="card-actions">
-      <div class="form-control">
-        <label class="label cursor-pointer gap-4">
-          <span class="label-text">春</span>
-          <input
-            type="radio"
-            name="theme-radios"
-            class="radio theme-controller"
-            value="default"
-          />
-        </label>
-      </div>
-      <div class="form-control">
-        <label class="label cursor-pointer gap-4">
-          <span class="label-text">夏</span>
-          <input
-            type="radio"
-            name="theme-radios"
-            class="radio theme-controller"
-            value="retro"
-          />
-        </label>
-      </div>
-      <div class="form-control">
-        <label class="label cursor-pointer gap-4">
-          <span class="label-text">秋</span>
-          <input
-            type="radio"
-            name="theme-radios"
-            class="radio theme-controller"
-            value="cyberpunk"
-          />
-        </label>
-      </div>
-      <div class="form-control">
-        <label class="label cursor-pointer gap-4">
-          <span class="label-text">冬</span>
-          <input
-            type="radio"
-            name="theme-radios"
-            class="radio theme-controller"
-            value="valentine"
-          />
-        </label>
-      </div>
+    <div class="form-control">
+      <label class="label cursor-pointer gap-4">
+        <span class="label-text">春</span>
+        <input
+          type="radio"
+          name="theme-radios"
+          class="radio theme-controller"
+          value="valentine"
+        />
+      </label>
+    </div>
+    <div class="form-control">
+      <label class="label cursor-pointer gap-4">
+        <span class="label-text">夏</span>
+        <input
+          type="radio"
+          name="theme-radios"
+          class="radio theme-controller"
+          value="retro"
+        />
+      </label>
+    </div>
+    <div class="form-control">
+      <label class="label cursor-pointer gap-4">
+        <span class="label-text">秋</span>
+        <input
+          type="radio"
+          name="theme-radios"
+          class="radio theme-controller"
+          value="nord"
+        />
+      </label>
+    </div>
+    <div class="form-control">
+      <label class="label cursor-pointer gap-4">
+        <span class="label-text">冬</span>
+        <input
+          type="radio"
+          name="theme-radios"
+          class="radio theme-controller"
+          value="pastel"
+        />
+      </label>
     </div>
   </div>
 </div>
+
+<script>
+  const themeRadios = document.querySelectorAll(".theme-controller");
+  themeRadios.forEach((radio) => {
+    radio.addEventListener("change", function () {
+      if (this.checked) {
+        localStorage.setItem("theme", this.value);
+        applyTheme(this.value);
+      }
+    });
+  });
+
+  function applyTheme(theme: string) {
+    console.log("已经切换主题", theme);
+  }
+
+  // 加载的时候
+  document.addEventListener("DOMContentLoaded", function () {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      applyTheme(savedTheme);
+      const selectedRadio = document.querySelector(
+        `input[value="${savedTheme}"]`
+      ) as any;
+      if (selectedRadio) {
+        selectedRadio.checked = true;
+      }
+    }
+  });
+</script>
