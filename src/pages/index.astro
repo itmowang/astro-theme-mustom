@@ -1,0 +1,42 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Main from '../components/Main.astro'
+import My from '../components/My.astro';
+import TagCloud from '../components/TagCloud.astro';
+import PostPage from '../components/PostPage.astro'
+import Theme from '../components/Theme.astro'
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<Main>
+			<div class="container mx-auto ">
+				<div class="flex pt-[120px] ">
+					<!-- 左侧信息 -->
+					<div class="w-2/6">
+						<My />
+						<div class="mt-6">
+							<TagCloud />
+						</div>
+						<div class="mt-6">
+							<Theme />
+						</div>
+					</div>
+					<!-- 右侧列表或者内容 -->
+					<div class="w-4/6">
+						<PostPage/>
+					</div>
+				</div>
+			</div>
+			
+			
+		</Main>
+	</body>
+</html>

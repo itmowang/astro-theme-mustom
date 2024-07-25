@@ -1,0 +1,19 @@
+---
+import Footer from "../components/Footer.astro";
+---
+
+<main>
+  <div class="relative">
+    <div
+      class="bg-[url('/banner.webp')] bg-no-repeat bg-cover h-dvh bg-center relative"
+    >
+      <div class="absolute inset-0 bg-gradient-to-t from-white"></div>
+    </div>
+    <div class="absolute inset-0">
+        <div class="min-h-dvh">
+            <slot />
+        </div>
+      <Footer />
+    </div>
+  </div>
+</main>
