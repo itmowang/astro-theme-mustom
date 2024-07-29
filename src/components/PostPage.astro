@@ -12,7 +12,7 @@ const isOdd = (number: number) => {
     return (
       <div class="ml-4">
         {isOdd(index) ? (
-          <div class="card bg-base-100 mb-4 rounded-lg w-full shadow-xl flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95">
+          <div class="card bg-color postCard mb-4 rounded-lg w-full shadow-xl flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95">
             <div class="flex">
               <div>
                 <img
@@ -27,7 +27,7 @@ const isOdd = (number: number) => {
                 {/* <!-- tag  --> */}
                 <div class="flex justify-between">
                   <div />
-                  <div class="flex">
+                  <div class="flex tools">
                     <div class="text-sm mr-6">2023-07-07</div>
                     <div class="text-sm mr-6">25K字</div>
                     <div class="text-sm">10分钟</div>
@@ -36,7 +36,7 @@ const isOdd = (number: number) => {
                 {/* <!-- title  --> */}
                 <div class="flex justify-between items-center mt-2">
                   <div>
-                    <div class="text-2xl font-bold">博客文章命名标题</div>
+                    <div class="text-2xl font-medium title">博客文章命名标题</div>
                   </div>
                   <div class="text-sm text-gray-500">日常生活</div>
                 </div>
@@ -49,13 +49,13 @@ const isOdd = (number: number) => {
             </div>
           </div>
         ) : (
-          <div class="card bg-base-100 rounded-lg w-full mb-4 shadow-xl flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95">
+          <div class="card bg-color postCard rounded-lg w-full mb-4 shadow-xl flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95">
             <div class="flex">
               <div class="w-full p-4">
                 {/* <!-- tag  --> */}
                 <div class="flex justify-between">
                   <div />
-                  <div class="flex">
+                  <div class="flex tools">
                     <div class="text-sm mr-6">2023-07-07</div>
                     <div class="text-sm mr-6">25K字</div>
                     <div class="text-sm">10分钟</div>
@@ -64,7 +64,7 @@ const isOdd = (number: number) => {
                 {/* <!-- title  --> */}
                 <div class="flex justify-between items-center mt-2">
                   <div>
-                    <div class="text-2xl font-bold">博客文章命名标题</div>
+                    <div class="text-2xl font-medium title">博客文章命名标题</div>
                   </div>
                   <div class="text-sm text-gray-500">日常生活</div>
                 </div>
