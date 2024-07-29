@@ -23,3 +23,29 @@
 	font-style: normal;
 	font-display: swap;
 }
+
+.header-nav .active:after{
+	transform: translateZ(0) scale(1) !important;
+}
+ 
+.header-nav .header-nav-item:hover:after{
+	transform: translateZ(0) scale(1) !important;
+}
+
+.header-nav .header-nav-item{
+	position: relative !important;
+	box-decoration-break: clone !important;
+	text-decoration: none !important;
+}
+
+.header-nav .header-nav-item:after{
+	left: 0;
+    right: 0 ;
+    bottom: 20px;
+    content: "";
+    height: 2px ;
+    position: absolute ;
+    transform: translateZ(0) scaleX(0);
+    transform-origin: left center;
+    transition: all .15s ease-in-out;
+}

@@ -22,34 +22,37 @@ export default {
 				},
 				".header-theme": {
 					"color": "#fb7185",
-					"background-color": "rgba(255,255,255,0.9)"
+					"background-color": "rgba(255,255,255,0.9)",
+					".header-nav .header-nav-item:after": {
+						"background-image": "linear-gradient(to right,rgb(251 113 133 / 1),rgb(251 113 133 / 1))"
+					}
 				},
 				".header-theme:hover": {
 					"background-color": "rgba(255,255,255,0.95)"
 				},
 				".postCard": {
-					".title":{
+					".title": {
 						"color": "#f43f5e"
 					},
-					".tools":{
+					".tools": {
 						"color": "#777"
 					}
 				},
-				".myCard":{
-					".my-title":{
-						"color":"#f43f5e"
+				".myCard": {
+					".my-title": {
+						"color": "#f43f5e"
 					},
-					".my-desc":{
-						"color":"#777"
+					".my-desc": {
+						"color": "#777"
 					},
-					".my-cate":{
-						"color":"#fb7185"
+					".my-cate": {
+						"color": "#fb7185"
 					},
-					".my-number":{
-						"color":"#f43f5e"
+					".my-number": {
+						"color": "#f43f5e"
 					},
-					".my-yy":{
-						"color":"#f43f5e"
+					".my-yy": {
+						"color": "#f43f5e"
 					}
 				}
 			},
@@ -65,34 +68,37 @@ export default {
 				},
 				".header-theme": {
 					"color": "#93c5fd",
-					"background-color": "rgba(255,255,255,0.9)"
+					"background-color": "rgba(255,255,255,0.9)",
+					".header-nav .header-nav-item:after": {
+						"background-image": "linear-gradient(to right,rgb(147 197 253 / 1),rgb(147 197 253 / 1))"
+					}
 				},
 				".header-theme:hover": {
 					"background-color": "rgba(255,255,255,0.95)"
 				},
 				".postCard": {
-					".title":{
+					".title": {
 						"color": "#60a5fa"
 					},
-					".tools":{
+					".tools": {
 						"color": "#777"
 					}
 				},
-				".myCard":{
-					".my-title":{
-						"color":"#60a5fa"
+				".myCard": {
+					".my-title": {
+						"color": "#60a5fa"
 					},
-					".my-desc":{
-						"color":"#777"
+					".my-desc": {
+						"color": "#777"
 					},
-					".my-cate":{
-						"color":"#93c5fd"
+					".my-cate": {
+						"color": "#93c5fd"
 					},
-					".my-number":{
-						"color":"#60a5fa"
+					".my-number": {
+						"color": "#60a5fa"
 					},
-					".my-yy":{
-						"color":"#60a5fa"
+					".my-yy": {
+						"color": "#60a5fa"
 					}
 				}
 			},
@@ -108,34 +114,37 @@ export default {
 				},
 				".header-theme": {
 					"color": "#fdba74",
-					"background-color": "rgba(255,255,255,0.9)"
+					"background-color": "rgba(255,255,255,0.9)",
+					".header-nav .header-nav-item:after": {
+						"background-image": "linear-gradient(to right,rgb(253 186 116 / 1),rgb(253 186 116 / 1))"
+					}
 				},
 				".header-theme:hover": {
 					"background-color": "rgba(255,255,255,0.95)"
 				},
 				".postCard": {
-					".title":{
+					".title": {
 						"color": "#fb923c"
 					},
-					".tools":{
+					".tools": {
 						"color": "#777"
 					}
 				},
-				".myCard":{
-					".my-title":{
-						"color":"#fb923c"
+				".myCard": {
+					".my-title": {
+						"color": "#fb923c"
 					},
-					".my-desc":{
-						"color":"#777"
+					".my-desc": {
+						"color": "#777"
 					},
-					".my-cate":{
-						"color":"#fdba74"
+					".my-cate": {
+						"color": "#fdba74"
 					},
-					".my-number":{
-						"color":"#fb923c"
+					".my-number": {
+						"color": "#fb923c"
 					},
-					".my-yy":{
-						"color":"#fb923c"
+					".my-yy": {
+						"color": "#fb923c"
 					}
 				}
 			},
@@ -151,34 +160,37 @@ export default {
 				},
 				".header-theme": {
 					"color": "#38bdf8",
-					"background-color": "rgba(255,255,255,0.9)"
+					"background-color": "rgba(255,255,255,0.9)",
+					".header-nav .header-nav-item:after": {
+						"background-image": "linear-gradient(to right,rgb(56 189 248 / 1),rgb(56 189 248  / 1))"
+					}
 				},
 				".header-theme:hover": {
 					"background-color": "rgba(255,255,255,0.95)"
 				},
 				".postCard": {
-					".title":{
+					".title": {
 						"color": "#0ea5e9"
 					},
-					".tools":{
+					".tools": {
 						"color": "#777"
 					}
 				},
-				".myCard":{
-					".my-title":{
-						"color":"#0ea5e9"
+				".myCard": {
+					".my-title": {
+						"color": "#0ea5e9"
 					},
-					".my-desc":{
-						"color":"#777"
+					".my-desc": {
+						"color": "#777"
 					},
-					".my-cate":{
-						"color":"#38bdf8"
+					".my-cate": {
+						"color": "#38bdf8"
 					},
-					".my-number":{
-						"color":"#0ea5e9"
+					".my-number": {
+						"color": "#0ea5e9"
 					},
-					".my-yy":{
-						"color":"#0ea5e9"
+					".my-yy": {
+						"color": "#0ea5e9"
 					}
 				}
 			},
