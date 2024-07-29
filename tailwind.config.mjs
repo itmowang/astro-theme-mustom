@@ -34,6 +34,23 @@ export default {
 					".tools":{
 						"color": "#777"
 					}
+				},
+				".myCard":{
+					".my-title":{
+						"color":"#f43f5e"
+					},
+					".my-desc":{
+						"color":"#777"
+					},
+					".my-cate":{
+						"color":"#fb7185"
+					},
+					".my-number":{
+						"color":"#f43f5e"
+					},
+					".my-yy":{
+						"color":"#f43f5e"
+					}
 				}
 			},
 			summer: {
@@ -59,6 +76,23 @@ export default {
 					},
 					".tools":{
 						"color": "#777"
+					}
+				},
+				".myCard":{
+					".my-title":{
+						"color":"#60a5fa"
+					},
+					".my-desc":{
+						"color":"#777"
+					},
+					".my-cate":{
+						"color":"#93c5fd"
+					},
+					".my-number":{
+						"color":"#60a5fa"
+					},
+					".my-yy":{
+						"color":"#60a5fa"
 					}
 				}
 			},
@@ -86,6 +120,23 @@ export default {
 					".tools":{
 						"color": "#777"
 					}
+				},
+				".myCard":{
+					".my-title":{
+						"color":"#fb923c"
+					},
+					".my-desc":{
+						"color":"#777"
+					},
+					".my-cate":{
+						"color":"#fdba74"
+					},
+					".my-number":{
+						"color":"#fb923c"
+					},
+					".my-yy":{
+						"color":"#fb923c"
+					}
 				}
 			},
 			winter: {
@@ -111,6 +162,23 @@ export default {
 					},
 					".tools":{
 						"color": "#777"
+					}
+				},
+				".myCard":{
+					".my-title":{
+						"color":"#0ea5e9"
+					},
+					".my-desc":{
+						"color":"#777"
+					},
+					".my-cate":{
+						"color":"#38bdf8"
+					},
+					".my-number":{
+						"color":"#0ea5e9"
+					},
+					".my-yy":{
+						"color":"#0ea5e9"
 					}
 				}
 			},

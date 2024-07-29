@@ -57,7 +57,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 	<body>
 		<Header />
 		<Main>
-			<article class="pt-[120px]">  
+			<article class="pt-[120px] ">  
 				<div class="hero-image">
 					{heroImage && <img width={1020} height={510} src={heroImage} alt="" />}
 				</div>
@@ -76,7 +76,9 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 						<h1>{title}</h1>
 						<hr />
 					</div>
-					<slot />
+					<div class="mockup-code">
+						<slot />
+					</div>
 				</div>
 			</article>
 		</Main>
