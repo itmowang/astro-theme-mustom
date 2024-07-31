@@ -29,6 +29,7 @@ export default defineConfig({
   markdown: {
     shikiConfig: {
       theme: "ayu-dark",
+      langs: ["javascript", "typescript", "html", "css", "json","shell"],
       transformers:[ {
         pre(node, line, col) {
           node.properties.class = "mockup-code";
