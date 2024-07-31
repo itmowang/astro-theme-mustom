@@ -4,25 +4,36 @@ import sitemap from '@astrojs/sitemap';
 import tailwind from "@astrojs/tailwind";
 
 const myTheme = {
-  name: 'my-theme',
-  settings: [
+  "name": "mockup-code",
+  "type": "dark",
+  "colors": {
+    "background": "#282c34",
+    "text": "#abb2bf",
+    // Define other colors as needed
+  },
+  "tokenColors": [
     {
-      scope: ['comment'],
-      settings: {
-        foreground: '#888'
+      "name": "Comment",
+      "scope": ["comment", "punctuation.definition.comment"],
+      "settings": {
+        "foreground": "#5c6370"
       }
     },
+    // Add other token colors as needed
   ]
-}
+};
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://example.com', 
   markdown: {
     shikiConfig: {
-      theme: 'vitesse-light',
-      transformers: [
-        myTransformer
-      ]
+      theme: "ayu-dark",
+      transformers:[ {
+        pre(node, line, col) {
+          node.properties.class = "mockup-code";
+        },
+      },]
     },
   },
   integrations: [mdx(), sitemap(), tailwind()]
