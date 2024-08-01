@@ -2,7 +2,8 @@
 import { getCollection } from "astro:content";
 import { page_fun } from "../utils/page";
 
-const { sortPosts, getPagination ,pageSize,countWords,calculateTimeAgo } = page_fun;
+const { sortPosts, getPagination, pageSize, countWords, calculateTimeAgo } =
+  page_fun;
 
 const allPost = await getCollection("blog");
 const postLength = allPost.length;
@@ -13,19 +14,22 @@ const pagination = getPagination(postLength, pageSize);
 const isOdd = (number: number) => {
   return number % 2 !== 0;
 };
+ 
 ---
 
 {
-  homePost.map((post:any, index: number) => { 
-    return (
-      <div class="ml-4">
-        {isOdd(index) ? (
-           <a href={`/blog/${post.slug}/index.html`} title={post.data.title}>
+  homePost.map((post: any, index: number) => {
+    return isOdd(index) ? (
+      <div class="ml-4 ">
+        <a href={`/blog/${post.slug}/index.html`} title={post.data.title}>
           <div class="card bg-color postCard mb-4 rounded-lg w-full shadow-xl cursor-pointer	 flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95">
             <div class="flex">
               <div>
                 <img
-                  src={post?.data?.heroImage || "https://wdssmq.com/zb_users/theme/acgMora/var/noimg/2.webp"}
+                  src={
+                    post?.data?.heroImage ||
+                    "https://wdssmq.com/zb_users/theme/acgMora/var/noimg/2.webp"
+                  }
                   class="w-[500px] h-[200px] rounded-l-lg"
                   style={{
                     "clip-path": "polygon(0 0,88% 0,100% 100%,0 100%)",
@@ -37,25 +41,41 @@ const isOdd = (number: number) => {
                 <div class="flex justify-between">
                   <div />
                   <div class="flex tools">
-                    <div class="text-sm mr-6"> <time datetime={post.data.pubDate}>{new Date(post.data.pubDate).toLocaleDateString()}</time> </div>
+                    <div class="text-sm mr-6">
+                      {" "}
+                      <time datetime={post.data.pubDate}>
+                        {new Date(post.data.pubDate).toLocaleDateString()}
+                      </time>{" "}
+                    </div>
                     <div class="text-sm mr-6">{countWords(post.body)}字</div>
-                    <div class="text-sm">{calculateTimeAgo(post.data.pubDate)}</div>
+                    <div class="text-sm">
+                      {calculateTimeAgo(post.data.pubDate)}
+                    </div>
                   </div>
                 </div>
                 {/* <!-- title  --> */}
                 <div class="flex justify-between items-center mt-2">
                   <div>
-                    <div class="text-2xl font-medium title">{post.data.title}</div>
+                    <div class="text-2xl font-medium title">
+                      {post.data.title}
+                    </div>
                   </div>
                   <div class="text-sm text-gray-500">日常生活</div>
                 </div>
                 {/* <!-- desc  --> */}
-                <div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed" set:html={post.body}> </div>
+                <div
+                  class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed"
+                  set:html={post.body}
+                >
+                  {" "}
+                </div>
               </div>
             </div>
           </div>
         </a>
-        ) : (
+      </div>
+    ) : (
+      <div class="ml-4">
         <a href={`/blog/${post.slug}/index.html`} title={post.data.title}>
           <div class="card bg-color cursor-pointer	 postCard rounded-lg w-full mb-4 shadow-xl flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95">
             <div class="flex">
@@ -64,24 +84,40 @@ const isOdd = (number: number) => {
                 <div class="flex justify-between">
                   <div />
                   <div class="flex tools">
-                    <div class="text-sm mr-6"><time datetime={post.data.pubDate}>{new Date(post.data.pubDate).toLocaleDateString()}</time></div>
+                    <div class="text-sm mr-6">
+                      <time datetime={post.data.pubDate}>
+                        {new Date(post.data.pubDate).toLocaleDateString()}
+                      </time>
+                    </div>
                     <div class="text-sm mr-6">{countWords(post.body)}字</div>
-                    <div class="text-sm">{calculateTimeAgo(post.data.pubDate)}</div>
+                    <div class="text-sm">
+                      {calculateTimeAgo(post.data.pubDate)}
+                    </div>
                   </div>
                 </div>
                 {/* <!-- title  --> */}
                 <div class="flex justify-between items-center mt-2">
                   <div class="w-5/6">
-                    <div class="text-2xl font-medium title line-clamp-1 leading-relaxed">{post.data.title}</div>
+                    <div class="text-2xl font-medium title line-clamp-1 leading-relaxed">
+                      {post.data.title}
+                    </div>
                   </div>
                   <div class="text-sm text-gray-500">日常生活</div>
                 </div>
                 {/* <!-- desc  --> */}
-                <div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed" set:html={post.body}>  </div>
+                <div
+                  class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed"
+                  set:html={post.body}
+                >
+                  {" "}
+                </div>
               </div>
               <div>
                 <img
-                  src={post?.data?.heroImage || "https://wdssmq.com/zb_users/theme/acgMora/var/noimg/3.webp"}
+                  src={
+                    post?.data?.heroImage ||
+                    "https://wdssmq.com/zb_users/theme/acgMora/var/noimg/3.webp"
+                  }
                   class="w-[500px] h-[200px] rounded-r-lg object-cover"
                   style={{
                     "clip-path": "polygon(0 0,100% 0,100% 100%,20% 100%)",
@@ -91,7 +127,6 @@ const isOdd = (number: number) => {
             </div>
           </div>
         </a>
-        )}
       </div>
     );
   })

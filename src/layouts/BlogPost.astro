@@ -6,7 +6,7 @@ import FormattedDate from "../components/FormattedDate.astro";
 import Main from "../components/Main.astro";
 import TagCloud from "../components/TagCloud.astro";
 import My from "../components/My.astro";
-
+import "../styles/post.less";
 type Props = CollectionEntry<"blog">["data"];
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
@@ -36,12 +36,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
         padding: 1em;
         color: rgb(var(--gray-dark));
       }
-      .title {
-        margin-bottom: 1em;
-        padding: 1em 0;
-        text-align: center;
-        line-height: 1;
-      }
+      
       .title h1 {
         margin: 0 0 0.5em 0;
       }
@@ -67,7 +62,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
   <body>
     <Header />
     <Main>
-      <div class="container mx-auto pt-[120px]">
+      <div class="container post-container mx-auto pt-[120px]">
         <div class="flex">
           <!-- 左侧信息 -->
           <div class="w-2/6">
@@ -80,15 +75,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
           <div class="w-4/6 ml-4 mb-8">
             <article>
               <div class="card  bg-color shadow-xl">
-                <figure class="px-10 pt-10">
-                  <div class="hero-image">
-                    {
-                      heroImage && (
-                        <img width={1020} height={510} src={heroImage} alt="" />
-                      )
-                    }
-                  </div>
-                </figure>
+              
                 <div class="card-body items-center">
                   <div class="prose">
                     <div class="title">
@@ -103,7 +90,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
                           )
                         }
                       </div>
-                      <h1>{title}</h1>
+                      <h1 class="title">{title}</h1>
                       <hr />
                     </div>
                     <div>
