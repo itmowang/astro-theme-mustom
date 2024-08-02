@@ -1,0 +1,662 @@
+<!DOCTYPE html><html lang="en"> <head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v4.12.2"><!-- Font preloads --><link rel="preload" href="/fonts/atkinson-regular.woff" as="font" type="font/woff" crossorigin><link rel="preload" href="/fonts/atkinson-bold.woff" as="font" type="font/woff" crossorigin><!-- Canonical URL --><link rel="canonical" href="https://example.com/page/5/"><!-- Primary Meta Tags --><title>魔王 の 博客</title><meta name="title" content="魔王 の 博客"><meta name="description" content="魔王 の部落阁"><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://example.com/page/5/"><meta property="og:title" content="魔王 の 博客"><meta property="og:description" content="魔王 の部落阁"><meta property="og:image" content="https://example.com/blog-placeholder-1.jpg"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://example.com/page/5/"><meta property="twitter:title" content="魔王 の 博客"><meta property="twitter:description" content="魔王 の部落阁"><meta property="twitter:image" content="https://example.com/blog-placeholder-1.jpg"><link rel="stylesheet" href="/_astro/about.82merU4V.css">
+<style>footer[data-astro-cid-sz7xmlte]{padding:2em 1em 6em;background:linear-gradient(var(--gray-gradient)) no-repeat;color:rgb(var(--gray));text-align:center}.social-links[data-astro-cid-sz7xmlte]{display:flex;justify-content:center;gap:1em;margin-top:1em}.social-links[data-astro-cid-sz7xmlte] a[data-astro-cid-sz7xmlte]{text-decoration:none;color:rgb(var(--gray))}.social-links[data-astro-cid-sz7xmlte] a[data-astro-cid-sz7xmlte]:hover{color:rgb(var(--gray-dark))}
+</style><script type="module">function o(e){console.log("已经切换主题",e)}document.addEventListener("DOMContentLoaded",function(){const e=localStorage.getItem("theme");if(e){o(e);const t=document.querySelector(`input[value="${e}"]`);t&&(t.checked=!0)}});
+</script></head> <body> <header class="w-full fixed z-10 header-theme hover:shadow-md transition ease-in-out delay duration-300"> <nav class="flex items-center justify-center  w-full "> <div class="text-xl leading-[80px] header-nav"> <a href="/" class="mx-2 header-nav-item" data-astro-cid-eimmu3lg> 首页 </a>  <a href="/blog" class="mx-2 header-nav-item" data-astro-cid-eimmu3lg> 归档 </a>  <a href="/about" class="mx-2 header-nav-item" data-astro-cid-eimmu3lg> 关于 </a>  <a href="/link" class="mx-2 header-nav-item" data-astro-cid-eimmu3lg> 友链 </a>  </div> <div class="flex items-center"> <a href="https://m.webtoo.ls/@astro" class="ml-2 mr-2" target="_blank"> <span class="sr-only">Follow Astro on Mastodon</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="16" height="16"><path fill="currentColor" d="M11.19 12.195c2.016-.24 3.77-1.475 3.99-2.603.348-1.778.16-4.339.16-4.339 0-3.47-2.286-4.488-2.286-4.488C12.062.238 10.083.017 8.027 0h-.05C5.92.017 3.942.238 2.79.765c0 0-2.285 1.017-2.285 4.488l-.002.662c-.004.64-.007 1.35.011 2.091.083 3.394.626 6.74 3.78 7.57 1.454.383 2.703.463 3.709.408 1.823-.1 2.847-.647 2.847-.647l-.06-1.317s-1.303.41-2.767.36c-1.45-.05-2.98-.156-3.215-1.928a3.614 3.614 0 0 1-.033-.496s1.424.346 3.228.428c1.103.05 2.137-.064 3.188-.189zm1.613-2.47H11.13v-4.08c0-.859-.364-1.295-1.091-1.295-.804 0-1.207.517-1.207 1.541v2.233H7.168V5.89c0-1.024-.403-1.541-1.207-1.541-.727 0-1.091.436-1.091 1.296v4.079H3.197V5.522c0-.859.22-1.541.66-2.046.456-.505 1.052-.764 1.793-.764.856 0 1.504.168 1.933.983L8 4.39l.417-.695c.429-.655 1.077-.983 1.934-.983.74 0 1.336.259 1.791.764.442.505.661 1.187.661 2.046v4.203z"></path></svg> </a> <a href="https://twitter.com/astrodotbuild" class="mr-2" target="_blank"> <span class="sr-only">Follow Astro on Twitter</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="16" height="16"><path fill="currentColor" d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.165 9.165 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.163 3.163 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.616 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.16 6.16 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path></svg> </a> <a href="https://github.com/withastro/astro" class="mr-2" target="_blank"> <span class="sr-only">Go to Astro's GitHub repo</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="16" height="16"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.16-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> </a> </div> </nav> </header> <main> <div class="relative"> <div class="bg-urls bg-no-repeat bg-cover h-dvh bg-center relative"> <div class="absolute inset-0 bg-gradient-to-t from-white"></div> </div> <div class="absolute inset-0"> <div class="min-h-dvh">  <div class="container mx-auto"> <div class="flex pt-[120px]"> <!-- 左侧信息 --> <div class="w-2/6"> <div class="myCard card card-side bg-color shadow-xl"> <figure> <img src="https://d-sketon.top/img/_backwebp/bg26.webp" alt="Movie" class="h-full w-[200px] object-cover object-top"> </figure> <div class="card-body p-4"> <h2 class="card-title flex justify-center my-title">MoWang</h2> <div class="flex justify-center my-desc">魔王的 Blog </div> <div class="flex w-full flex-col lg:flex-row"> <div class="card rounded-box grid h-16 flex-grow place-items-center"> <div> <div class="flex justify-center my-cate">文章</div> <div class="flex justify-center my-number">11</div> </div> </div> <div class="divider sm:divider-horizontal"></div> <div class="card rounded-box grid h-16 flex-grow place-items-center"> <div> <div class="flex justify-center my-cate">分类</div> <div class="flex justify-center my-number">11</div> </div> </div> <div class="divider sm:divider-horizontal"></div> <div class="card rounded-box grid h-16 flex-grow place-items-center"> <div> <div class="flex justify-center my-cate">标签</div> <div class="flex justify-center my-number">11</div> </div> </div> </div> <div class="flex justify-between"> <div> <button class="btn btn-sm btn-outline btn-primary">首页</button> </div> <div> <button class="btn btn-sm btn-outline btn-primary">归档</button> </div> <div> <button class="btn btn-sm btn-outline btn-primary">关于</button> </div> </div> <div class="decoration-wavy italic text-center my-yy">年少不得之物,终将困其一生</div> </div> </div> <div class="mt-6"> <div class="card bg-color  shadow-xl"> <div class="card-body"> <h2 class="card-title">标签云预留点</h2> <p> 后续你打算做点什么?</p> </div> </div> </div> <div class="mt-6"> <div class="card bg-color shadow-xl"> <div class="card-body"> <h2 class="card-title">Theme</h2> <div class="form-control"> <label class="label cursor-pointer gap-4"> <span class="label-text">春</span> <input type="radio" name="theme-radios" class="radio theme-controller" value="spring"> </label> </div> <div class="form-control"> <label class="label cursor-pointer gap-4"> <span class="label-text">夏</span> <input type="radio" name="theme-radios" class="radio theme-controller" value="summer"> </label> </div> <div class="form-control"> <label class="label cursor-pointer gap-4"> <span class="label-text">秋</span> <input type="radio" name="theme-radios" class="radio theme-controller" value="autumn"> </label> </div> <div class="form-control"> <label class="label cursor-pointer gap-4"> <span class="label-text">冬</span> <input type="radio" name="theme-radios" class="radio theme-controller" value="winter"> </label> </div> </div> </div>  </div> </div> <!-- 右侧列表或者内容 --> <div class="w-4/6 mb-4"> <div class="ml-4"><a href="/blog/2023-11-6-astrosetup/doc/index.html" title="给表妹的 Astro Blog 搭建流程"><div class="card bg-color cursor-pointer	 postCard rounded-lg w-full mb-4 shadow-xl flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"><time datetime="Mon Nov 06 2023 23:27:24 GMT+0800 (中国标准时间)">2023/11/6</time></div><div class="text-sm mr-6">0.1K字</div><div class="text-sm">269 天前</div></div></div><div class="flex justify-between items-center mt-2"><div class="w-5/6"><div class="text-2xl font-medium title line-clamp-1 leading-relaxed">给表妹的 Astro Blog 搭建流程</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed"> 
+表妹上大学了，理工类的学科，看来以后绝对优秀人才呢。因此需要一个blog来记录学习过程。
+
+### 为什么使用 Astro 
+
+当然和我是前端工程师是分不开的关系，本来也是推荐使用一些PHP的blog程序，但是需要一些服务器相关的知识，也并非省时省力。顺带还需要给她传授一点 Git 相关的知识，所以对于正在使用astro 的我当然首选 **Astro** 啦 , 也可以讲下web相关的知识。
+
+### 在此之前
+
+安装好nodejs:
+
+https://nodejs.org/en
+
+熟悉md的编写:
+
+https://www.math.pku.edu.cn/teachers/lidf/docs/Rbook/html/_Rbook/markdown.html
+
+### 在 github 克隆一个 astro 项目 
+
+``` bash
+
+# 首推自己的个人github项目
+
+https://github.com/itmowang/sxq-astro
+```
+
+![切图1](http://img.blog.loli.wang/2023-11-6-astrosetup/01.png)
+
+github推出的新功能 **repository templates**  方便快速使用该代码库。使用后会在自己的本地仓库看到该项目
+
+
+### 编写文章
+
+克隆到自己的私人仓库后 通过 git 工具拉取自己仓库的代码代码。
+
+「文章」存放于`src/content/blog`路径内，可自行清空后新建；
+
+
+![切图2](http://img.blog.loli.wang/2023-11-6-astrosetup/02.png)
+
+
+文章内固定格式
+
+``` jsx
+---
+title: &quot;文章标题&quot;   # 文章标题
+pubDate: 2021-03-27 09:45:11  # 发布日期
+description: &quot;文章描述。&quot;  # 文章描述
+heroImage: &quot;http://img.blog.loli.wang/2023-8-21-cfworkerProxy/01.png&quot; # 主页预览图
+---
+    # mdx
+    文章内容
+```
+
+
+### 发布
+``` bash
+ # 通过npm发布至线上
+ # 强烈要求 Node 版本在 18x + 
+    npm i -g pnpm
+
+    pnpm install
+    
+    pnpm build
+
+    然后将docs目录内的文件部署到服务器上，同样的也可以直接使用 github 的 pages 根据自己的喜好来。
+
+```
+
+</div></div><div><img src="http://img.blog.loli.wang/2023-11-6-astrosetup/01.png" class="w-[500px] h-[200px] rounded-r-lg object-cover" style="clip-path:polygon(0 0,100% 0,100% 100%,20% 100%)"></div></div></div></a></div><div class="ml-4 "><a href="/blog/2023-11-6-rust001/doc/index.html" title="rust开发环境安装以及Cargo"><div class="card bg-color postCard mb-4 rounded-lg w-full shadow-xl cursor-pointer	 flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div><img src="http://img.blog.loli.wang/2023-11-6-rust001/01.png" class="w-[500px] h-[200px] rounded-l-lg" style="clip-path:polygon(0 0,88% 0,100% 100%,0 100%)"></div><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"> <time datetime="Mon Nov 06 2023 23:27:24 GMT+0800 (中国标准时间)">2023/11/6</time> </div><div class="text-sm mr-6">0.1K字</div><div class="text-sm">269 天前</div></div></div><div class="flex justify-between items-center mt-2"><div><div class="text-2xl font-medium title">rust开发环境安装以及Cargo</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed">
+
+## 我正在学习准备rust 
+
+学习资源：
+
+```
+    官方文档 
+    https://doc.rust-lang.org/book/
+    第三方中文文档
+    https://rustwiki.org/zh-CN/book/
+```
+
+## 安装
+
+根据官网提供的exe 安装进行下一步就好
+
+### hello world! 
+
+建立一个 **project** 文件夹 创建文件 main.rs 文件
+
+``` bash
+# main.rs
+
+fn main() {
+    println!(&quot;Hello, world!&quot;);
+}
+
+```
+
+保存文件 在命令行中输入命令
+
+``` bash
+
+rustc main.rs
+
+# 会自动生成 main.exe main.pdb 文件 exe 是主要可执行文件 pdb是调试信息文件 方便调试
+
+./main.exe
+
+# Hello, world!
+
+```
+
+
+### Rust 是预编译语言
+
+Rust 是一门预编译(ahead-of-time compiled)语言，这意味着你可以编译一个程序，将编译后的可执行文件给别人，即使他们没有安装 Rust 也可以运行程序。
+
+
+### Cargo 
+
+使用 Cargo 创建一个新项目
+
+查看cargo的版本
+
+```bash
+cargo --version
+# cargo 1.73.0 (9c4383fb5 2023-08-26)
+```
+
+创建项目
+
+``` bash
+cargo new hello_cargo
+# Created binary (application) `hello_cargo` package
+cd hello_cargo
+```
+
+目录结构
+
+src 目录内有个 main.rs 作为主入口
+
+Cargo.toml 为 Cargo的配置文件
+
+``` bash
+# Cargo.toml
+[package]
+name = &quot;hello_cargo&quot;
+version = &quot;0.1.0&quot;
+edition = &quot;2021&quot;
+
+[dependencies]
+```
+
+### 构建并运行 Cargo 项目
+
+``` bash
+cargo build # 构建项目
+cargo run # 一步构建并运行项目
+cargo check # 检查项目是否可以编译通过
+```
+
+
+看来可以开始Rust之旅了</div></div></div></div></a></div><div class="ml-4"><a href="/blog/2023-10-13-dockerdevops/doc/index.html" title="docker 配置 nginx 环境"><div class="card bg-color cursor-pointer	 postCard rounded-lg w-full mb-4 shadow-xl flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"><time datetime="Fri Oct 13 2023 23:27:24 GMT+0800 (中国标准时间)">2023/10/13</time></div><div class="text-sm mr-6">0.2K字</div><div class="text-sm">293 天前</div></div></div><div class="flex justify-between items-center mt-2"><div class="w-5/6"><div class="text-2xl font-medium title line-clamp-1 leading-relaxed">docker 配置 nginx 环境</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed"> 
+如果是windows环境下，记得安装上 ubuntu ，然后安装好docker Desktop
+
+   ![切图1](http://img.blog.loli.wang/2023-10-13-dockerDevops/01.png)
+
+##  搜索nginx镜像
+
+``` bash
+
+打开ubuntu的命令行。
+
+ docker search nginx # 搜索nginx镜像
+ 
+ NAME: 镜像仓库源的名称
+ DESCRIPTION: 镜像的描述
+ OFFICIAL: 是否为 docker 官方发布
+ stars: 类似 Github 里面的 star
+ AUTOMATED: 自动构建。
+``` 
+
+ ![切图2](http://img.blog.loli.wang/2023-10-13-dockerDevops/02.png)
+
+## 拉取最新NGINX Docker镜像 
+
+``` bash
+
+docker pull nginx:latest # latest 代表最新版本的意思 同样也可以在这里制定版本
+
+```
+
+ ![切图3](http://img.blog.loli.wang/2023-10-13-dockerDevops/03.png)
+
+ ## 查看镜像
+
+``` bash 
+ docker images # 查看所有已经拉取和自己的镜像
+```
+![切图4](http://img.blog.loli.wang/2023-10-13-dockerDevops/04.png)
+
+## 使用执行镜像创建一个新的容器
+
+``` bash 
+
+docker run -it nginx
+
+语法：docker run [OPTIONS] IMAGE [COMMAND] [ARG…]
+
+OPTIONS说明：
+-a stdin: 指定标准输入输出内容类型，可选 STDIN/STDOUT/STDERR 三项；
+-d: 后台运行容器，并返回容器ID；
+-i: 以交互模式运行容器，通常与 -t 同时使用；
+-P: 随机端口映射，容器内部端口随机映射到主机的端口
+-p: 指定端口映射，格式为：主机(宿主)端口:容器端口
+-t: 为容器重新分配一个伪输入终端，通常与 -i 同时使用；
+–name=&quot;nginx-lb&quot;: 为容器指定一个名称；
+–dns 8.8.8.8: 指定容器使用的DNS服务器，默认和宿主一致；
+–dns-search example.com: 指定容器DNS搜索域名，默认和宿主一致；
+-h “mars”: 指定容器的hostname；
+-e username=“ritchie”: 设置环境变量；
+–env-file=[]: 从指定文件读入环境变量；
+–cpuset=&quot;0-2”&quot; or --cpuset=&quot;0,1,2&quot;: 绑定容器到指定CPU运行；
+-m :设置容器使用内存最大值；
+–net=&quot;bridge&quot;: 指定容器的网络连接类型，支持 bridge/host/none/container: 四种类型；
+–link=[]: 添加链接到另一个容器；
+–expose=[]: 开放一个端口或一组端口；
+–volume , -v: 绑定一个卷
+
+
+# 使用指令
+
+docker run -it --name=&quot;testNgx&quot; nginx
+
+```
+
+![切图5](http://img.blog.loli.wang/2023-10-13-dockerDevops/05.png)
+
+可以看到我们这里有了新的我们创建的容器。可以对容器启动关闭销毁等快捷的操作。
+
+当然 我们是nginx 要配置个ip和端口，方便本地测试
+
+## 实践测试
+
+写上第二个测试 ，可以看到我们正常创建了个新的容器，并8080端口映射了80端口
+
+```  bash
+# 指令
+docker run --name nginx-test -p 8080:80 -d nginx
+```
+
+![切图6](http://img.blog.loli.wang/2023-10-13-dockerDevops/06.png)
+
+![切图7](http://img.blog.loli.wang/2023-10-13-dockerDevops/07.png)
+
+![切图8](http://img.blog.loli.wang/2023-10-13-dockerDevops/08.png)
+
+改变docker nginx的conf配置改为自己的配置就可以啦
+
+</div></div><div><img src="http://img.blog.loli.wang/2023-10-13-dockerDevops/01.png" class="w-[500px] h-[200px] rounded-r-lg object-cover" style="clip-path:polygon(0 0,100% 0,100% 100%,20% 100%)"></div></div></div></a></div><div class="ml-4 "><a href="/blog/2023-10-08-surge/doc/index.html" title="记一次折腾 Surge (github pages替代品) "><div class="card bg-color postCard mb-4 rounded-lg w-full shadow-xl cursor-pointer	 flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div><img src="http://img.blog.loli.wang/2023-10-08-surge/04.png" class="w-[500px] h-[200px] rounded-l-lg" style="clip-path:polygon(0 0,88% 0,100% 100%,0 100%)"></div><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"> <time datetime="Sun Oct 08 2023 23:27:24 GMT+0800 (中国标准时间)">2023/10/8</time> </div><div class="text-sm mr-6">0.1K字</div><div class="text-sm">298 天前</div></div></div><div class="flex justify-between items-center mt-2"><div><div class="text-2xl font-medium title">记一次折腾 Surge (github pages替代品) </div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed">
+## 起因
+  
+   ![切图1](http://img.blog.loli.wang/2023-10-08-surge/05.png)
+
+   看到老师发这玩意，不管是什么，总得折腾一番 😁
+
+## 如何使用 Surge.sh 免费部署静态网站
+
+Surge.sh 是一个免费的静态网站主机，您可以通过命令行与之交互。它可以快速轻松地在线获取新站点和应用程序，无论是手动还是作为 CI 构建过程的一部分。以下是如何开始使用该服务。类似github 的pages功能
+
+## 第一次运行
+我们假设您已经有了要部署到 Web 的文件目录。如果还没有，请创建一个新文件夹，添加一个 index.html 和一些简单的入门内容。
+
+Surge 是通过Npm发布的JavaScript的引用程序 ，在这之前必须安装Node.js ，再然后使用npm安装Surge
+
+    npm install --global surge
+
+安装完成后执行指令
+``` bash
+
+surge
+```   
+执行后会要求你注册/登录一个相关的账号，填写完后，会要求让你填写需要发布的目录，填写完成后自动发布
+
+ ![切图2](http://img.blog.loli.wang/2023-10-08-surge/02.png)
+ ![切图3](http://img.blog.loli.wang/2023-10-08-surge/03.png)
+
+
+## 补充，如何绑定域名
+只需要在需要发布的 Web 文件目录，建立一个CNAME文件，内部填写需要绑定的域名即可
+
+ ![切图3](http://img.blog.loli.wang/2023-10-08-surge/07.png)
+
+
+发布成功
+
+ ![切图4](http://img.blog.loli.wang/2023-10-08-surge/06.png)</div></div></div></div></a></div><div class="ml-4"><a href="/blog/2023-9-dplayer-thumbnails/doc/index.html" title="问答：DPlayer关键帧预览图生成思路 "><div class="card bg-color cursor-pointer	 postCard rounded-lg w-full mb-4 shadow-xl flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"><time datetime="Tue Sep 26 2023 23:27:24 GMT+0800 (中国标准时间)">2023/9/26</time></div><div class="text-sm mr-6">0.2K字</div><div class="text-sm">310 天前</div></div></div><div class="flex justify-between items-center mt-2"><div class="w-5/6"><div class="text-2xl font-medium title line-clamp-1 leading-relaxed">问答：DPlayer关键帧预览图生成思路 </div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed"> 
+## 起因
+  网友学习java工作了，公司领导给了个需求，要播放视频同事鼠标悬停到进度条位置有预览效果
+
+  类似
+  ![切图1](http://img.blog.loli.wang/2023-9-dplayer-thumbnails/01.png)
+
+  网友深思熟虑的考虑播放器使用 **DPlayer** ，但是把官网上的Demo复制下来，放上自己的视频后，发现预览图都是白屏。
+
+![切图2](http://img.blog.loli.wang/2023-9-dplayer-thumbnails/02.png)
+
+我看了下 **DPlayer** 文档后，发现是有个属性 **thumbnails** 专门存放时间帧的预览图。给出的建议是自己去通过视频工具去切时间帧的图片。
+
+### 重新理解需求
+
+发现他的需求并没有描述清楚，常常因为需求没有描述清楚而导致做一些多余的事情
+
+![切图3](http://img.blog.loli.wang/2023-9-dplayer-thumbnails/03.png)
+
+嗯.... 他是java工程师，在工作中前端的活也要干。。但是居然想着前端切图，，，前端一个弱语言单线程，就算依赖Web Workers 也很不好吧。应用层并不适合处理视频这种场景。
+
+### 进一步建议和最后的方案
+
+看见 **DPlayer** 作者有个库**DPlayer-thumbnails**，专门处理视频预览图片的，是基于&quot;fluent-ffmpeg&quot;这个库来写的，可惜是Node的，他是java不太适用。但是ffmpeg 连 Node都有相关的库，java这么好的生态会没有? 毕竟不是java 慢慢引导下吧。
+
+![切图4](http://img.blog.loli.wang/2023-9-dplayer-thumbnails/04.png)
+![切图5](http://img.blog.loli.wang/2023-9-dplayer-thumbnails/05.png)
+![切图6](http://img.blog.loli.wang/2023-9-dplayer-thumbnails/06.png)
+![切图7](http://img.blog.loli.wang/2023-9-dplayer-thumbnails/07.png)
+![切图8](http://img.blog.loli.wang/2023-9-dplayer-thumbnails/08.png)
+
+最终结束。。。虽然没帮到什么实际上的，至少思路给引导了下。我想应该足够了
+
+
+### 后续
+
+后一天问了下网友情况，如何生成 ，他打算的方案是循环生成图片再去拼接，我看官方写的插件Node版本的也是这样的，后来发现他的能力并不能做到相关的操作
+
+``` bash
+ffmpeg -y -i &quot;test.mp4&quot; -frames 1 -vf &quot;thumbnail=n=100,scale=-1:320,tile=4X6:padding=10:color=white&quot; thumbnail.png
+```
+
+![切图9](http://img.blog.loli.wang/2023-9-dplayer-thumbnails/09.png)</div></div><div><img src="http://img.blog.loli.wang/2023-9-dplayer-thumbnails/01.png" class="w-[500px] h-[200px] rounded-r-lg object-cover" style="clip-path:polygon(0 0,100% 0,100% 100%,20% 100%)"></div></div></div></a></div><div class="ml-4 "><a href="/blog/2023-9-23-prototype/doc/index.html" title="原型链的理解"><div class="card bg-color postCard mb-4 rounded-lg w-full shadow-xl cursor-pointer	 flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div><img src="http://img.blog.loli.wang/2023-9-23-prototype/01.png" class="w-[500px] h-[200px] rounded-l-lg" style="clip-path:polygon(0 0,88% 0,100% 100%,0 100%)"></div><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"> <time datetime="Sat Sep 23 2023 23:27:24 GMT+0800 (中国标准时间)">2023/9/23</time> </div><div class="text-sm mr-6">0.1K字</div><div class="text-sm">313 天前</div></div></div><div class="flex justify-between items-center mt-2"><div><div class="text-2xl font-medium title">原型链的理解</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed">
+## 起因
+  程序媛妹妹问我面试题，怎么好好的解释原型链(或许她问的什么是原型链)，嘛！毕竟写vue都要理解这玩意捏。
+
+## 理解
+  每一个对象都有自己的原型链，有自己的内置对象，有自己的prototype 和 proto 。
+
+  **prototype** 显式原型，指向一个构造函数
+  ** __proto__ ** 隐式原型，是对象的属性
+
+  如果想从对象中查找某个值，如果没有找到他们就会从原型实例，向上查找，直到找到Object.prototype 为止。
+
+  示例解释
+  
+``` jsx
+
+ Object.prototype.abc = 222;
+
+ // 建立构造函数1
+ function Test1Fun() {}
+
+ // 构造函数中写入原型
+ Test1Fun.prototype.test = &quot;111&quot;;
+
+ // 建立构造函数2
+ function Test2Fun() {}
+  
+ // 将Test2Fun的原型对象指向一个Test1Fun的实例，实现原型链继承
+ Test2Fun.prototype = new Test1Fun();
+
+// 创建一个Test2Fun的实例对象testObj
+ var testObj = new Test2Fun();
+
+//  从原型链中查找 test 
+ console.log(testObj.test);
+//  从原型链中查找 abc
+ console.log(testObj.abc);
+
+```
+
+是否发现vue中 Vue是一个构造函数，我们经常在上面挂载原型，在所有地方都能方便使用
+
+![切图1](http://img.blog.loli.wang/2023-9-23-prototype/01.png)
+</div></div></div></div></a></div><div class="ml-4"><a href="/blog/2023-9-22-multappliction/doc/index.html" title="vite 多页面应用配置"><div class="card bg-color cursor-pointer	 postCard rounded-lg w-full mb-4 shadow-xl flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"><time datetime="Fri Sep 22 2023 23:27:24 GMT+0800 (中国标准时间)">2023/9/22</time></div><div class="text-sm mr-6">0.2K字</div><div class="text-sm">314 天前</div></div></div><div class="flex justify-between items-center mt-2"><div class="w-5/6"><div class="text-2xl font-medium title line-clamp-1 leading-relaxed">vite 多页面应用配置</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed"> 
+## 起因
+一个程序媛妹妹问我vite如何配置多应用，我仔细想了想，什么是多应用？？，后来经过gpt搜索，百度资料，哦~ 原来叫做 **多页面应用** ，然后这就去研究。
+
+想打包出来的目录结构是这样的:
+
+![切图1](http://img.blog.loli.wang/2023-9-22-multAppliction/01.png)
+
+
+妹子是使用rollup配置的，看了下代码， 写的一个插件，导入到vite插件里面。看上去并不合理，也并不友善，同样的查看了vite文档 有相关的处理方案
+
+## 自己动手
+
+看文档，只需要根目录定义好相应的目录结构，在rollupOptions中配置好相应的入口，就可以成功
+
+![切图2](http://img.blog.loli.wang/2023-9-22-multAppliction/03.png)
+
+但是我们需要动态的读取目录，更好的读取应用, 所以需要使用fs去读取下文件夹内文件
+
+``` jsx
+import fs from &quot;fs&quot;;
+
+//...
+
+  // 加载所有子目录
+  const appliction = fs.readdirSync(&quot;./appliction&quot;);
+  // 合并成input入口数组
+  const input = Object.fromEntries(
+    appliction.map((item) =&gt; [
+      item,
+      path.resolve(`${__dirname}/appliction/${item}/index.html`),
+    ])
+  );
+
+//...
+
+// 获取出来的目录结构
+// {
+//     app1:&#39;xxx/xxx/appliction/app1/index.html&#39;
+// }
+
+
+//...
+  return {
+    base: &quot;./&quot;,
+    outDir: &quot;dist&quot;,
+    plugins: [vue()],
+    build: {
+      target: &quot;es2015&quot;,
+      cssCodeSplit: true,
+      assetsDir: &quot;appliction&quot;,
+      rollupOptions: {
+        input: {
+          main: path.resolve(__dirname, &quot;index.html&quot;),
+          ...input,
+        }, 
+      },
+  },
+//...
+
+```
+
+
+
+这时候我们就打包出来了相应的目录，结构
+
+![切图2](http://img.blog.loli.wang/2023-9-22-multAppliction/02.png)
+
+
+不过有个缺点，目录结构都在assets内，想将打包出来的js文件css文件放到他们自己的文件结构内，例如
+
+``` jsx
+
+    - dist
+        - page1
+            - static
+            - index.html    
+        - page2
+            - static
+            - index.html 
+    index.html
+
+```
+
+所以需要配置下rollup的输出格式
+
+``` jsx
+
+ return {
+    base: &quot;./&quot;,
+    outDir: &quot;dist&quot;,
+    plugins: [vue()],
+    build: {
+      target: &quot;es2015&quot;,
+      cssCodeSplit: true,
+      assetsDir: &quot;appliction&quot;,
+      rollupOptions: {
+        input: {
+          main: path.resolve(__dirname, &quot;index.html&quot;),
+          ...input,
+        },
+        output: {
+          entryFileNames: &quot;appliction/[name]/static/[name].[hash].js&quot;,
+          chunkFileNames: &quot;appliction/[name]/static/[name].[hash].js&quot;,
+          assetFileNames: &quot;appliction/[name]/static/[name].[hash].[ext]&quot;,
+        },
+      },
+    },
+
+
+```
+
+这样就打包出了我们所需要的目录结构
+
+![切图3](http://img.blog.loli.wang/2023-9-22-multAppliction/01.png)
+
+
+参考文档：
+ [ 我的github仓库 ](https://github.com/itmowang/mw-cli/tree/master/packages/mw-create/template/multi-application-template)
+    
+[vite官方] (https://vitejs.dev/guide/build.html#multi-page-app)</div></div><div><img src="http://img.blog.loli.wang/2023-9-22-multAppliction/01.png" class="w-[500px] h-[200px] rounded-r-lg object-cover" style="clip-path:polygon(0 0,100% 0,100% 100%,20% 100%)"></div></div></div></a></div><div class="ml-4 "><a href="/blog/2023-9-18-exportswhy/doc/index.html" title="package.json 中 exports 的理解"><div class="card bg-color postCard mb-4 rounded-lg w-full shadow-xl cursor-pointer	 flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div><img src="http://img.blog.loli.wang/2023-9-18-exportswhy/01.png" class="w-[500px] h-[200px] rounded-l-lg" style="clip-path:polygon(0 0,88% 0,100% 100%,0 100%)"></div><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"> <time datetime="Mon Sep 18 2023 23:27:24 GMT+0800 (中国标准时间)">2023/9/18</time> </div><div class="text-sm mr-6">0.1K字</div><div class="text-sm">318 天前</div></div></div><div class="flex justify-between items-center mt-2"><div><div class="text-2xl font-medium title">package.json 中 exports 的理解</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed">
+
+### 起因
+  学习某低代码平台代码，看**packages**中有个exports，指向了不同的js文件，疑惑为什么这么做
+
+### 解惑
+
+  在通常情况下，我们会使用 main:&quot;index.js&quot; 指向单独指向一个所抛出的 **exports** 
+
+  但是使用过 exports 后，会生成一个对应关系，抛出不同的模块，并消除替换了 **mian** 字段的默认行为 例如
+
+``` jsx
+ {
+  &quot;exports&quot;: {
+    &quot;.&quot;: &quot;./main.js&quot;,
+    &quot;./core/test&quot;: &quot;./test.js&quot;,
+  }
+}
+
+// 使用时可以使用如此的对应关系 分模块去使用
+
+// &quot;.&quot;: &quot;./main.js&quot;,
+import test from &#39;package&#39;
+
+// &quot;./core/test&quot;: &quot;./test.js&quot;,
+import test from &#39;package/core/test&#39;
+
+```
+
+### 根据模块语法 引用不同的文件
+
+``` jsx
+&quot;exports&quot;: {
+    &quot;.&quot;: {
+      &quot;import&quot;: &quot;./lib/esm/index.mjs&quot;,
+      &quot;require&quot;: &quot;./main.js&quot;
+    },
+    &quot;./core/test&quot;: &quot;./test.js&quot;
+  }
+```
+
+
+### 后续疑问
+
+exports 为抛出不同的模块,那么ts中的tsconfig 的paths 和 vite的  resolve.alias 区别是什么？</div></div></div></div></a></div><div class="ml-4"><a href="/blog/2023-9-13-why-swc/doc/index.html" title="什么是swc"><div class="card bg-color cursor-pointer	 postCard rounded-lg w-full mb-4 shadow-xl flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"><time datetime="Sun Sep 10 2023 23:27:24 GMT+0800 (中国标准时间)">2023/9/10</time></div><div class="text-sm mr-6">0.1K字</div><div class="text-sm">326 天前</div></div></div><div class="flex justify-between items-center mt-2"><div class="w-5/6"><div class="text-2xl font-medium title line-clamp-1 leading-relaxed">什么是swc</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed"> 
+## 什么是 swc
+
+在swc没出现之前，一直是使用 **babel** 来处理转换旧版本 **JavaScript** 的工具，也可以给**typescript**使用，ast解析树，压缩等等.. 是前端工程换不可缺少的一环。
+
+而 **Babel** 是JavaScript编写的，是JavaScript的编译器，SWC 同样也是JavaScript的编译器，不过是用Rust重写的，比Javascript快的多。性能得到了大幅度提升，目前很多常用的工具库都正在用rust重写。所以还不学Rust？
+
+
+## swc 的使用
+``` bash
+# 命令
+
+pnpm init
+
+pnpm add @swc/core @swc/cli
+```
+
+``` bash
+# async.js
+
+const fetch = require(&quot;node-fetch&quot;);
+
+async function getData() {
+    let res = await fetch(&quot;https://jsonplaceholder.typicode.com/todos/1&quot;);
+    let json = await res.json();
+    console.log(&#39;data&#39;, json);
+}
+
+getData();
+
+```
+
+### 配置spack
+
+ 在根目录创建 spack.config.js 文件 
+
+ ``` bash
+ const { config } = require(&quot;@swc/core/spack&quot;);
+
+
+module.exports = config({
+  // 入口
+  entry: __dirname + &quot;/index.js&quot;,
+  // 输出到哪儿
+  output: {
+    path: __dirname + &quot;/dist&quot;,
+  },
+  module:{}
+  // swc编译配置
+//   options: {
+//     // 编译规则
+//     jsc: {
+//         parser: {}, // 解析配置
+//         target: &quot;es5&quot;, // 转义目标
+//         // ... 等可以去官网看具体配置 https://swc.rs/docs/configuration/swcrc
+//     },
+//     // 输出文件配置
+//     module: {
+//       type: &quot;commonjs&quot;,
+//       strict: false,
+//       strictMode: true,
+//       lazy: false,
+//       noInterop: false,
+//       ignoreDynamic: false,
+//     },
+//   },
+});
+
+ ```
+
+
+
+ ### 更改执行脚本
+
+ ``` bash
+ # package.json
+
+  &quot;scripts&quot;: {
+    &quot;build&quot;: &quot;spack&quot;
+  }
+
+ # 执行
+ pnpm build
+
+ ```
+
+![切图2](http://img.blog.loli.wang/2023-9-13-why-swc/02.png)
+
+![切图3](http://img.blog.loli.wang/2023-9-13-why-swc/03.png)
+
+
+参考文档：
+
+[SWC - 官方文档](https://swc.rs/docs/usage/bundling)
+   
+
+或许准备些一个自己的swc插件后面持续记录</div></div><div><img src="http://img.blog.loli.wang/2023-9-13-why-swc/01.png" class="w-[500px] h-[200px] rounded-r-lg object-cover" style="clip-path:polygon(0 0,100% 0,100% 100%,20% 100%)"></div></div></div></a></div><div class="ml-4 "><a href="/blog/2023-9-9-mini-webpack/doc/index.html" title="mini-webpack - 学习 - 废弃已经学习了概念后续补充"><div class="card bg-color postCard mb-4 rounded-lg w-full shadow-xl cursor-pointer	 flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div><img src="http://img.blog.loli.wang/2023-9-04-astroxxq/05.png" class="w-[500px] h-[200px] rounded-l-lg" style="clip-path:polygon(0 0,88% 0,100% 100%,0 100%)"></div><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"> <time datetime="Sat Sep 09 2023 23:27:24 GMT+0800 (中国标准时间)">2023/9/9</time> </div><div class="text-sm mr-6">0.0K字</div><div class="text-sm">327 天前</div></div></div><div class="flex justify-between items-center mt-2"><div><div class="text-2xl font-medium title">mini-webpack - 学习 - 废弃已经学习了概念后续补充</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed">
+## 准备
+``` bash
+    fs # 操作文件
+    @babel/parser # 就是babel 只不过是一个api的使用方式 babel是一个编译工具 将新的es语言转换为老的es语言
+    @babel/traverse # babel的插件 用来遍历文件树 
+    ejs # 模板生成器 可以将模块里的东西
+    babel-preset-env 
+```</div></div></div></div></a></div><div class="pagination-container page-bar flex items-center justify-between bg-white p-4 rounded-md shadow-md"> <a href="/page/4/" class="prev text-blue-500 hover:text-blue-700 transition-colors duration-200" title="上一页">
+上一页
+</a> <span class="pagination-info text-gray-700">
+第 5 页 / 共 7 页
+</span> <a href="/page/6/" class="next text-blue-500 hover:text-blue-700 transition-colors duration-200" title="下一页">
+下一页
+</a> </div> </div> </div> </div>  </div> <footer data-astro-cid-sz7xmlte>
+&copy; 2024 Your name here. All rights reserved.
+<div class="social-links" data-astro-cid-sz7xmlte> <a href="https://m.webtoo.ls/@astro" target="_blank" data-astro-cid-sz7xmlte> <span class="sr-only" data-astro-cid-sz7xmlte>Follow Astro on Mastodon</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/mastodon" data-astro-cid-sz7xmlte><path fill="currentColor" d="M11.19 12.195c2.016-.24 3.77-1.475 3.99-2.603.348-1.778.32-4.339.32-4.339 0-3.47-2.286-4.488-2.286-4.488C12.062.238 10.083.017 8.027 0h-.05C5.92.017 3.942.238 2.79.765c0 0-2.285 1.017-2.285 4.488l-.002.662c-.004.64-.007 1.35.011 2.091.083 3.394.626 6.74 3.78 7.57 1.454.383 2.703.463 3.709.408 1.823-.1 2.847-.647 2.847-.647l-.06-1.317s-1.303.41-2.767.36c-1.45-.05-2.98-.156-3.215-1.928a3.614 3.614 0 0 1-.033-.496s1.424.346 3.228.428c1.103.05 2.137-.064 3.188-.189zm1.613-2.47H11.13v-4.08c0-.859-.364-1.295-1.091-1.295-.804 0-1.207.517-1.207 1.541v2.233H7.168V5.89c0-1.024-.403-1.541-1.207-1.541-.727 0-1.091.436-1.091 1.296v4.079H3.197V5.522c0-.859.22-1.541.66-2.046.456-.505 1.052-.764 1.793-.764.856 0 1.504.328 1.933.983L8 4.39l.417-.695c.429-.655 1.077-.983 1.934-.983.74 0 1.336.259 1.791.764.442.505.661 1.187.661 2.046v4.203z" data-astro-cid-sz7xmlte></path></svg> </a> <a href="https://twitter.com/astrodotbuild" target="_blank" data-astro-cid-sz7xmlte> <span class="sr-only" data-astro-cid-sz7xmlte>Follow Astro on Twitter</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/twitter" data-astro-cid-sz7xmlte><path fill="currentColor" d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" data-astro-cid-sz7xmlte></path></svg> </a> <a href="https://github.com/withastro/astro" target="_blank" data-astro-cid-sz7xmlte> <span class="sr-only" data-astro-cid-sz7xmlte>Go to Astro's GitHub repo</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/github" data-astro-cid-sz7xmlte><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" data-astro-cid-sz7xmlte></path></svg> </a> </div> </footer>  </div> </div> </main> </body></html>

@@ -1,24 +1,26 @@
 ---
 import { getCollection } from "astro:content";
 import { page_fun } from "../utils/page";
+import PageBar from "./PageBar.astro";
 
 const { sortPosts, getPagination, pageSize, countWords, calculateTimeAgo } =
   page_fun;
-
 const allPost = await getCollection("blog");
 const postLength = allPost.length;
 const homePost = allPost.sort(sortPosts).splice(0, pageSize);
-const pagination = getPagination(postLength, pageSize);
+const { page } = Astro.props;
+const post_List = page?.data || homePost;
+
+const pagination = getPagination(postLength, pageSize, page?.currentPage);
 
 // 奇数偶数展示不同的风格
 const isOdd = (number: number) => {
   return number % 2 !== 0;
 };
- 
 ---
 
 {
-  homePost.map((post: any, index: number) => {
+  post_List.map((post: any, index: number) => {
     return isOdd(index) ? (
       <div class="ml-4 ">
         <a href={`/blog/${post.slug}/index.html`} title={post.data.title}>
@@ -62,13 +64,10 @@ const isOdd = (number: number) => {
                   </div>
                   <div class="text-sm text-gray-500">日常生活</div>
                 </div>
-                {/* <!-- desc  --> */}
                 <div
                   class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed"
-                  set:html={post.body}
-                >
-                  {" "}
-                </div>
+                  set:text={post.body}
+                />
               </div>
             </div>
           </div>
@@ -107,7 +106,7 @@ const isOdd = (number: number) => {
                 {/* <!-- desc  --> */}
                 <div
                   class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed"
-                  set:html={post.body}
+                  set:text={post.body}
                 >
                   {" "}
                 </div>
@@ -131,3 +130,5 @@ const isOdd = (number: number) => {
     );
   })
 }
+
+{pageSize < postLength && <PageBar {...pagination} isBar={true} />}

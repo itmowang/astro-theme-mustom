@@ -1,0 +1,956 @@
+<!DOCTYPE html><html lang="en"> <head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v4.12.2"><!-- Font preloads --><link rel="preload" href="/fonts/atkinson-regular.woff" as="font" type="font/woff" crossorigin><link rel="preload" href="/fonts/atkinson-bold.woff" as="font" type="font/woff" crossorigin><!-- Canonical URL --><link rel="canonical" href="https://example.com/page/6/"><!-- Primary Meta Tags --><title>魔王 の 博客</title><meta name="title" content="魔王 の 博客"><meta name="description" content="魔王 の部落阁"><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://example.com/page/6/"><meta property="og:title" content="魔王 の 博客"><meta property="og:description" content="魔王 の部落阁"><meta property="og:image" content="https://example.com/blog-placeholder-1.jpg"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://example.com/page/6/"><meta property="twitter:title" content="魔王 の 博客"><meta property="twitter:description" content="魔王 の部落阁"><meta property="twitter:image" content="https://example.com/blog-placeholder-1.jpg"><link rel="stylesheet" href="/_astro/about.82merU4V.css">
+<style>footer[data-astro-cid-sz7xmlte]{padding:2em 1em 6em;background:linear-gradient(var(--gray-gradient)) no-repeat;color:rgb(var(--gray));text-align:center}.social-links[data-astro-cid-sz7xmlte]{display:flex;justify-content:center;gap:1em;margin-top:1em}.social-links[data-astro-cid-sz7xmlte] a[data-astro-cid-sz7xmlte]{text-decoration:none;color:rgb(var(--gray))}.social-links[data-astro-cid-sz7xmlte] a[data-astro-cid-sz7xmlte]:hover{color:rgb(var(--gray-dark))}
+</style><script type="module">function o(e){console.log("已经切换主题",e)}document.addEventListener("DOMContentLoaded",function(){const e=localStorage.getItem("theme");if(e){o(e);const t=document.querySelector(`input[value="${e}"]`);t&&(t.checked=!0)}});
+</script></head> <body> <header class="w-full fixed z-10 header-theme hover:shadow-md transition ease-in-out delay duration-300"> <nav class="flex items-center justify-center  w-full "> <div class="text-xl leading-[80px] header-nav"> <a href="/" class="mx-2 header-nav-item" data-astro-cid-eimmu3lg> 首页 </a>  <a href="/blog" class="mx-2 header-nav-item" data-astro-cid-eimmu3lg> 归档 </a>  <a href="/about" class="mx-2 header-nav-item" data-astro-cid-eimmu3lg> 关于 </a>  <a href="/link" class="mx-2 header-nav-item" data-astro-cid-eimmu3lg> 友链 </a>  </div> <div class="flex items-center"> <a href="https://m.webtoo.ls/@astro" class="ml-2 mr-2" target="_blank"> <span class="sr-only">Follow Astro on Mastodon</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="16" height="16"><path fill="currentColor" d="M11.19 12.195c2.016-.24 3.77-1.475 3.99-2.603.348-1.778.16-4.339.16-4.339 0-3.47-2.286-4.488-2.286-4.488C12.062.238 10.083.017 8.027 0h-.05C5.92.017 3.942.238 2.79.765c0 0-2.285 1.017-2.285 4.488l-.002.662c-.004.64-.007 1.35.011 2.091.083 3.394.626 6.74 3.78 7.57 1.454.383 2.703.463 3.709.408 1.823-.1 2.847-.647 2.847-.647l-.06-1.317s-1.303.41-2.767.36c-1.45-.05-2.98-.156-3.215-1.928a3.614 3.614 0 0 1-.033-.496s1.424.346 3.228.428c1.103.05 2.137-.064 3.188-.189zm1.613-2.47H11.13v-4.08c0-.859-.364-1.295-1.091-1.295-.804 0-1.207.517-1.207 1.541v2.233H7.168V5.89c0-1.024-.403-1.541-1.207-1.541-.727 0-1.091.436-1.091 1.296v4.079H3.197V5.522c0-.859.22-1.541.66-2.046.456-.505 1.052-.764 1.793-.764.856 0 1.504.168 1.933.983L8 4.39l.417-.695c.429-.655 1.077-.983 1.934-.983.74 0 1.336.259 1.791.764.442.505.661 1.187.661 2.046v4.203z"></path></svg> </a> <a href="https://twitter.com/astrodotbuild" class="mr-2" target="_blank"> <span class="sr-only">Follow Astro on Twitter</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="16" height="16"><path fill="currentColor" d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.165 9.165 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.163 3.163 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.616 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.16 6.16 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path></svg> </a> <a href="https://github.com/withastro/astro" class="mr-2" target="_blank"> <span class="sr-only">Go to Astro's GitHub repo</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="16" height="16"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.16-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> </a> </div> </nav> </header> <main> <div class="relative"> <div class="bg-urls bg-no-repeat bg-cover h-dvh bg-center relative"> <div class="absolute inset-0 bg-gradient-to-t from-white"></div> </div> <div class="absolute inset-0"> <div class="min-h-dvh">  <div class="container mx-auto"> <div class="flex pt-[120px]"> <!-- 左侧信息 --> <div class="w-2/6"> <div class="myCard card card-side bg-color shadow-xl"> <figure> <img src="https://d-sketon.top/img/_backwebp/bg26.webp" alt="Movie" class="h-full w-[200px] object-cover object-top"> </figure> <div class="card-body p-4"> <h2 class="card-title flex justify-center my-title">MoWang</h2> <div class="flex justify-center my-desc">魔王的 Blog </div> <div class="flex w-full flex-col lg:flex-row"> <div class="card rounded-box grid h-16 flex-grow place-items-center"> <div> <div class="flex justify-center my-cate">文章</div> <div class="flex justify-center my-number">11</div> </div> </div> <div class="divider sm:divider-horizontal"></div> <div class="card rounded-box grid h-16 flex-grow place-items-center"> <div> <div class="flex justify-center my-cate">分类</div> <div class="flex justify-center my-number">11</div> </div> </div> <div class="divider sm:divider-horizontal"></div> <div class="card rounded-box grid h-16 flex-grow place-items-center"> <div> <div class="flex justify-center my-cate">标签</div> <div class="flex justify-center my-number">11</div> </div> </div> </div> <div class="flex justify-between"> <div> <button class="btn btn-sm btn-outline btn-primary">首页</button> </div> <div> <button class="btn btn-sm btn-outline btn-primary">归档</button> </div> <div> <button class="btn btn-sm btn-outline btn-primary">关于</button> </div> </div> <div class="decoration-wavy italic text-center my-yy">年少不得之物,终将困其一生</div> </div> </div> <div class="mt-6"> <div class="card bg-color  shadow-xl"> <div class="card-body"> <h2 class="card-title">标签云预留点</h2> <p> 后续你打算做点什么?</p> </div> </div> </div> <div class="mt-6"> <div class="card bg-color shadow-xl"> <div class="card-body"> <h2 class="card-title">Theme</h2> <div class="form-control"> <label class="label cursor-pointer gap-4"> <span class="label-text">春</span> <input type="radio" name="theme-radios" class="radio theme-controller" value="spring"> </label> </div> <div class="form-control"> <label class="label cursor-pointer gap-4"> <span class="label-text">夏</span> <input type="radio" name="theme-radios" class="radio theme-controller" value="summer"> </label> </div> <div class="form-control"> <label class="label cursor-pointer gap-4"> <span class="label-text">秋</span> <input type="radio" name="theme-radios" class="radio theme-controller" value="autumn"> </label> </div> <div class="form-control"> <label class="label cursor-pointer gap-4"> <span class="label-text">冬</span> <input type="radio" name="theme-radios" class="radio theme-controller" value="winter"> </label> </div> </div> </div>  </div> </div> <!-- 右侧列表或者内容 --> <div class="w-4/6 mb-4"> <div class="ml-4"><a href="/blog/2023-9-04-astroxxq/doc/index.html" title="个人Astro主题 - SXQ"><div class="card bg-color cursor-pointer	 postCard rounded-lg w-full mb-4 shadow-xl flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"><time datetime="Tue Sep 05 2023 23:27:24 GMT+0800 (中国标准时间)">2023/9/5</time></div><div class="text-sm mr-6">0.1K字</div><div class="text-sm">331 天前</div></div></div><div class="flex justify-between items-center mt-2"><div class="w-5/6"><div class="text-2xl font-medium title line-clamp-1 leading-relaxed">个人Astro主题 - SXQ</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed"> 
+## 个人Astro主题 - SXQ
+
+一款 Astro 的二次元风格捏，应该会有人喜欢的，正在慢慢完善中，欢迎指出问题提出意见。
+
+Github 项目地址 ：[https://github.com/itmowang/sxq-astro](https://github.com/itmowang &quot; 魔王，应该有魔王的姿态 &quot;)
+
+### 使用方式
+``` bash
+    # 强烈要求 Node 版本在 18x + 
+    npm i -g pnpm
+
+    pnpm install
+    
+    pnpm build
+
+    然后将docs目录内的文件部署到服务器上，同样的也可以直接使用 github 的 pages 根据自己的喜好来。
+```
+
+### 预览图 
+
+包含移动端 PC端 平板端的不同样式
+
+预览地址: https://blog2.loli.wang
+
+
+![切图1](http://img.blog.loli.wang/2023-9-04-astroxxq/01.png)
+
+![切图2](http://img.blog.loli.wang/2023-9-04-astroxxq/02.png)
+
+![切图3](http://img.blog.loli.wang/2023-9-04-astroxxq/03.jpg)
+
+![切图4](http://img.blog.loli.wang/2023-9-04-astroxxq/04.jpg)
+
+![切图5](http://img.blog.loli.wang/2023-9-04-astroxxq/05.png)
+
+![切图6](http://img.blog.loli.wang/2023-9-04-astroxxq/06.jpg)
+
+![切图6](http://img.blog.loli.wang/2023-9-04-astroxxq/07.jpg)</div></div><div><img src="http://img.blog.loli.wang/2023-9-04-astroxxq/05.png" class="w-[500px] h-[200px] rounded-r-lg object-cover" style="clip-path:polygon(0 0,100% 0,100% 100%,20% 100%)"></div></div></div></a></div><div class="ml-4 "><a href="/blog/2023-8-23-webworker/doc/index.html" title="JS之多线程Web Worker API"><div class="card bg-color postCard mb-4 rounded-lg w-full shadow-xl cursor-pointer	 flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div><img src="http://img.blog.loli.wang/2023-8-23-WebWorker/01.png" class="w-[500px] h-[200px] rounded-l-lg" style="clip-path:polygon(0 0,88% 0,100% 100%,0 100%)"></div><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"> <time datetime="Thu Aug 31 2023 23:27:24 GMT+0800 (中国标准时间)">2023/8/31</time> </div><div class="text-sm mr-6">0.1K字</div><div class="text-sm">336 天前</div></div></div><div class="flex justify-between items-center mt-2"><div><div class="text-2xl font-medium title">JS之多线程Web Worker API</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed">
+## 为什么需要 Web Worker
+
+由于 JavaScript 语言用的是单线程，同一时刻只能做一件事， 如果又多个同步任务执行完之前，下方代码不会执行。造成了堵塞，页面无响应。
+
+但如果把这段代码放到 Web Worker 中执行，这段逻辑在执行中依然可以执行下面的代码，用户的操作也就可以正常响应了
+
+## 什么是 Web Worker
+
+Web Worker 为 Web 内容在后台线程中运行脚本提供了一种简单的方法。线程可以执行任务而不干扰用户界面。但是他不可以操作 dom
+
+## Web Worker 的使用限制
+
+### 同源限制
+
+    分配给 Worker 线程运行的脚本文件，必须与主线程的脚本文件同源。
+
+### 文件限制
+
+    Worker 无法读取本地文件(&#39;file://&#39;) 他加载的协议必须要来自网络
+
+### 通信限制
+
+    Worker 线程所仔的全局对象，与主线程不一样，区别是
+    1. 无法读取主线程所在的网页 DOM 对象
+    2. 无法使用 document 、window 、parent 这些对象
+
+    Worker 线程和主线程不在同一个环境，他们不能直接通信，必须通过消息完成 `postMessage` 和 `onMessage`
+
+
+### 脚本限制
+
+Worker 线程不能使用 alert() 和 confirm() 方法 ，但是可以使用 ajax 和定时器 setTimeout 等 API
+
+## 基本使用
+
+创建线程   
+
+``` bash
+const worker = new Worker(aURL, options);
+```
+
+`worker.postMessage` 向 worker 内部作用域发送一共消息，消息可以由JavaScript任何对象组成
+
+`worker.terminate`  立刻终止worker。该方法并不会等待woker去完成剩余的操作，会立马停止
+
+`worker.onmessage` 接收到消息会立马触发message消息
+
+`worker.onerror` 当worker出现运行中错误时。会被调用
+
+
+``` bash
+
+worker.addEventListener(&#39;error&#39;, function (e) {
+    console.log(e.message) // 可读性良好的错误消息
+    console.log(e.filename) // 发生错误的脚本文件名
+    console.log(e.lineno) // 发生错误时所在脚本文件的行号
+})
+
+```
+
+## 多数使用场景
+```
+    - 打包压缩 另外开辟线程去处理
+    - 导出图片太大 另外开辟线程去处理
+    - 压缩图片等等
+    ....
+```
+
+
+相关文档
+
+[MDN - Web Workers API](https://developer.mozilla.org/zh-CN/docs/Web/API/Web_Workers_API/Using_web_workers)
+   </div></div></div></div></a></div><div class="ml-4"><a href="/blog/2023-08-30-csssvhdvh/doc/index.html" title="css新单位dvh，svh 解释"><div class="card bg-color cursor-pointer	 postCard rounded-lg w-full mb-4 shadow-xl flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"><time datetime="Wed Aug 30 2023 23:27:24 GMT+0800 (中国标准时间)">2023/8/30</time></div><div class="text-sm mr-6">0.1K字</div><div class="text-sm">337 天前</div></div></div><div class="flex justify-between items-center mt-2"><div class="w-5/6"><div class="text-2xl font-medium title line-clamp-1 leading-relaxed">css新单位dvh，svh 解释</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed"> 
+## 什么是vh，vw
+
+在css中 `vh` 表示窗口视图的高度百分比,  `vw` 表示窗口视图的宽度度百分比 , `1vh` 等于窗口视图高度 `1%`，而`1vw` 代表视图宽度的`1%` ，一般我们使用 `100vh` 来自定义我们的视图大小的高度，固定为100%，他对响应式是非常适用，因为他会根据窗口的大小自动适应尺寸。
+
+![切图1](http://img.blog.loli.wang/2023-08-30-cssSvhDvh/01.png)
+
+### 遇见问题
+
+发现新项目模板平板上会出现白屏溢出出现滚动条！！！**不止是高度，宽度也是这样 会出现一定的问题**
+
+![切图2](http://img.blog.loli.wang/2023-08-30-cssSvhDvh/02.png)
+
+### 解决方案
+
+为了解决这个方案出现了新的单位 `dvh` `svh`, 他们在移动端兼容上面会经常用到。也会对移动端进行一定的兼容
+
+
+参考:
+[MDN - CSS](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/101)
+   </div></div><div><img src="http://img.blog.loli.wang/2023-08-30-cssSvhDvh/03.png" class="w-[500px] h-[200px] rounded-r-lg object-cover" style="clip-path:polygon(0 0,100% 0,100% 100%,20% 100%)"></div></div></div></a></div><div class="ml-4 "><a href="/blog/2023-8-28-nodeclitools/doc/index.html" title="编写一个自己的 Cli 脚手架工具"><div class="card bg-color postCard mb-4 rounded-lg w-full shadow-xl cursor-pointer	 flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div><img src="http://img.blog.loli.wang/2023-8-28-nodeCliTools/03.png" class="w-[500px] h-[200px] rounded-l-lg" style="clip-path:polygon(0 0,88% 0,100% 100%,0 100%)"></div><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"> <time datetime="Mon Aug 28 2023 21:22:24 GMT+0800 (中国标准时间)">2023/8/28</time> </div><div class="text-sm mr-6">0.6K字</div><div class="text-sm">339 天前</div></div></div><div class="flex justify-between items-center mt-2"><div><div class="text-2xl font-medium title">编写一个自己的 Cli 脚手架工具</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed">
+具体完整代码可以去查看我的github项目，[mw-cli - 一个Nodejs脚手架工具](https://github.com/itmowang/mw-cli)
+
+## 战斗准备
+
+建立一个项目文件 **打开命令窗口** 我们所使用的一切为pnpm 
+
+``` bash
+npm install pnpm -g
+
+# 初始化项目指令
+pnpm init
+
+# 安装我们所需要会用到的依赖 作用去查去查阅下吧！
+pnpm add typescript  // Typescript 支持 💕 个人习惯
+pnpm add commander  
+pnpm add copy-dir
+pnpm add cross-spawn
+pnpm add fs
+pnpm add kolorist
+pnpm add minimist
+pnpm add ora
+pnpm add ts-node
+
+# 生成ts配置文件 tsconfig.json
+tsc --init
+
+```
+
+## 启动文件   
+
+创建**bin**目录作为启动路径，创建index.ts文件，注意 **#!/usr/bin/env** 是一个常见的约定，用于告诉操作系统在运行脚本时使用指定的解释器。在这种情况下，/usr/bin/env 是一个可执行文件，它会在环境变量中查找指定的解释器（在这里是 node），并使用它来执行脚本。
+
+``` bash
+# /bin/index.ts
+
+#!/usr/bin/env node
+
+// 引用cross-spawn
+const spawn = require(&quot;cross-spawn&quot;);
+
+// 调用pkgjson
+const pkg = require(&quot;../../package.json&quot;);
+
+// 引用commander
+const program = require(&quot;commander&quot;);
+
+// 引用创建项目逻辑
+const createProject = require(&quot;../src/core/create&quot;);
+
+//版本号 -v --version 选项
+program.version(pkg.version, &#39;-v,--version&#39;)
+
+// 创建项目
+program.command(&quot;create &lt;projectName&gt;&quot;).description(&quot;创建项目&quot;).action((projectName: string) =&gt; {
+    createProject(projectName);
+});
+
+program.parse(process.argv);
+
+```
+
+## 创建项目配置文件
+
+建立**src**目录,创建**config**目录和**core**目录，config 文件夹我们用于存放配置文件，core 文件夹用于存放核心逻辑文件。
+
+config 文件夹内建立 repo.config.ts , 用于存放我们项目模板地址，原本有考虑是用github的项目地址的，但是个人认为并不适合。
+    
+``` bash
+# /src/config/repo.config.ts
+
+const path = require(&quot;path&quot;);
+
+// 模板地址
+const repoUrl =  path.resolve(__dirname, &quot;../../template&quot;);
+
+module.exports = repoUrl;
+
+```
+
+并且创建 **template** 目录,存放我们项目模板
+
+![切图1](http://img.blog.loli.wang/2023-8-28-nodeCliTools/01.png)
+
+
+## 创建模板逻辑
+
+``` bash
+# /src/core/create.ts 
+
+// 读取vue模版
+const vueCommand = require(&quot;./vueCreate&quot;);
+// 读取node模版
+const nodeCommand = require(&quot;./nodeCreate&quot;);
+
+const createCommand = async (projectName = &quot;&quot;) =&gt; {
+  const {
+    blue,
+    cyan,
+    green,
+    lightBlue,
+    lightGreen,
+    lightRed,
+  } = require(&quot;kolorist&quot;);
+
+  const prompts = require(&quot;prompts&quot;);
+
+  const questions = [
+    {
+      type: &quot;text&quot;,
+      name: &quot;projectName&quot;,
+      message: &quot;请输入你需要创建的项目名称&quot;,
+      initial: projectName,
+    },
+    {
+      type: &quot;text&quot;,
+      name: &quot;projectVersion&quot;,
+      message: &quot;请输入你需要创建的项目版本号&quot;,
+      initial: &quot;1.0.0&quot;,
+    },
+    {
+      type: &quot;select&quot;,
+      name: &quot;projectTemplate&quot;,
+      message: &quot;请选择你需要创建的项目模板&quot;,
+      choices: [
+        {
+          title: &quot;Vue&quot;,
+          value: &quot;vue&quot;,
+          description: blue(&quot;vue类型的一些项目模版&quot;),
+        },
+        {
+          title: &quot;React&quot;,
+          value: &quot;react&quot;,
+          description: blue(&quot;react类型的一些项目模版&quot;),
+        },
+        {
+          title: &quot;Node&quot;,
+          value: &quot;node&quot;,
+          description: blue(&quot;node类型的一些项目模,例如配置好mysql或者orm框架&quot;),
+        },
+      ],
+    },
+  ];
+
+  (async () =&gt; {
+    const response = await prompts(questions);
+    const { projectName, projectVersion, projectTemplate } = response;
+    if (projectTemplate === &quot;vue&quot;) {
+      vueCommand(response);
+    } else if (projectTemplate === &quot;node&quot;) {
+      nodeCommand(response);
+    } else {
+      console.log(lightRed(&quot;暂时只支持vue模版&quot;));
+    }
+  })();
+};
+
+module.exports = createCommand;
+```
+
+## 创建vue模板逻辑
+
+``` bash
+# /src/core/vueCreate.ts 
+
+interface Create {
+  projectName: string; // 项目名称
+  projectVersion: string; // 项目版本号
+  projectTemplate: string; // 项目模版
+}
+
+// 读取vue模版
+const vueCreate = async (create: Create) =&gt; {
+  const prompts = require(&quot;prompts&quot;);
+  const config = require(&quot;../config/repo.config&quot;);
+  const {
+    blue,
+    cyan,
+    green,
+    lightBlue,
+    lightGreen,
+    lightRed,
+  } = require(&quot;kolorist&quot;);
+
+  const questions = [
+    {
+      type: &quot;select&quot;,
+      name: &quot;vueTemplate&quot;,
+      message: &quot;请选择你需要创建的项目模板&quot;,
+      choices: [
+        {
+          title: &quot;template-vue3-ts-vite&quot;,
+          value: &quot;template-vue3-ts-vite&quot;,
+          description: green(&quot;vue3 + ts + vite 项目模版&quot;),
+        },
+        {
+          title: &quot;template-vue3-webpack-ts&quot;,
+          value: &quot;template-vue3-webpack-ts&quot;,
+          description: green(&quot;vue3 + ts + webpack 项目模版&quot;),
+        },
+      ],
+    },
+  ];
+
+  (async () =&gt; {
+    const response = await prompts(questions);
+    const { vueTemplate } = response;
+    // 走copy-dir 不走github了 没意义
+    const copydir = require(&quot;copy-dir&quot;);
+    // 进度
+    const ora = require(&quot;ora&quot;);
+    const spinner = ora(blue(&quot;下载模版中...&quot;));
+
+    copydir.sync(
+      `${config}/${vueTemplate}`,
+      `./${create.projectName}`,
+      {
+        utimes: true, // keep add time and modify time
+        mode: true, // keep file mode
+        cover: true, // cover file when exists, default is true
+        filter: function (stat: string, filepath: any, filename: string) {
+          return true; // remind to return a true value when file check passed.
+        },
+      },
+      function (err: Error) {
+        if (err) throw err;
+        spinner.fail(lightRed(`项目模版创建失败`));
+      }
+    );
+
+    spinner.succeed(lightGreen(&quot;项目模版创建成功&quot;));
+  })();
+};
+
+module.exports = vueCreate;
+
+```
+
+从这里整体逻辑就已经编写完了 但是我们还需要在package.json中配置一下,并且修改下tsconfig.json
+
+``` bash
+# tsconfig.json
+# ...
+ &quot;outDir&quot;: &quot;lib&quot;
+# ...
+```
+
+修改输出目录为lib , 这样我们使用tsc命令编译后的文件就会输出到lib目录下
+
+``` bash
+{
+  &quot;name&quot;: &quot;mw-create&quot;,
+  &quot;version&quot;: &quot;1.0.14&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;main&quot;: &quot;./lib/bin/index.js&quot;,
+  &quot;bin&quot;: {
+    &quot;mwcli&quot;: &quot;./lib/bin/index.js&quot;
+  },
+  &quot;scripts&quot;: {
+    &quot;test&quot;: &quot;ts-node ./bin/index&quot;,
+    &quot;build&quot;: &quot;node ./bin/copyDir.ts &amp;&amp; tsc&quot;,
+    &quot;minor&quot;: &quot;npm version minor&quot;,
+    &quot;major&quot;: &quot;npm version major&quot;,
+    &quot;patch&quot;: &quot;npm version patch&quot;
+  },
+  &quot;publishConfig&quot;: {
+    &quot;access&quot;: &quot;public&quot;
+  },
+  &quot;repository&quot;: {
+    &quot;type&quot;: &quot;git&quot;,
+    &quot;url&quot;: &quot;git+https://github.com/itmowang/mw-cli.git&quot;
+  },
+  &quot;keywords&quot;: [],
+  &quot;author&quot;: &quot;&quot;,
+  &quot;license&quot;: &quot;MIT&quot;,
+  &quot;devDependencies&quot;: {
+    &quot;@types/node&quot;: &quot;^20.4.9&quot;
+  },
+  &quot;dependencies&quot;: {
+    &quot;commander&quot;: &quot;^11.0.0&quot;,
+    &quot;copy-dir&quot;: &quot;^1.3.0&quot;,
+    &quot;cross-spawn&quot;: &quot;^7.0.3&quot;,
+    &quot;download-git-repo&quot;: &quot;^3.0.2&quot;,
+    &quot;fs&quot;: &quot;0.0.1-security&quot;,
+    &quot;kolorist&quot;: &quot;^1.8.0&quot;,
+    &quot;minimist&quot;: &quot;^1.2.8&quot;,
+    &quot;ora&quot;: &quot;5.4.1&quot;,
+    &quot;prompts&quot;: &quot;^2.4.2&quot;,
+    &quot;ts-node&quot;: &quot;^10.9.1&quot;
+  }
+}
+
+```
+这里我们需要注意的是  &quot;main&quot;: &quot;./lib/bin/index.js&quot;, main字段指定了程序的主入口文件，bin字段指定了程序的命令名，npm会在全局环境下建立一个软链接，指向我们的主入口文件，这样我们就可以在命令行中使用mwcli命令了。
+
+## 测试一下
+
+``` bash
+
+npm link
+
+mwcli create test
+
+```
+
+![切图1](http://img.blog.loli.wang/2023-8-28-nodeCliTools/02.png)
+
+一切大功告成    
+
+
+具体代码参考github仓库 https://github.com/itmowang/mw-cli</div></div></div></div></a></div><div class="ml-4"><a href="/blog/2023-8-27-reflect/doc/index.html" title="JavaScript-内置对象-Reflect"><div class="card bg-color cursor-pointer	 postCard rounded-lg w-full mb-4 shadow-xl flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"><time datetime="Thu Aug 24 2023 22:31:24 GMT+0800 (中国标准时间)">2023/8/24</time></div><div class="text-sm mr-6">0.3K字</div><div class="text-sm">343 天前</div></div></div><div class="flex justify-between items-center mt-2"><div class="w-5/6"><div class="text-2xl font-medium title line-clamp-1 leading-relaxed">JavaScript-内置对象-Reflect</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed"> 
+## Reflect
+Reflect 是一个**内置的对象**，他提供了一些方法来 **操作对象** 的属性和方法， 并且它还提供 **拦截 JavaScript 操作** 的方法。这些方法与 proxy handler (en-US) 的方法相同。Reflect 不是一个函数对象，因此它是不可构造的。
+
+
+#### Reflect.get(target, propertyKey[, receiver]) 获取对象的属性值
+
+``` bash
+
+    const obj = {name:&#39;Mowang&#39;,age:20}
+
+    console.log(Reflect.get(obj,&#39;name&#39;)) // 输出 Mowang
+
+```
+
+#### Reflect.set(target, propertyKey, value[, receiver]) 设置对象的属性值
+
+``` bash
+    const obj = {name:&#39;Mowang&#39;,age:20}
+    
+    Reflect.set(obj,&#39;age&#39;,22)
+
+    console.log(obj[&#39;age&#39;]) // 输出 22
+```
+
+#### Reflect.has(target, propertyKey) 判断对象是否具有指定的属性
+
+``` bash
+    const obj = {name:&#39;Mowang&#39;,age:20}
+    
+    const hasName = Reflect.has(obj,&#39;name&#39;)
+
+    console.log(hasName) // 输出 true
+
+```
+
+#### Reflect.deleteProperty(target, propertyKey) 删除对象的属性
+
+``` bash
+    const obj = {name:&#39;Mowang&#39;,age:20}
+    
+    Reflect.deleteProperty(obj,&#39;age&#39;)
+
+    console.log(obj) // 输出 { name:&#39;Mowang&#39; }
+
+```
+
+#### Reflect.construct(target, argumentsList[, newTarget]) 使用给定的参数列表创建一个对象实例
+
+``` bash 
+    class Person {
+        constructor(name,age){
+            this.name = name;
+            this.age = age
+        }
+    }
+
+    const args = [&#39;Mowang&#39;,20];
+    const person = Reflect.construct(Person,args)
+    
+    console.log(person) // 输出 {name:&#39;Mowang&#39;,age:20}
+
+```
+
+
+这只是他的常用方法，他还有一些其他的函数
+``` bash
+    - Reflect.apply(target, thisArgument, argumentsList)  # 通过指定的参数列表发起对目标 (target) 函数的调用
+    - Reflect.get(target, propertyKey[, receiver]) # 从已有的对象种读取去属性值
+    - Reflect.has(target, propertyKey) # 判断目标对象中是否存在这个属性
+    - Reflect.set(target, propertyKey, value[, receiver]) # 修改或者设置一个属性
+    - Reflect.isExtensible(target) # 判断这个对象是否可拓展 如果可以拓展我们就可以增加新属性 ，比如 Reflect || Object.preventExtensions(target) 设置过的属性就是不可拓展的
+    - Reflect.ownKeys(target) # 返回一个以目标属性键值的数组 比如 const obj = {name:&#39;Mowang&#39;, age:20 }  Reflect.ownKeys(obj) 返回结果为 [&#39;name&#39;,&#39;age&#39;]
+    ...
+    // 举几个常用的 , 剩下的阅读MDN https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Reflect
+```
+
+Reflect 是一个内置的 JS 对象，它提供了一系列方法，可以让开发者通过调用这些方法，访问一些 JS 底层功能。也就是说，**从 Reflect 对象上可以拿到语言内部的方法**
+
+
+#### 配合 proxy 使用
+
+``` bash
+let p = {
+    a: &#39;a&#39;
+};
+
+let handler = {
+  set(target, key, value, receiver) {
+    console.log(&#39;set&#39;);
+    Reflect.set(target, key, value, receiver)
+  },
+  defineProperty(target, key, attribute) {
+    console.log(&#39;defineProperty&#39;);
+    Reflect.defineProperty(target, key, attribute);
+  }
+};
+
+let obj = new Proxy(p, handler);
+obj.a = &#39;A&#39;;
+// set
+// defineProperty
+
+```
+
+如果 Proxy 对象和 Reflect 对象联合使用，前者**拦截赋值**操作，后者完成**赋值的默认行为**，而且传入了 **receiver**，那么 **Reflect.set 会触发 Proxy.defineProperty 拦截**。
+
+
+参考文档  [MDN - Reflect](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Reflect)
+</div></div><div><img src="http://img.blog.loli.wang/2023-8-27-Reflect/01.png" class="w-[500px] h-[200px] rounded-r-lg object-cover" style="clip-path:polygon(0 0,100% 0,100% 100%,20% 100%)"></div></div></div></a></div><div class="ml-4 "><a href="/blog/2023-9-01-astro/doc/index.html" title="本站主题 - 待更新"><div class="card bg-color postCard mb-4 rounded-lg w-full shadow-xl cursor-pointer	 flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div><img src="http://img.blog.loli.wang/2023-9-01-AsTro/01.png" class="w-[500px] h-[200px] rounded-l-lg" style="clip-path:polygon(0 0,88% 0,100% 100%,0 100%)"></div><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"> <time datetime="Sun Jul 30 2023 23:27:24 GMT+0800 (中国标准时间)">2023/7/30</time> </div><div class="text-sm mr-6">0.0K字</div><div class="text-sm">368 天前</div></div></div><div class="flex justify-between items-center mt-2"><div><div class="text-2xl font-medium title">本站主题 - 待更新</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed">
+
+![切图1](http://img.blog.loli.wang/2023-9-01-AsTro/02.png)
+
+![切图2](http://img.blog.loli.wang/2023-9-01-AsTro/03.png)
+
+![切图3](http://img.blog.loli.wang/2023-9-01-AsTro/04.png)
+
+
+</div></div></div></div></a></div><div class="ml-4"><a href="/blog/2023-8-23-beyondcompare/doc/index.html" title="[工具] 代码文本比对神器 Beyond Compare"><div class="card bg-color cursor-pointer	 postCard rounded-lg w-full mb-4 shadow-xl flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"><time datetime="Fri Jul 21 2023 00:00:00 GMT+0800 (中国标准时间)">2023/7/21</time></div><div class="text-sm mr-6">0.0K字</div><div class="text-sm">378 天前</div></div></div><div class="flex justify-between items-center mt-2"><div class="w-5/6"><div class="text-2xl font-medium title line-clamp-1 leading-relaxed">[工具] 代码文本比对神器 Beyond Compare</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed"> 
+###  起因
+
+沉冰A梦写了个新的主题，也就是本博客的主题，在使用中发生了很多功能缺失的问题，往往从一个 **demo** 改为一个真正可用完整的东西的时候，少不了折腾，而我和沉冰不是用的一个代码仓库导致无法代码直接合并查看差异 ，而我又需要使用新功能，因此沉冰A梦推荐了一个工具 《Beyond Compare》
+
+![BeyondCompare](http://img.blog.loli.wang/2023-8-23-BeyondCompare/03.png)
+
+### 效果体验极佳 
+
+![切图1](http://img.blog.loli.wang/2023-8-23-BeyondCompare/01.png)
+![切图2](http://img.blog.loli.wang/2023-8-23-BeyondCompare/02.png)
+
+### 下载地址
+
+ https://www.scootersoftware.com/home  （这个应该是官方下载，中文站貌似是代理的）</div></div><div><img src="http://img.blog.loli.wang/2023-8-23-BeyondCompare/03.png" class="w-[500px] h-[200px] rounded-r-lg object-cover" style="clip-path:polygon(0 0,100% 0,100% 100%,20% 100%)"></div></div></div></a></div><div class="ml-4 "><a href="/blog/2023-8-22-eventloop/doc/index.html" title="JS 微任务和宏任务 "><div class="card bg-color postCard mb-4 rounded-lg w-full shadow-xl cursor-pointer	 flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div><img src="http://img.blog.loli.wang/2023-8-22-EventLoop/01.awebp" class="w-[500px] h-[200px] rounded-l-lg" style="clip-path:polygon(0 0,88% 0,100% 100%,0 100%)"></div><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"> <time datetime="Sun Jul 02 2023 00:00:00 GMT+0800 (中国标准时间)">2023/7/2</time> </div><div class="text-sm mr-6">0.0K字</div><div class="text-sm">397 天前</div></div></div><div class="flex justify-between items-center mt-2"><div><div class="text-2xl font-medium title">JS 微任务和宏任务 </div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed">
+### JS 是单线程
+
+js 特性单线程，js 是主要和用户互动，和操作 DOM，决定了他只能是个单线程，否则会出现很复杂的同步问题 。 单线程就意味着，所有任务必须要排队执行，只有执行完前面的，后面的才会执行， 如果前一个任务消耗时间很长， **后面的任务就必须等待前面的任务等着**。
+
+### JS 中的同步异步
+
+同步
+
+    必须要从上至下执行完毕，后一个任务必须要等待上一个任务执行完毕
+
+异步
+
+    前一个任务没有执行完， 没有关系 ， 他也会执行下一个任务，直到执行结束
+
+
+### 微任务和宏任务
+
+    对同步异步有一定的划分后， 已经知道同步任务是按顺序执行，从上至下。
+那么异步任务也有他的执行顺序的， 他也是从上至下， 但是在异步任务里，还有进一层的划分，就是微任务和宏任务，**[微任务比宏任务优先执行]**
+
+#### 微任务代表
+    process.nextTick、 Promise、 MutationObserver 等
+
+
+#### 宏任务代表
+    setTimeout、 setInterval、 setImmediate、 IO操作等
+
+注意： Promise有个特殊性，**Promise构造函数中函数体的代码都是立即执行的**，而Promise.then() 和 Promise.catch() 属于微任务， 也就是resolve() 和reject()
+
+![掘金补图](http://img.blog.loli.wang/2023-8-22-EventLoop/01.awebp)
+
+
+#### 参考资料
+
+掘金-辉夜真是太可爱了  https://juejin.cn/post/6886602875225833480
+
+</div></div></div></div></a></div><div class="ml-4"><a href="/blog/2023-8-24-reactexperience/doc/index.html" title="React之路 - 第一篇"><div class="card bg-color cursor-pointer	 postCard rounded-lg w-full mb-4 shadow-xl flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"><time datetime="Sun Jul 02 2023 00:00:00 GMT+0800 (中国标准时间)">2023/7/2</time></div><div class="text-sm mr-6">0.3K字</div><div class="text-sm">397 天前</div></div></div><div class="flex justify-between items-center mt-2"><div class="w-5/6"><div class="text-2xl font-medium title line-clamp-1 leading-relaxed">React之路 - 第一篇</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed"> 
+### 常用的 React 库
+
+    - react   // 不必多说
+    - react-dom  // React的官方渲染库，用于将React组件渲染到浏览器中
+    - react-router-dom // React 官方路由库
+    - react-redux // React 官方状态管理库
+    - react-query // 用于管理和处理数据的React库
+    - @tanstack/react-query 是 react-query 的一个扩展库，由 TanStack 维护 有一些react-query 没有的功能
+    - redux-persist 用于持久化存储Redux状态的库，会将Redux的状态缓存到loaclStorage sessionStorage中 能够使页面刷新保留状态
+
+### 函数式组件写法
+
+```bash
+// 参数1父组件传递进来的参数接收
+// 参数2用于访问组件实例的方法和属性，或者直接操作 DOM 元素 React.forwardRef(MyComponent)
+
+const 组件名(props,ref){
+    const {name} = props;
+    return &lt;div&gt; {name} &lt;/div&gt;
+}
+
+export default 组件名
+```
+
+### 类组件写法
+
+```bash
+import React from &#39;react&#39;
+
+class 组件名 extends React.Component{
+    constructor(props){
+        super(props);
+        this.state={
+            count: 0
+        }
+    }
+    
+    // 组件生命周期方法
+    componentDidMount() {
+        // 组件挂载后执行的操作
+    }
+
+    render(){
+        return (
+            &lt;div&gt; {this.state.count} &lt;/div&gt;
+        )
+    }
+}
+
+```
+
+### 常用的Hook
+
+##### 1. useState
+用来存储状态变量变量 [something, setSomething] 用解构方式取值
+something 为状态变量，setSomething 为改变状态变量的方法
+
+```bash 
+# 示例
+import React, { useState } from &quot;react&quot;;
+
+const [something, setSomething] = useState(0); 
+const [something1, setSomething1] = useState({
+    test:222
+});
+const [something2, setSomething2] = useState(&quot;222&quot;);
+
+# 修改状态变量something的方法
+setSomething(1);
+
+# 修改状态变量something1的方法
+setSomething1({
+    something1， // 这里的something1 为上面的状态变量   
+    test:333
+});
+
+# 修改状态变量something2的方法
+setSomething2(&quot;333&quot;);
+
+```
+
+##### 2. useEffect
+
+用来处理副作用，比如异步请求，定时器等
+
+```bash
+# 示例
+import React, { useState, useEffect } from &quot;react&quot;;
+
+const [something, setSomething] = useState(0);
+
+useEffect(() =&gt; {
+    // ....用来处理需要的副作用的处理
+}, [something]); // something 为依赖项，当something发生变化时，useEffect会重新执行
+
+#如果依赖项为空数组，他只会执行一次，相当于componentDidMount
+useEffect(() =&gt; {
+    // ....用来处理需要的副作用的处理
+}, []);
+
+```
+
+##### 3. useContext
+
+用来处理跨组件传值，类似于vue中的provide/inject ,方便数据各种组件之间的传递，也可以叫做上下文传递
+
+```bash
+# 示例
+import React, { useState, useContext } from &quot;react&quot;;
+
+const [something, setSomething] = useState(0);
+
+const Context = React.createContext(null);
+
+# 组件声明
+
+&lt;Context.Provider value={context}&gt;
+    &lt;组件名 /&gt;
+&lt;/Context.Provider&gt;
+
+# 组件接收
+
+const context = useContext(Context);
+
+```
+
+
+##### 4. useRef
+
+用来获取DOM元素或者保存变量
+
+```bash
+
+# 示例
+import React, { useState, useRef } from &quot;react&quot;;
+
+const [something, setSomething] = useState(0);
+
+const ref = useRef(null);
+
+# 获取DOM元素
+&lt;div ref={ref}&gt;&lt;/div&gt;
+
+# 获取变量
+ref.current
+
+```
+
+##### 5. useReducer
+useReducer 是 useState 的替代方案,用来进行性能优化，用于处理复杂的状态逻辑,他不会改变原有的状态，而是返回一个新的状态。
+
+``` bash
+# 示例
+
+import React, { useReducer } from &quot;react&quot;;
+
+// 初始化状态
+const initState = { name: &#39;123&#39; }
+
+// reducer 函数
+const reducer = (state: any, action: any) =&gt; {
+    return action.type === &#39;add&#39; ? { name: &#39;456&#39; } : { name: &#39;789&#39; }
+}
+
+// useReducer 接收两个参数，第一个参数为reducer函数，第二个参数为初始化状态
+const [state, dispatch] = useReducer(reducer, initState);
+
+# 修改状态
+dispatch({ type: &#39;add&#39; })
+
+```
+![切图2](http://img.blog.loli.wang/2023-8-24-ReactExperience/02.png)
+
+
+下一次写脚手架的时候再去填充。。。。
+
+
+
+参考文档 [阮一峰博客](https://www.ruanyifeng.com/blog/2019/09/react-hooks.html)
+
+
+</div></div><div><img src="http://img.blog.loli.wang/2023-8-24-ReactExperience/01.png" class="w-[500px] h-[200px] rounded-r-lg object-cover" style="clip-path:polygon(0 0,100% 0,100% 100%,20% 100%)"></div></div></div></a></div><div class="ml-4 "><a href="/blog/2023-8-25-vuemini1/doc/index.html" title="Vue3源码学习 - 1.搭建项目雏形"><div class="card bg-color postCard mb-4 rounded-lg w-full shadow-xl cursor-pointer	 flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div><img src="http://img.blog.loli.wang/2023-8-25-vuemini1/01.png" class="w-[500px] h-[200px] rounded-l-lg" style="clip-path:polygon(0 0,88% 0,100% 100%,0 100%)"></div><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"> <time datetime="Sun Jul 02 2023 00:00:00 GMT+0800 (中国标准时间)">2023/7/2</time> </div><div class="text-sm mr-6">0.2K字</div><div class="text-sm">397 天前</div></div></div><div class="flex justify-between items-center mt-2"><div><div class="text-2xl font-medium title">Vue3源码学习 - 1.搭建项目雏形</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed">
+# Vue3 源码准备
+
+项目项目源码地址：[itmowang/mini-vue](https://github.com/itmowang/mini-vue)
+
+### 项目所用包管理工具请一切使用 PNPM
+``` bash 
+npm install pnpm -g
+```
+
+### 项目目录结构
+```bash
+packages/ 
+┣ compiler-core/  # 编译器核心模块
+┃ ┣ src/
+┃ ┃ ┗ index.ts
+┃ ┗ README.md
+┣ compoler-dom/  # 浏览器部分编译模块
+┃ ┣ src/
+┃ ┃ ┗ index.ts
+┃ ┗ README.md
+┣ reactivity/    # 响应性模块
+┃ ┣ src/
+┃ ┃ ┗ index.ts
+┃ ┗ README.md
+┣ runtime-core/  # 运行时核心模块
+┃ ┣ src/
+┃ ┃ ┗ index.ts
+┃ ┗ README.md
+┣ runtime-dom/   # 浏览器部分运行时模块
+┃ ┣ src/
+┃ ┃ ┗ index.ts
+┃ ┗ README.md
+┣ shared/        # 共享公共方法模块
+┃ ┣ src/
+┃ ┃ ┗ index.ts
+┃ ┗ README.md
+┗ vue/           # 打包测试项目整体入口模块
+  ┣ src/
+┃ ┃ ┗ index.ts
+  ┗ README.md
+
+```
+
+#### 安装Typescript
+
+```
+
+ pnpm install typescript
+
+ tsc --init # 生成配置文件
+
+```
+
+``` bash 
+{
+  // 编辑器配置
+  &quot;compilerOptions&quot;: {
+    // 根目录
+    &quot;rootDir&quot;: &quot;.&quot;,
+    // 严格模式标志
+    &quot;strict&quot;: true,
+    // 指定类型脚本如何从给定的模块说明符查找文件。
+    &quot;moduleResolution&quot;: &quot;node&quot;,
+    // https://www.typescriptlang.org/tsconfig#esModuleInterop
+    &quot;esModuleInterop&quot;: true,
+    // JS 语言版本
+    &quot;target&quot;: &quot;es5&quot;,
+    // 允许未读取局部变量
+    &quot;noUnusedLocals&quot;: false,
+    // 允许未读取的参数
+    &quot;noUnusedParameters&quot;: false,
+    // 允许解析 json
+    &quot;resolveJsonModule&quot;: true,
+    // 支持语法迭代：https://www.typescriptlang.org/tsconfig#downlevelIteration
+    &quot;downlevelIteration&quot;: true,
+    // 允许使用隐式的 any 类型（这样有助于我们简化 ts 的复杂度，从而更加专注于逻辑本身）
+    &quot;noImplicitAny&quot;: false,
+    // 模块化
+    &quot;module&quot;: &quot;esnext&quot;,
+    // 转换为 JavaScript 时从 TypeScript 文件中删除所有注释。
+    &quot;removeComments&quot;: false,
+    // 禁用 sourceMap
+    &quot;sourceMap&quot;: false,
+    // https://www.typescriptlang.org/tsconfig#lib
+    &quot;lib&quot;: [&quot;esnext&quot;, &quot;dom&quot;],
+  },
+  // 入口
+  &quot;include&quot;: [&quot;packages/*/src&quot;]
+}
+```
+
+### 安装rollup 打包工具
+
+``` bash
+pnpm install rollup
+
+pnpm install @rollup/plugin-node-resolve # 模块导入路径补全
+
+pnpm install @rollup/plugin-commonjs # 将代码引用转换为 es2015
+
+pnpm install @rollup/plugin-typescript # ts 支持
+
+pnpm install tslib 
+```
+
+```
+
+import resolve from &#39;@rollup/plugin-node-resolve&#39;
+import commonjs from &#39;@rollup/plugin-commonjs&#39;
+import typescript from &#39;@rollup/plugin-typescript&#39;
+
+// rollup的配置文件
+export default [
+  {
+    // 入口文件
+    input: &#39;packages/vue/src/index.ts&#39;,
+    // 打包的输出文件
+    output: [
+      {
+        // 开启sourcemap
+        sourcemap: true,
+        file: &#39;packages/vue/dist/vue.js&#39;,
+        format: &#39;iife&#39;,
+        name: &#39;Vue&#39;
+      }
+    ],
+    plugins: [
+      // ts 支持
+      typescript({
+        sourceMap: true
+      }),
+      // 模块导入路径补全
+      resolve(),
+      // commonjs 模块转换成 es2015
+      commonjs()
+    ]
+  }
+]
+
+
+```
+
+在package.json文件中新加一个scripts
+
+```
+    &quot;build&quot;:&quot;rollup -c -w&quot;
+```
+如果出现以下这样证明成功了
+
+![rollup打包成功](http://img.blog.loli.wang/2023-8-25-vuemini1/02.png)
+
+项目的雏形，一个标准的monorepo项目。</div></div></div></div></a></div><div class="pagination-container page-bar flex items-center justify-between bg-white p-4 rounded-md shadow-md"> <a href="/page/5/" class="prev text-blue-500 hover:text-blue-700 transition-colors duration-200" title="上一页">
+上一页
+</a> <span class="pagination-info text-gray-700">
+第 6 页 / 共 7 页
+</span> <a href="/page/7/" class="next text-blue-500 hover:text-blue-700 transition-colors duration-200" title="下一页">
+下一页
+</a> </div> </div> </div> </div>  </div> <footer data-astro-cid-sz7xmlte>
+&copy; 2024 Your name here. All rights reserved.
+<div class="social-links" data-astro-cid-sz7xmlte> <a href="https://m.webtoo.ls/@astro" target="_blank" data-astro-cid-sz7xmlte> <span class="sr-only" data-astro-cid-sz7xmlte>Follow Astro on Mastodon</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/mastodon" data-astro-cid-sz7xmlte><path fill="currentColor" d="M11.19 12.195c2.016-.24 3.77-1.475 3.99-2.603.348-1.778.32-4.339.32-4.339 0-3.47-2.286-4.488-2.286-4.488C12.062.238 10.083.017 8.027 0h-.05C5.92.017 3.942.238 2.79.765c0 0-2.285 1.017-2.285 4.488l-.002.662c-.004.64-.007 1.35.011 2.091.083 3.394.626 6.74 3.78 7.57 1.454.383 2.703.463 3.709.408 1.823-.1 2.847-.647 2.847-.647l-.06-1.317s-1.303.41-2.767.36c-1.45-.05-2.98-.156-3.215-1.928a3.614 3.614 0 0 1-.033-.496s1.424.346 3.228.428c1.103.05 2.137-.064 3.188-.189zm1.613-2.47H11.13v-4.08c0-.859-.364-1.295-1.091-1.295-.804 0-1.207.517-1.207 1.541v2.233H7.168V5.89c0-1.024-.403-1.541-1.207-1.541-.727 0-1.091.436-1.091 1.296v4.079H3.197V5.522c0-.859.22-1.541.66-2.046.456-.505 1.052-.764 1.793-.764.856 0 1.504.328 1.933.983L8 4.39l.417-.695c.429-.655 1.077-.983 1.934-.983.74 0 1.336.259 1.791.764.442.505.661 1.187.661 2.046v4.203z" data-astro-cid-sz7xmlte></path></svg> </a> <a href="https://twitter.com/astrodotbuild" target="_blank" data-astro-cid-sz7xmlte> <span class="sr-only" data-astro-cid-sz7xmlte>Follow Astro on Twitter</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/twitter" data-astro-cid-sz7xmlte><path fill="currentColor" d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" data-astro-cid-sz7xmlte></path></svg> </a> <a href="https://github.com/withastro/astro" target="_blank" data-astro-cid-sz7xmlte> <span class="sr-only" data-astro-cid-sz7xmlte>Go to Astro's GitHub repo</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/github" data-astro-cid-sz7xmlte><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" data-astro-cid-sz7xmlte></path></svg> </a> </div> </footer>  </div> </div> </main> </body></html>

@@ -1,0 +1,33 @@
+---
+// 每页显示多少条
+
+const {
+  prev,
+  next,
+  total: totalPage, // 总页数
+  current: curPage, // 当前页码
+  isBar,
+} = Astro.props;
+ 
+---
+
+<div class={"pagination-container" + (isBar ? " page-bar" : "") + " flex items-center justify-between bg-white p-4 rounded-md shadow-md"}>
+    {
+      prev.num > 0 && (
+        <a href={prev.link} class="prev text-blue-500 hover:text-blue-700 transition-colors duration-200" title="上一页">
+          上一页
+        </a>
+      )
+    }
+    <span class="pagination-info text-gray-700">
+      第 {curPage} 页 / 共 {totalPage} 页
+    </span>
+    {
+      next.num > 0 && (
+        <a href={next.link} class="next text-blue-500 hover:text-blue-700 transition-colors duration-200" title="下一页">
+          下一页
+        </a>
+      )
+    }
+  </div>
+  

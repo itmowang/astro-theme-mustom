@@ -1,0 +1,549 @@
+<!DOCTYPE html><html lang="en"> <head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v4.12.2"><!-- Font preloads --><link rel="preload" href="/fonts/atkinson-regular.woff" as="font" type="font/woff" crossorigin><link rel="preload" href="/fonts/atkinson-bold.woff" as="font" type="font/woff" crossorigin><!-- Canonical URL --><link rel="canonical" href="https://example.com/page/4/"><!-- Primary Meta Tags --><title>魔王 の 博客</title><meta name="title" content="魔王 の 博客"><meta name="description" content="魔王 の部落阁"><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://example.com/page/4/"><meta property="og:title" content="魔王 の 博客"><meta property="og:description" content="魔王 の部落阁"><meta property="og:image" content="https://example.com/blog-placeholder-1.jpg"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://example.com/page/4/"><meta property="twitter:title" content="魔王 の 博客"><meta property="twitter:description" content="魔王 の部落阁"><meta property="twitter:image" content="https://example.com/blog-placeholder-1.jpg"><link rel="stylesheet" href="/_astro/about.82merU4V.css">
+<style>footer[data-astro-cid-sz7xmlte]{padding:2em 1em 6em;background:linear-gradient(var(--gray-gradient)) no-repeat;color:rgb(var(--gray));text-align:center}.social-links[data-astro-cid-sz7xmlte]{display:flex;justify-content:center;gap:1em;margin-top:1em}.social-links[data-astro-cid-sz7xmlte] a[data-astro-cid-sz7xmlte]{text-decoration:none;color:rgb(var(--gray))}.social-links[data-astro-cid-sz7xmlte] a[data-astro-cid-sz7xmlte]:hover{color:rgb(var(--gray-dark))}
+</style><script type="module">function o(e){console.log("已经切换主题",e)}document.addEventListener("DOMContentLoaded",function(){const e=localStorage.getItem("theme");if(e){o(e);const t=document.querySelector(`input[value="${e}"]`);t&&(t.checked=!0)}});
+</script></head> <body> <header class="w-full fixed z-10 header-theme hover:shadow-md transition ease-in-out delay duration-300"> <nav class="flex items-center justify-center  w-full "> <div class="text-xl leading-[80px] header-nav"> <a href="/" class="mx-2 header-nav-item" data-astro-cid-eimmu3lg> 首页 </a>  <a href="/blog" class="mx-2 header-nav-item" data-astro-cid-eimmu3lg> 归档 </a>  <a href="/about" class="mx-2 header-nav-item" data-astro-cid-eimmu3lg> 关于 </a>  <a href="/link" class="mx-2 header-nav-item" data-astro-cid-eimmu3lg> 友链 </a>  </div> <div class="flex items-center"> <a href="https://m.webtoo.ls/@astro" class="ml-2 mr-2" target="_blank"> <span class="sr-only">Follow Astro on Mastodon</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="16" height="16"><path fill="currentColor" d="M11.19 12.195c2.016-.24 3.77-1.475 3.99-2.603.348-1.778.16-4.339.16-4.339 0-3.47-2.286-4.488-2.286-4.488C12.062.238 10.083.017 8.027 0h-.05C5.92.017 3.942.238 2.79.765c0 0-2.285 1.017-2.285 4.488l-.002.662c-.004.64-.007 1.35.011 2.091.083 3.394.626 6.74 3.78 7.57 1.454.383 2.703.463 3.709.408 1.823-.1 2.847-.647 2.847-.647l-.06-1.317s-1.303.41-2.767.36c-1.45-.05-2.98-.156-3.215-1.928a3.614 3.614 0 0 1-.033-.496s1.424.346 3.228.428c1.103.05 2.137-.064 3.188-.189zm1.613-2.47H11.13v-4.08c0-.859-.364-1.295-1.091-1.295-.804 0-1.207.517-1.207 1.541v2.233H7.168V5.89c0-1.024-.403-1.541-1.207-1.541-.727 0-1.091.436-1.091 1.296v4.079H3.197V5.522c0-.859.22-1.541.66-2.046.456-.505 1.052-.764 1.793-.764.856 0 1.504.168 1.933.983L8 4.39l.417-.695c.429-.655 1.077-.983 1.934-.983.74 0 1.336.259 1.791.764.442.505.661 1.187.661 2.046v4.203z"></path></svg> </a> <a href="https://twitter.com/astrodotbuild" class="mr-2" target="_blank"> <span class="sr-only">Follow Astro on Twitter</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="16" height="16"><path fill="currentColor" d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.165 9.165 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.163 3.163 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.616 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.16 6.16 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path></svg> </a> <a href="https://github.com/withastro/astro" class="mr-2" target="_blank"> <span class="sr-only">Go to Astro's GitHub repo</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="16" height="16"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.16-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> </a> </div> </nav> </header> <main> <div class="relative"> <div class="bg-urls bg-no-repeat bg-cover h-dvh bg-center relative"> <div class="absolute inset-0 bg-gradient-to-t from-white"></div> </div> <div class="absolute inset-0"> <div class="min-h-dvh">  <div class="container mx-auto"> <div class="flex pt-[120px]"> <!-- 左侧信息 --> <div class="w-2/6"> <div class="myCard card card-side bg-color shadow-xl"> <figure> <img src="https://d-sketon.top/img/_backwebp/bg26.webp" alt="Movie" class="h-full w-[200px] object-cover object-top"> </figure> <div class="card-body p-4"> <h2 class="card-title flex justify-center my-title">MoWang</h2> <div class="flex justify-center my-desc">魔王的 Blog </div> <div class="flex w-full flex-col lg:flex-row"> <div class="card rounded-box grid h-16 flex-grow place-items-center"> <div> <div class="flex justify-center my-cate">文章</div> <div class="flex justify-center my-number">11</div> </div> </div> <div class="divider sm:divider-horizontal"></div> <div class="card rounded-box grid h-16 flex-grow place-items-center"> <div> <div class="flex justify-center my-cate">分类</div> <div class="flex justify-center my-number">11</div> </div> </div> <div class="divider sm:divider-horizontal"></div> <div class="card rounded-box grid h-16 flex-grow place-items-center"> <div> <div class="flex justify-center my-cate">标签</div> <div class="flex justify-center my-number">11</div> </div> </div> </div> <div class="flex justify-between"> <div> <button class="btn btn-sm btn-outline btn-primary">首页</button> </div> <div> <button class="btn btn-sm btn-outline btn-primary">归档</button> </div> <div> <button class="btn btn-sm btn-outline btn-primary">关于</button> </div> </div> <div class="decoration-wavy italic text-center my-yy">年少不得之物,终将困其一生</div> </div> </div> <div class="mt-6"> <div class="card bg-color  shadow-xl"> <div class="card-body"> <h2 class="card-title">标签云预留点</h2> <p> 后续你打算做点什么?</p> </div> </div> </div> <div class="mt-6"> <div class="card bg-color shadow-xl"> <div class="card-body"> <h2 class="card-title">Theme</h2> <div class="form-control"> <label class="label cursor-pointer gap-4"> <span class="label-text">春</span> <input type="radio" name="theme-radios" class="radio theme-controller" value="spring"> </label> </div> <div class="form-control"> <label class="label cursor-pointer gap-4"> <span class="label-text">夏</span> <input type="radio" name="theme-radios" class="radio theme-controller" value="summer"> </label> </div> <div class="form-control"> <label class="label cursor-pointer gap-4"> <span class="label-text">秋</span> <input type="radio" name="theme-radios" class="radio theme-controller" value="autumn"> </label> </div> <div class="form-control"> <label class="label cursor-pointer gap-4"> <span class="label-text">冬</span> <input type="radio" name="theme-radios" class="radio theme-controller" value="winter"> </label> </div> </div> </div>  </div> </div> <!-- 右侧列表或者内容 --> <div class="w-4/6 mb-4"> <div class="ml-4"><a href="/blog/2023-12-27-newcss/doc/index.html" title="现代化 CSS 框架"><div class="card bg-color cursor-pointer	 postCard rounded-lg w-full mb-4 shadow-xl flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"><time datetime="Wed Dec 27 2023 23:27:24 GMT+0800 (中国标准时间)">2023/12/27</time></div><div class="text-sm mr-6">0.1K字</div><div class="text-sm">218 天前</div></div></div><div class="flex justify-between items-center mt-2"><div class="w-5/6"><div class="text-2xl font-medium title line-clamp-1 leading-relaxed">现代化 CSS 框架</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed"> 
+### 什么是原子化 css
+
+原子 CSS 是一种 CSS 架构方法，它有利于小型、单一用途的类，其名称基于视觉功能。
+
+原子化 CSS 是一种 CSS 的架构方式，它倾向于小巧且用途单一的 class，并且会以视觉效果进行命名。
+
+例如 `.mt-10` 代表 `margin-top: 10px`，`.bg-red` 代表 `background-color: red`。
+
+```css
+.mt-10 {
+  margin-top: 10px;
+}
+.bg-red {
+  background-color: red;
+}
+```
+
+### 为什么要使用原子化 css
+
+原子化 CSS 有助于减少 CSS 的大小，因为它只使用了少量的 class，而不是大量的 class 和大量的 style 引入。优化了 CSS 的大小，也就优化了 CSS 的加载速度。
+
+### 常用的 css 框架选择
+
+- [Tailwind CSS](https://tailwindcss.com/)
+- [UnoCSS](https://unocss.dev/)
+- [Tachyons](https://tachyons.io/)
+  ....
+
+### 参考
+
+- [重新构想原子化 CSS-antfu] https://antfu.me/posts/reimagine-atomic-css-zh
+</div></div><div><img src="http://img.blog.loli.wang/2023-12-27-newcss/01.png" class="w-[500px] h-[200px] rounded-r-lg object-cover" style="clip-path:polygon(0 0,100% 0,100% 100%,20% 100%)"></div></div></div></a></div><div class="ml-4 "><a href="/blog/2023-12-14-tailwindbuttionope/doc/index.html" title="Tailwind + Antd Css冲突解决方案(按钮颜色透明)"><div class="card bg-color postCard mb-4 rounded-lg w-full shadow-xl cursor-pointer	 flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div><img src="http://img.blog.loli.wang/2023-12-14-tailwindButtionOpe/01.png" class="w-[500px] h-[200px] rounded-l-lg" style="clip-path:polygon(0 0,88% 0,100% 100%,0 100%)"></div><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"> <time datetime="Thu Dec 14 2023 23:27:24 GMT+0800 (中国标准时间)">2023/12/14</time> </div><div class="text-sm mr-6">0.1K字</div><div class="text-sm">231 天前</div></div></div><div class="flex justify-between items-center mt-2"><div><div class="text-2xl font-medium title">Tailwind + Antd Css冲突解决方案(按钮颜色透明)</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed">
+## 问题引发
+
+公司开展新项目，准备使用React，用React的主流框架肯定是Antd啦，为了防止公司样式污染以及结合了一些老项目的痛点，决心使用Tailwind来弥补这些问题，然后引发了按钮没有颜色的Bug 在原有Css中 Tailwind的优先级比Antd要高所以引发了这个问题
+
+![切图1](http://img.blog.loli.wang/2023-12-14-tailwindButtionOpe/02.png)
+
+
+## 解决方案
+
+1. tailwind.config.js 配置文件修改 
+ 
+将 preflight: false 修改为 false
+
+``` jsx
+  /** @type {import(&#39;tailwindcss&#39;).Config} */
+export default {
+  content: [&#39;./src/**/*.{js,jsx,ts,tsx}&#39;],
+  theme: {
+    extend: { 
+    }
+  }
+  // plugins: [],
+  // corePlugins: {
+  //   preflight: false
+  // }
+}
+```
+
+2. 修改 tailwind @layer样式
+
+
+``` jsx
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* @layer base { 
+  button, [type=&#39;button&#39;], [type=&#39;reset&#39;], [type=&#39;submit&#39;]
+  { background-color: #3b82f6; 
+  }
+} */
+```
+
+
+3. 全局修改 antd 全局样式
+
+将自己的全局Css样式中处理这个这个引入
+
+``` jsx
+// global.css
+:global(.ant-btn-primary) {
+  background-color: #1677ff !important;
+}
+// 或者
+.ant-btn-primary{
+     background-color: #1677ff !important;
+}
+```
+</div></div></div></div></a></div><div class="ml-4"><a href="/blog/2023-12-05-directadmin2222ssl/doc/index.html" title="Directadmin 2222 开启 SSL "><div class="card bg-color cursor-pointer	 postCard rounded-lg w-full mb-4 shadow-xl flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"><time datetime="Tue Dec 05 2023 23:27:24 GMT+0800 (中国标准时间)">2023/12/5</time></div><div class="text-sm mr-6">0.1K字</div><div class="text-sm">240 天前</div></div></div><div class="flex justify-between items-center mt-2"><div class="w-5/6"><div class="text-2xl font-medium title line-clamp-1 leading-relaxed">Directadmin 2222 开启 SSL </div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed"> 
+
+太久没管理IDC.LA 网站了，这次上去，发现所有服务器面板的SSL都挂了。
+
+    真不是个合格的网站管理者
+
+#### 先启动LetsEncrypt
+
+1. 在directadmin.conf中启用letsencrypt = 1选项，顺便先把ssl=0改为 ssl=1 ，使DA 2222使用SSL协议
+
+2. 重启、build 相关组件
+
+``` bash
+echo “action=directadmin&amp;value=restart” &gt;&gt; /usr/local/directadmin/data/task.queue; /usr/local/directadmin/dataskq d2000
+
+cd /usr/local/directadmin/custombuild
+./build rewrite_confs
+
+cd /usr/local/directadmin/custombuild
+./build update
+./build letsencrypt
+```
+
+#### 为DA开启
+
+先获得域名证书，设定跳转，使其生效。
+
+``` bash
+/usr/local/directadmin/scripts/letsencrypt.sh request_single us1.yunloli.com 4096
+
+/usr/local/directadmin/directadmin set ssl_redirect_host us1.yunloli.com
+service directadmin restart
+```
+
+
+### 相关资料
+
+https://help.directadmin.com/item.php?id=15
+
+https://help.directadmin.com/item.php?id=648
+
+https://help.directadmin.com/item.php?id=629</div></div><div><img src="http://img.blog.loli.wang/2023-12-05-directadmin2222ssl/01.png" class="w-[500px] h-[200px] rounded-r-lg object-cover" style="clip-path:polygon(0 0,100% 0,100% 100%,20% 100%)"></div></div></div></a></div><div class="ml-4 "><a href="/blog/2023-12-13-ssgblog01/doc/index.html" title="ViteSSG 搭建博客 01 (ssg项目项目搭建)"><div class="card bg-color postCard mb-4 rounded-lg w-full shadow-xl cursor-pointer	 flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div><img src="http://img.blog.loli.wang/2023-12-13-ssgblog01/01.png" class="w-[500px] h-[200px] rounded-l-lg" style="clip-path:polygon(0 0,88% 0,100% 100%,0 100%)"></div><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"> <time datetime="Tue Dec 05 2023 23:27:24 GMT+0800 (中国标准时间)">2023/12/5</time> </div><div class="text-sm mr-6">0.2K字</div><div class="text-sm">240 天前</div></div></div><div class="flex justify-between items-center mt-2"><div><div class="text-2xl font-medium title">ViteSSG 搭建博客 01 (ssg项目项目搭建)</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed">
+
+
+### 项目准备
+
+``` bash 
+# 强烈建议使用 pnpm
+npm i -g pnpm 
+
+# 安装主要项目依赖
+pnpm add vue typescript less vue-router
+
+pnpm add @unhead/vue @vitejs/plugin-vue vite vite-plugin-pages vite-ssg -D
+```
+
+
+### 开始
+
+Node 版本需要高于 14 以上
+
+示例以多页应用为例
+
+``` jsx
+// package.json
+{
+    &quot;script&quot;:{
+        &quot;dev&quot;:&quot;vite&quot;,
+        &quot;build&quot;:&quot;vite-ssg build&quot;
+    }
+}
+
+```
+
+``` jsx
+// main.ts
+import { ViteSSG } from &quot;vite-ssg&quot;;
+import App from &quot;./App.vue&quot;;
+import routes from &quot;~pages&quot;;
+
+export const createApp = ViteSSG(
+  App,
+  { routes },
+  ({ app, router, routes, isClient, initialState }) =&gt; {}
+);
+
+```
+
+``` jsx
+// vite.config.ts
+import { defineConfig } from &quot;vite&quot;;
+import vue from &quot;@vitejs/plugin-vue&quot;;
+import Pages from &quot;vite-plugin-pages&quot;;
+
+export default defineConfig({
+  plugins: [vue(), Pages({ extensions: [&quot;vue&quot;, &quot;md&quot;] })],
+  ssgOptions: {
+    script: &quot;async&quot;,
+    formatting: &quot;prettify&quot;,
+  },
+});
+```
+
+编写页面,在 pages 目录下新建文件夹 index 然后建立目录 index.vue
+
+``` jsx
+// src/pages/index/index.vue
+&lt;template&gt;
+  &lt;div class=&quot;Index&quot;&gt;
+    &lt;div&gt;Index&lt;/div&gt;
+    &lt;div&gt;{{ index }}&lt;/div&gt;
+    &lt;div&gt;{{ index2 }}&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+&lt;script lang=&quot;tsx&quot; setup&gt;
+import { ref } from &quot;vue&quot;;
+
+const index = ref(&quot;idx&quot;);
+const index2 = ref(&quot;Leo&quot;);
+&lt;/script&gt;
+
+
+```
+
+最后执行 `pnpm build` 即可生成静态构建的文件
+
+![切图2](http://img.blog.loli.wang/2023-12-13-ssgblog01/01.png)
+</div></div></div></div></a></div><div class="ml-4"><a href="/blog/2023-11-27-volatsetup/doc/index.html" title="Node版本管理Volta的使用"><div class="card bg-color cursor-pointer	 postCard rounded-lg w-full mb-4 shadow-xl flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"><time datetime="Mon Nov 27 2023 23:27:24 GMT+0800 (中国标准时间)">2023/11/27</time></div><div class="text-sm mr-6">0.1K字</div><div class="text-sm">248 天前</div></div></div><div class="flex justify-between items-center mt-2"><div class="w-5/6"><div class="text-2xl font-medium title line-clamp-1 leading-relaxed">Node版本管理Volta的使用</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed"> 
+## 为什么要有Volta
+
+一个项目组有多个前端现象，使用的Node版本都不一样，并且有前端工程师一个人管理多个不同node版本的前端项目需要频繁的切换Node版本
+
+
+## 使用 Volta
+
+    官网：https://volta.sh/
+
+``` bash
+# 安装volta 
+curl https://get.volta.sh | bash
+
+# 安装node
+volta install node
+
+# 指定node版本安装
+volta install node@14.15.5
+
+```
+
+在前端项目中配置进行自动切换
+
+``` jsx
+// package.json
+
+&quot;volta&quot;: {
+  &quot;node&quot;: &quot;12.20.2&quot;,
+  &quot;yarn&quot;: &quot;1.19.2&quot;
+}
+
+```
+
+通过volta 安装好指定的node版本后可以做到打开当前的项目的命令行，自动切换node版本
+
+![切图1](http://img.blog.loli.wang/2023-11-27-volatSetup/02.png)
+
+![切图2](http://img.blog.loli.wang/2023-11-27-volatSetup/03.png)
+</div></div><div><img src="http://img.blog.loli.wang/2023-11-27-volatSetup/01.png" class="w-[500px] h-[200px] rounded-r-lg object-cover" style="clip-path:polygon(0 0,100% 0,100% 100%,20% 100%)"></div></div></div></a></div><div class="ml-4 "><a href="/blog/2023-11-17-vuevirtuallist/doc/index.html" title="简单虚拟列表 + 无限滚动"><div class="card bg-color postCard mb-4 rounded-lg w-full shadow-xl cursor-pointer	 flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div><img src="http://img.blog.loli.wang/2023-11-17-vuevirtualList/1.gif" class="w-[500px] h-[200px] rounded-l-lg" style="clip-path:polygon(0 0,88% 0,100% 100%,0 100%)"></div><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"> <time datetime="Fri Nov 17 2023 23:27:24 GMT+0800 (中国标准时间)">2023/11/17</time> </div><div class="text-sm mr-6">0.2K字</div><div class="text-sm">258 天前</div></div></div><div class="flex justify-between items-center mt-2"><div><div class="text-2xl font-medium title">简单虚拟列表 + 无限滚动</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed">
+## 为什么要有虚拟列表这个东西
+
+很多时候前端被迫被逼着接收上百条，上千条，上万条数据（因为需求的缘故），没有相关经验的前端会直接直接赋值渲染上去。
+但是这样子操作是有很大的弊端的。轻则让浏览器卡顿，重则浏览器崩溃。更严重的老板直接过来骂人。
+
+也就是说，我们不能一股脑的直接赋值，要有合理的方案。
+
+1. 后端给出分页 (是最好的处理方式 有什么东西是不能让后端给前端压力的呢)
+2. 前端将数据切成小块 进行分页 (但是可能业务被迫需要更加直观的展示不让使用分页)
+3. 前端通过搜索去过滤数据再渲染 (可以存入到缓存里,读取缓存内的数据,但是会有过滤后还是有大量数据的问题，和缓存有大小问题等限制，是不合理的方案)
+4. 虚拟列表 (通过滚动条只渲染可见部分，随着滚动加载最新的数据，非常合理的方式)
+
+通过以上解释，虚拟列表是最佳合理的方案，实例：
+
+``` vue
+&lt;template&gt;
+  &lt;div id=&quot;app&quot;&gt;
+    &lt;div
+      class=&quot;virtual-list-container&quot;
+      ref=&quot;listContainerRef&quot;
+      @scroll=&quot;handleScroll&quot;
+    &gt;
+      &lt;div class=&quot;list-phantom&quot;&gt;
+        &lt;div
+          class=&quot;list-item&quot;
+          v-for=&quot;(item, index) in state.visibleItem&quot;
+          :key=&quot;index&quot;
+        &gt;
+          虚拟化列表数据 {{ item.name }}
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script lang=&quot;tsx&quot; setup&gt;
+import { ref, reactive, onMounted } from &quot;vue&quot;;
+
+let state = reactive({
+  visibleItem: [] as any,
+  visibleItemCount: 20, // 可见区域显示多少条
+  count: 800000, // 需要生成的数据总条数
+});
+
+// 数据生成函数
+const genertteItems = (count: number): any[] =&gt; {
+  const items: any = [];
+  Array.from({ length: count }).forEach((item, index: number) =&gt; {
+    items.push({ id: index, name: `${index}名称` });
+  });
+  return items;
+};
+
+// 关键代码
+// 通过ref获取带有滚动条的dom
+const listContainerRef = ref&lt;any&gt;(null);
+
+// 滚动事件
+const handleScroll = () =&gt; {
+  // 滚动容器
+  const container = listContainerRef.value;
+  // 获取容器当前至容器顶部距离多远
+  const scrollTop = container?.scrollTop || 0;
+  // 获取容器可视区域总高度
+  const scrollHeight = container?.scrollHeight || 0;
+  // 获取容器的总高度
+  const containerHeight = container?.clientHeight || 0;
+  // 如果滚动距离加上可是高度大于总高度 说明到了容器底部
+  if (scrollTop + containerHeight &gt;= scrollHeight) {
+    // 滚动到底部加载更多数据
+    loadMoreData();
+  }
+};
+
+// 加载更多函数
+const loadMoreData = () =&gt; {
+  const startIndex = state.visibleItem.length;
+  const endIndex = startIndex + state.visibleItemCount;
+  const newItems = genertteItems(state.count).slice(startIndex, endIndex);
+  state.visibleItem = [...state.visibleItem, ...newItems];
+};
+
+onMounted(() =&gt; {
+  handleScroll(); // 确保组件挂载后初始化一次数据\
+});
+&lt;/script&gt;
+
+&lt;style lang=&quot;less&quot;&gt;
+.list-item {
+  height: 80px;
+  border: 1px solid red;
+}
+.virtual-list-container {
+  overflow-y: auto;
+  height: 400px; /* 容器高度 */
+  position: relative;
+}
+.list-phantom {
+  position: absolute;
+  width: 100%;
+  pointer-events: none;
+}
+&lt;/style&gt;
+
+```
+
+实现效果
+
+![切图1](http://img.blog.loli.wang/2023-11-17-vuevirtualList/1.gif)
+</div></div></div></div></a></div><div class="ml-4"><a href="/blog/2023-11-11-dependenciesanddevdependencies/doc/index.html" title="dependencies 和 devDependencies 的区别(回忆录1)"><div class="card bg-color cursor-pointer	 postCard rounded-lg w-full mb-4 shadow-xl flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"><time datetime="Sat Nov 11 2023 23:27:24 GMT+0800 (中国标准时间)">2023/11/11</time></div><div class="text-sm mr-6">0.0K字</div><div class="text-sm">264 天前</div></div></div><div class="flex justify-between items-center mt-2"><div class="w-5/6"><div class="text-2xl font-medium title line-clamp-1 leading-relaxed">dependencies 和 devDependencies 的区别(回忆录1)</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed"> 
+## 回忆录1: 一次给别人解决BUG引发的问题
+
+事情是这样的，一个小伙伴问我一个问题。项目写了个插件，导出到NPM中了，但是通过npm install 下来无法使用，仔细检查，发现依赖都是装载在 **devDependencies** 中
+
+###  理解
+
+区别:
+
+    dependencies 用于生产环境
+    devDependencies 用于开发环境，打包成npm插件后无法获取内容
+
+拓展:
+
+npm install xxx -g 表示全局安装，通常用于安装脚手架 yarn pnpm webpack 等工具
+
+npm install xxx –save(-S) 表示本地安装，会被加至dependencies部分
+
+npm install xxx –save-dev(-D) 表示本地安装，会被加至
+devDependencies部分
+
+
+npm install会默认下载dependencies和devDependencies中的所有依赖包
+
+1.如webpack、html-webpack-plugin等工具包就安装在devDependencies开发环境下，
+
+项目部署到开发环境所必须的依赖包则安装在dependencies生产环境下。
+在项目编译时dependencies、devDependencies里的依赖其实没有影响，最重要的区别体现在:
+
+npm包发布的时候，其他的开发者可以从你发布的npm包中下载dependencies里的依赖包，而不能下载devDependencies里的内容。
+
+</div></div><div><img src="http://img.blog.loli.wang/2023-11-11-dependenciesAnddevDependencies/01.png" class="w-[500px] h-[200px] rounded-r-lg object-cover" style="clip-path:polygon(0 0,100% 0,100% 100%,20% 100%)"></div></div></div></a></div><div class="ml-4 "><a href="/blog/2023-11-11-viteerrorglob/doc/index.html" title="类型“ImportMeta”上不存在属性“glob” "><div class="card bg-color postCard mb-4 rounded-lg w-full shadow-xl cursor-pointer	 flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div><img src="http://img.blog.loli.wang/2023-11-11-viteErrorGlob/01.png" class="w-[500px] h-[200px] rounded-l-lg" style="clip-path:polygon(0 0,88% 0,100% 100%,0 100%)"></div><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"> <time datetime="Sat Nov 11 2023 23:27:24 GMT+0800 (中国标准时间)">2023/11/11</time> </div><div class="text-sm mr-6">0.0K字</div><div class="text-sm">264 天前</div></div></div><div class="flex justify-between items-center mt-2"><div><div class="text-2xl font-medium title">类型“ImportMeta”上不存在属性“glob” </div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed">
+## 类型“ImportMeta”上不存在属性“glob”
+
+如果直接使用import.meta.glob，vscode会报类型ImportMeta上不存在属性“glob”的错误，需要在tsconfig文件下添加类型定义vite/client
+
+``` jsx
+{
+  &quot;compilerOptions&quot;: {
+    &quot;types&quot;: [&quot;vite/client&quot;]
+  }
+}
+```
+</div></div></div></div></a></div><div class="ml-4"><a href="/blog/2023-11-08-rust003/doc/index.html" title="rust的编程概念"><div class="card bg-color cursor-pointer	 postCard rounded-lg w-full mb-4 shadow-xl flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"><time datetime="Wed Nov 08 2023 23:27:24 GMT+0800 (中国标准时间)">2023/11/8</time></div><div class="text-sm mr-6">0.1K字</div><div class="text-sm">267 天前</div></div></div><div class="flex justify-between items-center mt-2"><div class="w-5/6"><div class="text-2xl font-medium title line-clamp-1 leading-relaxed">rust的编程概念</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed"> 
+## 变量
+
+声明变量
+
+```rs
+// 普通变量
+let x = 5;  // 无法修改 类似常量
+
+let mut x = 5; // 增加mut 变为可修改
+
+```
+
+数据类型
+
+长度 有符号类型 无符号类型
+8 位 i8 u8
+16 位 i16 u16
+32 位 i32 u32
+64 位 i64 u64
+128 位 i128 u128
+arch isize usize
+
+```rs
+// 整型
+let guess=22222;
+// 浮点型
+let x: f64 = 2.0;
+// 布尔型
+let t = true;
+// 字符串类型
+let c = &#39;z&#39;;
+// 元组类型
+let tup = (500, 6.4, 1);
+let (x, y, z) = tup;
+// 数组类型
+let a = [1, 2, 3, 4, 5];
+
+```
+
+函数
+
+```rs
+// 函数
+fn another_function() {
+    println!(&quot;Another function.&quot;);
+}
+// 带参函数
+fn another_function(x: i32) {
+    println!(&quot;The value of x is: {}&quot;, x);
+}
+// 带返回值的函数
+fn main() {
+    let x = plus_one(5);
+
+    println!(&quot;The value of x is: {}&quot;, x);
+}
+
+fn plus_one(x: i32) -&gt; i32 {
+    x + 1
+    //  也可以  return x+1
+
+}
+
+
+```
+
+循环
+
+```rs
+// 循环
+loop {
+        println!(&quot;again!&quot;);
+}
+// 条件循环
+let mut number = 3
+while number != 0 {
+    println!(&quot;{}!&quot;, number); 
+    number -= 1;
+}
+// for 循环
+let a = [10, 20, 30, 40, 50];
+
+for element in a {
+    println!(&quot;the value is: {}&quot;, element);
+}
+
+```
+
+</div></div><div><img src="http://img.blog.loli.wang/2023-11-6-rust001/01.png" class="w-[500px] h-[200px] rounded-r-lg object-cover" style="clip-path:polygon(0 0,100% 0,100% 100%,20% 100%)"></div></div></div></a></div><div class="ml-4 "><a href="/blog/2023-11-07-rust002/doc/index.html" title="使用rust建立一个简单的web服务器"><div class="card bg-color postCard mb-4 rounded-lg w-full shadow-xl cursor-pointer	 flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div><img src="http://img.blog.loli.wang/2023-11-6-rust001/01.png" class="w-[500px] h-[200px] rounded-l-lg" style="clip-path:polygon(0 0,88% 0,100% 100%,0 100%)"></div><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"> <time datetime="Tue Nov 07 2023 23:27:24 GMT+0800 (中国标准时间)">2023/11/7</time> </div><div class="text-sm mr-6">0.1K字</div><div class="text-sm">268 天前</div></div></div><div class="flex justify-between items-center mt-2"><div><div class="text-2xl font-medium title">使用rust建立一个简单的web服务器</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed">
+## 
+
+``` rs
+// main.rs
+
+use std::io::prelude::*;
+use std::net::TcpListener;
+use std::net::TcpStream;
+use std::fs;
+
+fn handle_client(mut stream: TcpStream) {
+    let mut buffer = [0; 1024];
+    stream.read(&amp;mut buffer).unwrap();
+
+    let response = &quot;HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n&quot;;
+    let contents = fs::read_to_string(&quot;html/index.html&quot;).unwrap();
+    let response = format!(&quot;{}{}&quot;, response, contents);
+
+    stream.write(response.as_bytes()).unwrap();
+    stream.flush().unwrap();
+}
+
+fn main() {
+    let listener = TcpListener::bind(&quot;127.0.0.1:3030&quot;).unwrap();
+    println!(&quot;Server is listening on port 3030&quot;);
+
+    for stream in listener.incoming() {
+        let stream = stream.unwrap();
+        handle_client(stream);
+    }
+}
+
+
+```
+
+
+![切图1](http://img.blog.loli.wang/2023-11-07-rust002/001.png)</div></div></div></div></a></div><div class="pagination-container page-bar flex items-center justify-between bg-white p-4 rounded-md shadow-md"> <a href="/page/3/" class="prev text-blue-500 hover:text-blue-700 transition-colors duration-200" title="上一页">
+上一页
+</a> <span class="pagination-info text-gray-700">
+第 4 页 / 共 7 页
+</span> <a href="/page/5/" class="next text-blue-500 hover:text-blue-700 transition-colors duration-200" title="下一页">
+下一页
+</a> </div> </div> </div> </div>  </div> <footer data-astro-cid-sz7xmlte>
+&copy; 2024 Your name here. All rights reserved.
+<div class="social-links" data-astro-cid-sz7xmlte> <a href="https://m.webtoo.ls/@astro" target="_blank" data-astro-cid-sz7xmlte> <span class="sr-only" data-astro-cid-sz7xmlte>Follow Astro on Mastodon</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/mastodon" data-astro-cid-sz7xmlte><path fill="currentColor" d="M11.19 12.195c2.016-.24 3.77-1.475 3.99-2.603.348-1.778.32-4.339.32-4.339 0-3.47-2.286-4.488-2.286-4.488C12.062.238 10.083.017 8.027 0h-.05C5.92.017 3.942.238 2.79.765c0 0-2.285 1.017-2.285 4.488l-.002.662c-.004.64-.007 1.35.011 2.091.083 3.394.626 6.74 3.78 7.57 1.454.383 2.703.463 3.709.408 1.823-.1 2.847-.647 2.847-.647l-.06-1.317s-1.303.41-2.767.36c-1.45-.05-2.98-.156-3.215-1.928a3.614 3.614 0 0 1-.033-.496s1.424.346 3.228.428c1.103.05 2.137-.064 3.188-.189zm1.613-2.47H11.13v-4.08c0-.859-.364-1.295-1.091-1.295-.804 0-1.207.517-1.207 1.541v2.233H7.168V5.89c0-1.024-.403-1.541-1.207-1.541-.727 0-1.091.436-1.091 1.296v4.079H3.197V5.522c0-.859.22-1.541.66-2.046.456-.505 1.052-.764 1.793-.764.856 0 1.504.328 1.933.983L8 4.39l.417-.695c.429-.655 1.077-.983 1.934-.983.74 0 1.336.259 1.791.764.442.505.661 1.187.661 2.046v4.203z" data-astro-cid-sz7xmlte></path></svg> </a> <a href="https://twitter.com/astrodotbuild" target="_blank" data-astro-cid-sz7xmlte> <span class="sr-only" data-astro-cid-sz7xmlte>Follow Astro on Twitter</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/twitter" data-astro-cid-sz7xmlte><path fill="currentColor" d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" data-astro-cid-sz7xmlte></path></svg> </a> <a href="https://github.com/withastro/astro" target="_blank" data-astro-cid-sz7xmlte> <span class="sr-only" data-astro-cid-sz7xmlte>Go to Astro's GitHub repo</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/github" data-astro-cid-sz7xmlte><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" data-astro-cid-sz7xmlte></path></svg> </a> </div> </footer>  </div> </div> </main> </body></html>

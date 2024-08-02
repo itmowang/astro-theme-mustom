@@ -1,0 +1,239 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-bvzihdzo> <head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v4.12.2"><!-- Font preloads --><link rel="preload" href="/fonts/atkinson-regular.woff" as="font" type="font/woff" crossorigin><link rel="preload" href="/fonts/atkinson-bold.woff" as="font" type="font/woff" crossorigin><!-- Canonical URL --><link rel="canonical" href="https://example.com/blog/2024-07-13-clicreate2/doc/"><!-- Primary Meta Tags --><title>重写自己脚手架工具之旅</title><meta name="title" content="重写自己脚手架工具之旅"><meta name="description" content="重写自己脚手架工具之旅"><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://example.com/blog/2024-07-13-clicreate2/doc/"><meta property="og:title" content="重写自己脚手架工具之旅"><meta property="og:description" content="重写自己脚手架工具之旅"><meta property="og:image" content="https://example.com/blog-placeholder-1.jpg"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://example.com/blog/2024-07-13-clicreate2/doc/"><meta property="twitter:title" content="重写自己脚手架工具之旅"><meta property="twitter:description" content="重写自己脚手架工具之旅"><meta property="twitter:image" content="https://example.com/blog-placeholder-1.jpg"><link rel="stylesheet" href="/_astro/about.82merU4V.css">
+<style>footer[data-astro-cid-sz7xmlte]{padding:2em 1em 6em;background:linear-gradient(var(--gray-gradient)) no-repeat;color:rgb(var(--gray));text-align:center}.social-links[data-astro-cid-sz7xmlte]{display:flex;justify-content:center;gap:1em;margin-top:1em}.social-links[data-astro-cid-sz7xmlte] a[data-astro-cid-sz7xmlte]{text-decoration:none;color:rgb(var(--gray))}.social-links[data-astro-cid-sz7xmlte] a[data-astro-cid-sz7xmlte]:hover{color:rgb(var(--gray-dark))}
+.post-container{margin-top:20px}.post-container h1,.post-container h2,.post-container h3,.post-container h4,.post-container h5,.post-container h6{margin:16px 0;color:#495057}.post-container .title{font-size:1.8rem;text-align:center;line-height:1;margin-top:1rem}.post-container a{color:#4c6ef5;border-bottom:1px dotted #4c6ef5;transition:all .3s}.post-container a:hover{color:#3b5bdb;border-bottom:1px dotted #3b5bdb}.post-container img{display:block;box-shadow:0 2px 5px #0000191a,0 5px 75px 1px #00003233;max-width:100%;border-radius:2px;margin:24px auto}.post-container p{line-height:1.725;margin-bottom:24px;font-size:18px;color:#353b42}.post-container p code,.post-container ul code,.post-container ol code{padding:0 3px;margin:0 2px;background:#e9ecef;font-size:.9em;border-radius:2px;border:1px solid #dee2e6;display:inline-block;line-height:1.5;color:#adb5bd}.post-container blockquote{background:#e9ecef;padding:16px;border-left:3px solid #7048e8;border-radius:2px;margin-bottom:16px}.post-container blockquote p{color:#adb5bd;margin-bottom:0}.post-container pre{margin-bottom:16px}.post-container pre code{font-size:14px;font-family:Source Code Pro,Consolas,Menlo,Monaco,Courier New,monospace;padding:2em 1em 1em;border-radius:5px;line-height:1.375;position:relative;background:#343a40;color:#f8f9fa;display:block}.post-container pre code:after{content:"CODE";display:block;position:absolute;left:8px;top:4px;font-size:14px;font-weight:700;color:#495057}.post-container table{border-collapse:collapse;margin:1rem 0;display:block;overflow-x:auto}.post-container tr{border-top:1px solid #dfe2e5}.post-container td,.post-container th{border:1px solid #dfe2e5;padding:.6em 1em}.post-container ul,.post-container ol{color:var(--c-base-blacklight);padding-left:24px;line-height:1.725;margin-bottom:16px}.post-container strong{font-weight:bolder}.post-container em{color:#868e96}.post-container hr{height:0;border:2px solid #efefef;margin-bottom:24px}main[data-astro-cid-bvzihdzo]{width:calc(100% - 2em);max-width:100%;margin:0}.hero-image[data-astro-cid-bvzihdzo]{width:100%}.hero-image[data-astro-cid-bvzihdzo] img[data-astro-cid-bvzihdzo]{display:block;margin:0 auto;border-radius:12px;box-shadow:var(--box-shadow)}.prose[data-astro-cid-bvzihdzo]{max-width:calc(100% - 2em);margin:auto;padding:1em;color:rgb(var(--gray-dark))}.title[data-astro-cid-bvzihdzo] h1[data-astro-cid-bvzihdzo]{margin:0 0 .5em}.date[data-astro-cid-bvzihdzo]{margin-bottom:.5em;color:rgb(var(--gray))}.last-updated-on[data-astro-cid-bvzihdzo]{font-style:italic}
+</style></head> <script>
+    if (localStorage.getItem("theme") === null) {
+      document.documentElement.setAttribute("data-theme", "light");
+    } else
+      document.documentElement.setAttribute(
+        "data-theme",
+        localStorage.getItem("theme")
+      );
+  </script> <body data-astro-cid-bvzihdzo> <header class="w-full fixed z-10 header-theme hover:shadow-md transition ease-in-out delay duration-300"> <nav class="flex items-center justify-center  w-full "> <div class="text-xl leading-[80px] header-nav"> <a href="/" class="mx-2 header-nav-item" data-astro-cid-eimmu3lg> 首页 </a>  <a href="/blog" class="mx-2 header-nav-item active" data-astro-cid-eimmu3lg> 归档 </a>  <a href="/about" class="mx-2 header-nav-item" data-astro-cid-eimmu3lg> 关于 </a>  <a href="/link" class="mx-2 header-nav-item" data-astro-cid-eimmu3lg> 友链 </a>  </div> <div class="flex items-center"> <a href="https://m.webtoo.ls/@astro" class="ml-2 mr-2" target="_blank"> <span class="sr-only">Follow Astro on Mastodon</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="16" height="16"><path fill="currentColor" d="M11.19 12.195c2.016-.24 3.77-1.475 3.99-2.603.348-1.778.16-4.339.16-4.339 0-3.47-2.286-4.488-2.286-4.488C12.062.238 10.083.017 8.027 0h-.05C5.92.017 3.942.238 2.79.765c0 0-2.285 1.017-2.285 4.488l-.002.662c-.004.64-.007 1.35.011 2.091.083 3.394.626 6.74 3.78 7.57 1.454.383 2.703.463 3.709.408 1.823-.1 2.847-.647 2.847-.647l-.06-1.317s-1.303.41-2.767.36c-1.45-.05-2.98-.156-3.215-1.928a3.614 3.614 0 0 1-.033-.496s1.424.346 3.228.428c1.103.05 2.137-.064 3.188-.189zm1.613-2.47H11.13v-4.08c0-.859-.364-1.295-1.091-1.295-.804 0-1.207.517-1.207 1.541v2.233H7.168V5.89c0-1.024-.403-1.541-1.207-1.541-.727 0-1.091.436-1.091 1.296v4.079H3.197V5.522c0-.859.22-1.541.66-2.046.456-.505 1.052-.764 1.793-.764.856 0 1.504.168 1.933.983L8 4.39l.417-.695c.429-.655 1.077-.983 1.934-.983.74 0 1.336.259 1.791.764.442.505.661 1.187.661 2.046v4.203z"></path></svg> </a> <a href="https://twitter.com/astrodotbuild" class="mr-2" target="_blank"> <span class="sr-only">Follow Astro on Twitter</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="16" height="16"><path fill="currentColor" d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.165 9.165 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.163 3.163 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.616 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.16 6.16 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path></svg> </a> <a href="https://github.com/withastro/astro" class="mr-2" target="_blank"> <span class="sr-only">Go to Astro's GitHub repo</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="16" height="16"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.16-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> </a> </div> </nav> </header> <main> <div class="relative"> <div class="bg-urls bg-no-repeat bg-cover h-dvh bg-center relative"> <div class="absolute inset-0 bg-gradient-to-t from-white"></div> </div> <div class="absolute inset-0"> <div class="min-h-dvh">  <div class="container post-container mx-auto pt-[120px]" data-astro-cid-bvzihdzo> <div class="flex" data-astro-cid-bvzihdzo> <!-- 左侧信息 --> <div class="w-2/6" data-astro-cid-bvzihdzo> <div class="myCard card card-side bg-color shadow-xl"> <figure> <img src="https://d-sketon.top/img/_backwebp/bg26.webp" alt="Movie" class="h-full w-[200px] object-cover object-top"> </figure> <div class="card-body p-4"> <h2 class="card-title flex justify-center my-title">MoWang</h2> <div class="flex justify-center my-desc">魔王的 Blog </div> <div class="flex w-full flex-col lg:flex-row"> <div class="card rounded-box grid h-16 flex-grow place-items-center"> <div> <div class="flex justify-center my-cate">文章</div> <div class="flex justify-center my-number">11</div> </div> </div> <div class="divider sm:divider-horizontal"></div> <div class="card rounded-box grid h-16 flex-grow place-items-center"> <div> <div class="flex justify-center my-cate">分类</div> <div class="flex justify-center my-number">11</div> </div> </div> <div class="divider sm:divider-horizontal"></div> <div class="card rounded-box grid h-16 flex-grow place-items-center"> <div> <div class="flex justify-center my-cate">标签</div> <div class="flex justify-center my-number">11</div> </div> </div> </div> <div class="flex justify-between"> <div> <button class="btn btn-sm btn-outline btn-primary">首页</button> </div> <div> <button class="btn btn-sm btn-outline btn-primary">归档</button> </div> <div> <button class="btn btn-sm btn-outline btn-primary">关于</button> </div> </div> <div class="decoration-wavy italic text-center my-yy">年少不得之物,终将困其一生</div> </div> </div> <div class="mt-6" data-astro-cid-bvzihdzo> <div class="card bg-color  shadow-xl"> <div class="card-body"> <h2 class="card-title">标签云预留点</h2> <p> 后续你打算做点什么?</p> </div> </div> </div> </div> <!-- 右侧列表或者内容 --> <div class="w-4/6 ml-4 mb-8" data-astro-cid-bvzihdzo> <article data-astro-cid-bvzihdzo> <div class="card  bg-color shadow-xl" data-astro-cid-bvzihdzo> <div class="card-body items-center" data-astro-cid-bvzihdzo> <div class="prose" data-astro-cid-bvzihdzo> <div class="title" data-astro-cid-bvzihdzo> <div class="date" data-astro-cid-bvzihdzo> <time datetime="2024-07-14T15:27:25.000Z"> Jul 14, 2024 </time>  </div> <h1 class="title" data-astro-cid-bvzihdzo>重写自己脚手架工具之旅</h1> <hr data-astro-cid-bvzihdzo> </div> <div data-astro-cid-bvzihdzo>  <p>回首往昔，无趣的过往。没有任何精彩的事情发生，只有空的躯壳像NPC一样再运作。上一次写我的脚手架工具已经是一年前了，当时很多不成熟的思维也慢慢得到了改正，所以决定重新写一份了，毕竟每年都要好好的检查下自己嘛</p>
+<h2 id="必备项目依赖">必备项目依赖</h2>
+<p>— kolorist 控制台命令行操控颜色的脚本库
+— minimist 参数解析器 类似 mw create —template 这种
+— prompts 一个提示用户选择的库
+— unbuild 构建工具</p>
+<h2 id="开始编写">开始编写</h2>
+<p>安装我们所需要使用到的依赖</p>
+<pre class="mockup-code" style="background-color:#0b0e14;color:#bfbdb6; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#59C2FF">pnpm</span><span style="color:#AAD94C"> add</span><span style="color:#AAD94C"> kolorist</span><span style="color:#AAD94C"> minimist</span><span style="color:#AAD94C"> prompts</span><span style="color:#AAD94C"> unbuild</span><span style="color:#AAD94C"> typescript</span><span style="color:#95E6CB"> -D</span></span>
+<span class="line"></span></code></pre>
+<p>初始化<strong>tsconfig.json</strong></p>
+<pre class="mockup-code" style="background-color:#0b0e14;color:#bfbdb6; overflow-x: auto;" tabindex="0" data-language="json"><code><span class="line"></span>
+<span class="line"><span style="color:#BFBDB6">{</span></span>
+<span class="line"><span style="color:#39BAE6">  "compilerOptions"</span><span style="color:#BFBDB6B3">:</span><span style="color:#BFBDB6"> {</span></span>
+<span class="line"><span style="color:#39BAE6">    "target"</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "ES2022"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#39BAE6">    "module"</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "ES2020"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#39BAE6">    "outDir"</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "lib"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#39BAE6">    "moduleResolution"</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "bundler"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#39BAE6">    "strict"</span><span style="color:#BFBDB6B3">:</span><span style="color:#D2A6FF"> true</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#39BAE6">    "skipLibCheck"</span><span style="color:#BFBDB6B3">:</span><span style="color:#D2A6FF"> true</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#39BAE6">    "declaration"</span><span style="color:#BFBDB6B3">:</span><span style="color:#D2A6FF"> false</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#39BAE6">    "sourceMap"</span><span style="color:#BFBDB6B3">:</span><span style="color:#D2A6FF"> false</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#39BAE6">    "noUnusedLocals"</span><span style="color:#BFBDB6B3">:</span><span style="color:#D2A6FF"> true</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#39BAE6">    "esModuleInterop"</span><span style="color:#BFBDB6B3">:</span><span style="color:#D2A6FF"> true</span></span>
+<span class="line"><span style="color:#BFBDB6">  }</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#39BAE6">  "exclude"</span><span style="color:#BFBDB6B3">:</span><span style="color:#BFBDB6"> [</span><span style="color:#AAD94C">"template"</span><span style="color:#BFBDB6B3">,</span><span style="color:#AAD94C"> "lib"</span><span style="color:#BFBDB6">]</span></span>
+<span class="line"><span style="color:#BFBDB6">}</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"></span></code></pre>
+<p>整理合理的项目目录
+<img src="http://img.blog.loli.wang/2024-07-13-cliCreate2/01.png" alt="1"></p>
+<p>编写 unbuild 的配置文件</p>
+<pre class="mockup-code" style="background-color:#0b0e14;color:#bfbdb6; overflow-x: auto;" tabindex="0" data-language="ts"><code><span class="line"><span style="color:#ACB6BF8C;font-style:italic">// build.config.ts</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FF8F40">import</span><span style="color:#BFBDB6"> { defineBuildConfig } </span><span style="color:#FF8F40">from</span><span style="color:#AAD94C"> 'unbuild'</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FF8F40">export</span><span style="color:#FF8F40"> default</span><span style="color:#FFB454"> defineBuildConfig</span><span style="color:#BFBDB6">({</span></span>
+<span class="line"><span style="color:#BFBDB6">  entries</span><span style="color:#BFBDB6B3">:</span><span style="color:#BFBDB6"> [</span></span>
+<span class="line"><span style="color:#AAD94C">    "./src/index"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">  ]</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">  outDir</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "lib"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">  declaration</span><span style="color:#BFBDB6B3">:</span><span style="color:#D2A6FF"> true</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">})</span><span style="color:#BFBDB6B3">;</span></span>
+<span class="line"></span>
+<span class="line"></span></code></pre>
+<p>修改package.json 修改Bin软链接指令，编写unbuild的本地打包测试指令</p>
+<pre class="mockup-code" style="background-color:#0b0e14;color:#bfbdb6; overflow-x: auto;" tabindex="0" data-language="json"><code><span class="line"><span style="color:#BFBDB6">{</span></span>
+<span class="line"><span style="color:#39BAE6">  "name"</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "create-mw"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#39BAE6">  "version"</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "1.0.0"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#39BAE6">  "type"</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "module"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#39BAE6">  "scripts"</span><span style="color:#BFBDB6B3">:</span><span style="color:#BFBDB6"> {</span></span>
+<span class="line"><span style="color:#39BAE6">    "dev"</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "npx  unbuild --stub"</span></span>
+<span class="line"><span style="color:#BFBDB6">  }</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#39BAE6">  "bin"</span><span style="color:#BFBDB6B3">:</span><span style="color:#BFBDB6"> {</span></span>
+<span class="line"><span style="color:#39BAE6">    "cre"</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C">"index.js"</span></span>
+<span class="line"><span style="color:#BFBDB6">  }</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#39BAE6">  "keywords"</span><span style="color:#BFBDB6B3">:</span><span style="color:#BFBDB6"> []</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#39BAE6">  "author"</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> ""</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#39BAE6">  "license"</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "MIT"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#39BAE6">  "engines"</span><span style="color:#BFBDB6B3">:</span><span style="color:#BFBDB6"> {</span></span>
+<span class="line"><span style="color:#39BAE6">    "node"</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "^18.0.0 || >=20.0.0"</span></span>
+<span class="line"><span style="color:#BFBDB6">  }</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#39BAE6">  "devDependencies"</span><span style="color:#BFBDB6B3">:</span><span style="color:#BFBDB6"> {</span></span>
+<span class="line"><span style="color:#39BAE6">    "@types/minimist"</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "^1.2.5"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#39BAE6">    "@types/node"</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "^20.14.10"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#39BAE6">    "kolorist"</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "^1.8.0"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#39BAE6">    "minimist"</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "^1.2.8"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#39BAE6">    "prompts"</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "^2.4.2"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#39BAE6">    "tsx"</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "^4.16.2"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#39BAE6">    "typescript"</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "^5.5.3"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#39BAE6">    "unbuild"</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "^2.0.0"</span></span>
+<span class="line"><span style="color:#BFBDB6">  }</span></span>
+<span class="line"><span style="color:#BFBDB6">}</span></span>
+<span class="line"></span></code></pre>
+<p>修改<strong>index.js</strong> 入口文件代码让他指向我们打包出来的js文件</p>
+<pre class="mockup-code" style="background-color:#0b0e14;color:#bfbdb6; overflow-x: auto;" tabindex="0" data-language="jsx"><code><span class="line"><span style="color:#ACB6BF8C;font-style:italic">#!/usr/bin/env node</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FF8F40">import</span><span style="color:#AAD94C"> './lib/index.mjs'</span></span>
+<span class="line"></span></code></pre>
+<p>打包后，<strong>npm link</strong> 后测试下是否正常，执行命令cre 看看是否正常</p>
+<p><img src="http://img.blog.loli.wang/2024-07-13-cliCreate2/02.png" alt="2"></p>
+<p>然后我们使用<strong>minimist</strong> 来进行一个参数解析。 解析后让他成为能够获取 cre —template 获取这种在命令里的参数</p>
+<pre class="mockup-code" style="background-color:#0b0e14;color:#bfbdb6; overflow-x: auto;" tabindex="0" data-language="ts"><code><span class="line"><span style="color:#ACB6BF8C;font-style:italic">// 参数解析器</span></span>
+<span class="line"><span style="color:#FF8F40">const</span><span style="color:#BFBDB6"> argv </span><span style="color:#F29668">=</span><span style="color:#FFB454"> minimist</span><span style="color:#BFBDB6">(process</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">argv</span><span style="color:#F29668">.</span><span style="color:#FFB454">slice</span><span style="color:#BFBDB6">(</span><span style="color:#D2A6FF">2</span><span style="color:#BFBDB6">)</span><span style="color:#BFBDB6B3">,</span><span style="color:#BFBDB6"> {})</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#BFBDB6">console</span><span style="color:#F29668">.</span><span style="color:#FFB454">log</span><span style="color:#BFBDB6">(argv)</span><span style="color:#BFBDB6B3">;</span></span>
+<span class="line"></span>
+<span class="line"></span></code></pre>
+<p><img src="http://img.blog.loli.wang/2024-07-13-cliCreate2/04.png" alt="2">
+<img src="http://img.blog.loli.wang/2024-07-13-cliCreate2/03.png" alt="2"></p>
+<pre class="mockup-code" style="background-color:#0b0e14;color:#bfbdb6; overflow-x: auto;" tabindex="0" data-language="jsx"><code><span class="line"><span style="color:#FF8F40">import</span><span style="color:#BFBDB6"> minimist </span><span style="color:#FF8F40">from</span><span style="color:#AAD94C"> "minimist"</span><span style="color:#BFBDB6B3">;</span></span>
+<span class="line"><span style="color:#FF8F40">import</span><span style="color:#BFBDB6"> prompts </span><span style="color:#FF8F40">from</span><span style="color:#AAD94C"> "prompts"</span><span style="color:#BFBDB6B3">;</span></span>
+<span class="line"><span style="color:#FF8F40">import</span><span style="color:#BFBDB6"> {</span></span>
+<span class="line"><span style="color:#BFBDB6">  blue</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">  cyan</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">  green</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">  lightBlue</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">  lightGreen</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">  lightRed</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">  magenta</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">  red</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">  reset</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">  yellow</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">} </span><span style="color:#FF8F40">from</span><span style="color:#AAD94C"> "kolorist"</span><span style="color:#BFBDB6B3">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#ACB6BF8C;font-style:italic">// 参数解析器 方便解析我们需要的</span></span>
+<span class="line"><span style="color:#FF8F40">const</span><span style="color:#BFBDB6"> argv </span><span style="color:#F29668">=</span><span style="color:#FFB454"> minimist</span><span style="color:#BFBDB6">(process</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">argv</span><span style="color:#F29668">.</span><span style="color:#FFB454">slice</span><span style="color:#BFBDB6">(</span><span style="color:#D2A6FF">2</span><span style="color:#BFBDB6">)</span><span style="color:#BFBDB6B3">,</span><span style="color:#BFBDB6"> {})</span><span style="color:#BFBDB6B3">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#BFBDB6">console</span><span style="color:#F29668">.</span><span style="color:#FFB454">log</span><span style="color:#BFBDB6">(argv)</span><span style="color:#BFBDB6B3">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#ACB6BF8C;font-style:italic">//  获取项目路径</span></span>
+<span class="line"><span style="color:#FF8F40">const</span><span style="color:#BFBDB6"> cwd </span><span style="color:#F29668">=</span><span style="color:#BFBDB6"> process</span><span style="color:#F29668">.</span><span style="color:#FFB454">cwd</span><span style="color:#BFBDB6">()</span><span style="color:#BFBDB6B3">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#BFBDB6">console</span><span style="color:#F29668">.</span><span style="color:#FFB454">log</span><span style="color:#BFBDB6">(cwd)</span><span style="color:#BFBDB6B3">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#ACB6BF8C;font-style:italic">// prettier-ignore</span></span>
+<span class="line"><span style="color:#FF8F40">const</span><span style="color:#BFBDB6"> helpMessage </span><span style="color:#F29668">=</span><span style="color:#AAD94C"> `</span><span style="color:#95E6CB">\</span></span>
+<span class="line"><span style="color:#AAD94C">Usage: create-vite [OPTION]... [DIRECTORY]</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#AAD94C">Create a new Vite project in JavaScript or TypeScript.</span></span>
+<span class="line"><span style="color:#AAD94C">With no arguments, start the CLI in interactive mode.</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#AAD94C">Options:</span></span>
+<span class="line"><span style="color:#AAD94C">  -t, --template NAME        use a specific template</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#AAD94C">Available templates:</span></span>
+<span class="line"><span style="color:#FF8F40">${</span><span style="color:#FFB454">yellow</span><span style="color:#BFBDB6">   (</span><span style="color:#AAD94C">'vanilla-ts     vanilla'</span><span style="color:#BFBDB6">  )</span><span style="color:#FF8F40">}</span></span>
+<span class="line"><span style="color:#FF8F40">${</span><span style="color:#FFB454">green</span><span style="color:#BFBDB6">    (</span><span style="color:#AAD94C">'vue-ts         vue'</span><span style="color:#BFBDB6">      )</span><span style="color:#FF8F40">}</span></span>
+<span class="line"><span style="color:#FF8F40">${</span><span style="color:#FFB454">cyan</span><span style="color:#BFBDB6">     (</span><span style="color:#AAD94C">'react-ts       react'</span><span style="color:#BFBDB6">    )</span><span style="color:#FF8F40">}</span></span>
+<span class="line"><span style="color:#FF8F40">${</span><span style="color:#FFB454">cyan</span><span style="color:#BFBDB6">     (</span><span style="color:#AAD94C">'react-swc-ts   react-swc'</span><span style="color:#BFBDB6">)</span><span style="color:#FF8F40">}</span></span>
+<span class="line"><span style="color:#FF8F40">${</span><span style="color:#FFB454">magenta</span><span style="color:#BFBDB6">  (</span><span style="color:#AAD94C">'preact-ts      preact'</span><span style="color:#BFBDB6">   )</span><span style="color:#FF8F40">}</span></span>
+<span class="line"><span style="color:#FF8F40">${</span><span style="color:#FFB454">lightRed</span><span style="color:#BFBDB6"> (</span><span style="color:#AAD94C">'lit-ts         lit'</span><span style="color:#BFBDB6">      )</span><span style="color:#FF8F40">}</span></span>
+<span class="line"><span style="color:#FF8F40">${</span><span style="color:#FFB454">red</span><span style="color:#BFBDB6">      (</span><span style="color:#AAD94C">'svelte-ts      svelte'</span><span style="color:#BFBDB6">   )</span><span style="color:#FF8F40">}</span></span>
+<span class="line"><span style="color:#FF8F40">${</span><span style="color:#FFB454">blue</span><span style="color:#BFBDB6">     (</span><span style="color:#AAD94C">'solid-ts       solid'</span><span style="color:#BFBDB6">    )</span><span style="color:#FF8F40">}</span></span>
+<span class="line"><span style="color:#FF8F40">${</span><span style="color:#FFB454">lightBlue</span><span style="color:#BFBDB6">(</span><span style="color:#AAD94C">'qwik-ts        qwik'</span><span style="color:#BFBDB6">     )</span><span style="color:#FF8F40">}</span><span style="color:#AAD94C">`</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FF8F40">const</span><span style="color:#BFBDB6"> FRAMEWORKS </span><span style="color:#F29668">=</span><span style="color:#BFBDB6"> [</span></span>
+<span class="line"><span style="color:#BFBDB6">  {</span></span>
+<span class="line"><span style="color:#BFBDB6">    name</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "vanilla"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">    display</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "Vanilla"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">    color</span><span style="color:#BFBDB6B3">:</span><span style="color:#BFBDB6"> yellow</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">    variants</span><span style="color:#BFBDB6B3">:</span><span style="color:#BFBDB6"> [</span></span>
+<span class="line"><span style="color:#BFBDB6">      {</span></span>
+<span class="line"><span style="color:#BFBDB6">        name</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "vanilla-ts"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">        display</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "TypeScript"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">        color</span><span style="color:#BFBDB6B3">:</span><span style="color:#BFBDB6"> blue</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">      }</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">      {</span></span>
+<span class="line"><span style="color:#BFBDB6">        name</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "vanilla"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">        display</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "JavaScript"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">        color</span><span style="color:#BFBDB6B3">:</span><span style="color:#BFBDB6"> yellow</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">      }</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">    ]</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">  }</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">  {</span></span>
+<span class="line"><span style="color:#BFBDB6">    name</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "solid"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">    display</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "Solid"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">    color</span><span style="color:#BFBDB6B3">:</span><span style="color:#BFBDB6"> blue</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">    variants</span><span style="color:#BFBDB6B3">:</span><span style="color:#BFBDB6"> [</span></span>
+<span class="line"><span style="color:#BFBDB6">      {</span></span>
+<span class="line"><span style="color:#BFBDB6">        name</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "solid-ts"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">        display</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "TypeScript"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">        color</span><span style="color:#BFBDB6B3">:</span><span style="color:#BFBDB6"> blue</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">      }</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">      {</span></span>
+<span class="line"><span style="color:#BFBDB6">        name</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "solid"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">        display</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "JavaScript"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">        color</span><span style="color:#BFBDB6B3">:</span><span style="color:#BFBDB6"> yellow</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">      }</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">    ]</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">  }</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">]</span><span style="color:#BFBDB6B3">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#ACB6BF8C;font-style:italic">// 将 FRAMEWORKS 中存在的variants转换成一维数组 并转换成一维数组</span></span>
+<span class="line"><span style="color:#FF8F40">const</span><span style="color:#BFBDB6"> TEMPLATES </span><span style="color:#F29668">=</span><span style="color:#BFBDB6"> FRAMEWORKS</span><span style="color:#F29668">.</span><span style="color:#FFB454">map</span><span style="color:#BFBDB6">(</span></span>
+<span class="line"><span style="color:#BFBDB6">  (</span><span style="color:#D2A6FF">item</span><span style="color:#BFBDB6">) </span><span style="color:#FF8F40">=></span><span style="color:#BFBDB6"> (item</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">variants </span><span style="color:#F29668">&#x26;&#x26;</span><span style="color:#BFBDB6"> item</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">variants</span><span style="color:#F29668">.</span><span style="color:#FFB454">map</span><span style="color:#BFBDB6">((</span><span style="color:#D2A6FF">v</span><span style="color:#BFBDB6">) </span><span style="color:#FF8F40">=></span><span style="color:#BFBDB6"> v</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">name)) </span><span style="color:#F29668">||</span><span style="color:#BFBDB6"> [item</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">name]</span></span>
+<span class="line"><span style="color:#BFBDB6">)</span><span style="color:#F29668">.</span><span style="color:#FFB454">flat</span><span style="color:#BFBDB6">(</span><span style="color:#D2A6FF">Infinity</span><span style="color:#BFBDB6">)</span><span style="color:#BFBDB6B3">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#ACB6BF8C;font-style:italic">// 默认文件名</span></span>
+<span class="line"><span style="color:#FF8F40">const</span><span style="color:#BFBDB6"> defaultTargetDir </span><span style="color:#F29668">=</span><span style="color:#AAD94C"> "cre-Project"</span><span style="color:#BFBDB6B3">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#ACB6BF8C;font-style:italic">// 初始化函数</span></span>
+<span class="line"><span style="color:#FF8F40">const</span><span style="color:#FFB454"> init</span><span style="color:#F29668"> =</span><span style="color:#FF8F40"> async</span><span style="color:#BFBDB6"> () </span><span style="color:#FF8F40">=></span><span style="color:#BFBDB6"> {</span></span>
+<span class="line"><span style="color:#FF8F40">  try</span><span style="color:#BFBDB6"> {</span></span>
+<span class="line"><span style="color:#ACB6BF8C;font-style:italic">    // prompts</span></span>
+<span class="line"><span style="color:#FF8F40">    const</span><span style="color:#BFBDB6"> result </span><span style="color:#F29668">=</span><span style="color:#FF8F40"> await</span><span style="color:#FFB454"> prompts</span><span style="color:#BFBDB6">([</span></span>
+<span class="line"><span style="color:#BFBDB6">      {</span></span>
+<span class="line"><span style="color:#BFBDB6">        type</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "text"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">        name</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "projectName"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">        message</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "Project name:"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">        initial</span><span style="color:#BFBDB6B3">:</span><span style="color:#BFBDB6"> defaultTargetDir</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">      }</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">      {</span></span>
+<span class="line"><span style="color:#BFBDB6">        type</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "select"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">        name</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "overwrite"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">        message</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "Current directory"</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">        initial</span><span style="color:#BFBDB6B3">:</span><span style="color:#D2A6FF"> 0</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">        choices</span><span style="color:#BFBDB6B3">:</span><span style="color:#BFBDB6"> [</span></span>
+<span class="line"><span style="color:#BFBDB6">          {</span></span>
+<span class="line"><span style="color:#BFBDB6">            title</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> 'Remove existing files and continue'</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">            value</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> 'yes'</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">          }</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">          {</span></span>
+<span class="line"><span style="color:#BFBDB6">            title</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> 'Cancel operation'</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">            value</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> 'no'</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">          }</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">          {</span></span>
+<span class="line"><span style="color:#BFBDB6">            title</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> 'Ignore files and continue'</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">            value</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> 'ignore'</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">          }</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">        ]</span><span style="color:#BFBDB6B3">,</span></span>
+<span class="line"><span style="color:#BFBDB6">      }</span></span>
+<span class="line"><span style="color:#BFBDB6">    ])</span><span style="color:#BFBDB6B3">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#BFBDB6">    console</span><span style="color:#F29668">.</span><span style="color:#FFB454">log</span><span style="color:#BFBDB6">(result)</span><span style="color:#BFBDB6B3">;</span></span>
+<span class="line"><span style="color:#BFBDB6">  } </span><span style="color:#FF8F40">catch</span><span style="color:#BFBDB6"> (error) {</span></span>
+<span class="line"><span style="color:#BFBDB6">    console</span><span style="color:#F29668">.</span><span style="color:#FFB454">log</span><span style="color:#BFBDB6">(error)</span><span style="color:#BFBDB6B3">;</span></span>
+<span class="line"><span style="color:#BFBDB6">  }</span></span>
+<span class="line"><span style="color:#BFBDB6">}</span><span style="color:#BFBDB6B3">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFB454">init</span><span style="color:#BFBDB6">()</span><span style="color:#BFBDB6B3">;</span></span>
+<span class="line"></span>
+<span class="line"></span></code></pre>
+<p>没写完 临时有别的东西要写，下次更新。。。。</p>  </div> </div> </div> </div> </article> </div> </div> </div>  </div> <footer data-astro-cid-sz7xmlte>
+&copy; 2024 Your name here. All rights reserved.
+<div class="social-links" data-astro-cid-sz7xmlte> <a href="https://m.webtoo.ls/@astro" target="_blank" data-astro-cid-sz7xmlte> <span class="sr-only" data-astro-cid-sz7xmlte>Follow Astro on Mastodon</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/mastodon" data-astro-cid-sz7xmlte><path fill="currentColor" d="M11.19 12.195c2.016-.24 3.77-1.475 3.99-2.603.348-1.778.32-4.339.32-4.339 0-3.47-2.286-4.488-2.286-4.488C12.062.238 10.083.017 8.027 0h-.05C5.92.017 3.942.238 2.79.765c0 0-2.285 1.017-2.285 4.488l-.002.662c-.004.64-.007 1.35.011 2.091.083 3.394.626 6.74 3.78 7.57 1.454.383 2.703.463 3.709.408 1.823-.1 2.847-.647 2.847-.647l-.06-1.317s-1.303.41-2.767.36c-1.45-.05-2.98-.156-3.215-1.928a3.614 3.614 0 0 1-.033-.496s1.424.346 3.228.428c1.103.05 2.137-.064 3.188-.189zm1.613-2.47H11.13v-4.08c0-.859-.364-1.295-1.091-1.295-.804 0-1.207.517-1.207 1.541v2.233H7.168V5.89c0-1.024-.403-1.541-1.207-1.541-.727 0-1.091.436-1.091 1.296v4.079H3.197V5.522c0-.859.22-1.541.66-2.046.456-.505 1.052-.764 1.793-.764.856 0 1.504.328 1.933.983L8 4.39l.417-.695c.429-.655 1.077-.983 1.934-.983.74 0 1.336.259 1.791.764.442.505.661 1.187.661 2.046v4.203z" data-astro-cid-sz7xmlte></path></svg> </a> <a href="https://twitter.com/astrodotbuild" target="_blank" data-astro-cid-sz7xmlte> <span class="sr-only" data-astro-cid-sz7xmlte>Follow Astro on Twitter</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/twitter" data-astro-cid-sz7xmlte><path fill="currentColor" d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" data-astro-cid-sz7xmlte></path></svg> </a> <a href="https://github.com/withastro/astro" target="_blank" data-astro-cid-sz7xmlte> <span class="sr-only" data-astro-cid-sz7xmlte>Go to Astro's GitHub repo</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/github" data-astro-cid-sz7xmlte><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" data-astro-cid-sz7xmlte></path></svg> </a> </div> </footer>  </div> </div> </main> </body></html>

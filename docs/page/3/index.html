@@ -1,0 +1,979 @@
+<!DOCTYPE html><html lang="en"> <head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v4.12.2"><!-- Font preloads --><link rel="preload" href="/fonts/atkinson-regular.woff" as="font" type="font/woff" crossorigin><link rel="preload" href="/fonts/atkinson-bold.woff" as="font" type="font/woff" crossorigin><!-- Canonical URL --><link rel="canonical" href="https://example.com/page/3/"><!-- Primary Meta Tags --><title>魔王 の 博客</title><meta name="title" content="魔王 の 博客"><meta name="description" content="魔王 の部落阁"><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://example.com/page/3/"><meta property="og:title" content="魔王 の 博客"><meta property="og:description" content="魔王 の部落阁"><meta property="og:image" content="https://example.com/blog-placeholder-1.jpg"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://example.com/page/3/"><meta property="twitter:title" content="魔王 の 博客"><meta property="twitter:description" content="魔王 の部落阁"><meta property="twitter:image" content="https://example.com/blog-placeholder-1.jpg"><link rel="stylesheet" href="/_astro/about.82merU4V.css">
+<style>footer[data-astro-cid-sz7xmlte]{padding:2em 1em 6em;background:linear-gradient(var(--gray-gradient)) no-repeat;color:rgb(var(--gray));text-align:center}.social-links[data-astro-cid-sz7xmlte]{display:flex;justify-content:center;gap:1em;margin-top:1em}.social-links[data-astro-cid-sz7xmlte] a[data-astro-cid-sz7xmlte]{text-decoration:none;color:rgb(var(--gray))}.social-links[data-astro-cid-sz7xmlte] a[data-astro-cid-sz7xmlte]:hover{color:rgb(var(--gray-dark))}
+</style><script type="module">function o(e){console.log("已经切换主题",e)}document.addEventListener("DOMContentLoaded",function(){const e=localStorage.getItem("theme");if(e){o(e);const t=document.querySelector(`input[value="${e}"]`);t&&(t.checked=!0)}});
+</script></head> <body> <header class="w-full fixed z-10 header-theme hover:shadow-md transition ease-in-out delay duration-300"> <nav class="flex items-center justify-center  w-full "> <div class="text-xl leading-[80px] header-nav"> <a href="/" class="mx-2 header-nav-item" data-astro-cid-eimmu3lg> 首页 </a>  <a href="/blog" class="mx-2 header-nav-item" data-astro-cid-eimmu3lg> 归档 </a>  <a href="/about" class="mx-2 header-nav-item" data-astro-cid-eimmu3lg> 关于 </a>  <a href="/link" class="mx-2 header-nav-item" data-astro-cid-eimmu3lg> 友链 </a>  </div> <div class="flex items-center"> <a href="https://m.webtoo.ls/@astro" class="ml-2 mr-2" target="_blank"> <span class="sr-only">Follow Astro on Mastodon</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="16" height="16"><path fill="currentColor" d="M11.19 12.195c2.016-.24 3.77-1.475 3.99-2.603.348-1.778.16-4.339.16-4.339 0-3.47-2.286-4.488-2.286-4.488C12.062.238 10.083.017 8.027 0h-.05C5.92.017 3.942.238 2.79.765c0 0-2.285 1.017-2.285 4.488l-.002.662c-.004.64-.007 1.35.011 2.091.083 3.394.626 6.74 3.78 7.57 1.454.383 2.703.463 3.709.408 1.823-.1 2.847-.647 2.847-.647l-.06-1.317s-1.303.41-2.767.36c-1.45-.05-2.98-.156-3.215-1.928a3.614 3.614 0 0 1-.033-.496s1.424.346 3.228.428c1.103.05 2.137-.064 3.188-.189zm1.613-2.47H11.13v-4.08c0-.859-.364-1.295-1.091-1.295-.804 0-1.207.517-1.207 1.541v2.233H7.168V5.89c0-1.024-.403-1.541-1.207-1.541-.727 0-1.091.436-1.091 1.296v4.079H3.197V5.522c0-.859.22-1.541.66-2.046.456-.505 1.052-.764 1.793-.764.856 0 1.504.168 1.933.983L8 4.39l.417-.695c.429-.655 1.077-.983 1.934-.983.74 0 1.336.259 1.791.764.442.505.661 1.187.661 2.046v4.203z"></path></svg> </a> <a href="https://twitter.com/astrodotbuild" class="mr-2" target="_blank"> <span class="sr-only">Follow Astro on Twitter</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="16" height="16"><path fill="currentColor" d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.165 9.165 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.163 3.163 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.616 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.16 6.16 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path></svg> </a> <a href="https://github.com/withastro/astro" class="mr-2" target="_blank"> <span class="sr-only">Go to Astro's GitHub repo</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="16" height="16"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.16-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> </a> </div> </nav> </header> <main> <div class="relative"> <div class="bg-urls bg-no-repeat bg-cover h-dvh bg-center relative"> <div class="absolute inset-0 bg-gradient-to-t from-white"></div> </div> <div class="absolute inset-0"> <div class="min-h-dvh">  <div class="container mx-auto"> <div class="flex pt-[120px]"> <!-- 左侧信息 --> <div class="w-2/6"> <div class="myCard card card-side bg-color shadow-xl"> <figure> <img src="https://d-sketon.top/img/_backwebp/bg26.webp" alt="Movie" class="h-full w-[200px] object-cover object-top"> </figure> <div class="card-body p-4"> <h2 class="card-title flex justify-center my-title">MoWang</h2> <div class="flex justify-center my-desc">魔王的 Blog </div> <div class="flex w-full flex-col lg:flex-row"> <div class="card rounded-box grid h-16 flex-grow place-items-center"> <div> <div class="flex justify-center my-cate">文章</div> <div class="flex justify-center my-number">11</div> </div> </div> <div class="divider sm:divider-horizontal"></div> <div class="card rounded-box grid h-16 flex-grow place-items-center"> <div> <div class="flex justify-center my-cate">分类</div> <div class="flex justify-center my-number">11</div> </div> </div> <div class="divider sm:divider-horizontal"></div> <div class="card rounded-box grid h-16 flex-grow place-items-center"> <div> <div class="flex justify-center my-cate">标签</div> <div class="flex justify-center my-number">11</div> </div> </div> </div> <div class="flex justify-between"> <div> <button class="btn btn-sm btn-outline btn-primary">首页</button> </div> <div> <button class="btn btn-sm btn-outline btn-primary">归档</button> </div> <div> <button class="btn btn-sm btn-outline btn-primary">关于</button> </div> </div> <div class="decoration-wavy italic text-center my-yy">年少不得之物,终将困其一生</div> </div> </div> <div class="mt-6"> <div class="card bg-color  shadow-xl"> <div class="card-body"> <h2 class="card-title">标签云预留点</h2> <p> 后续你打算做点什么?</p> </div> </div> </div> <div class="mt-6"> <div class="card bg-color shadow-xl"> <div class="card-body"> <h2 class="card-title">Theme</h2> <div class="form-control"> <label class="label cursor-pointer gap-4"> <span class="label-text">春</span> <input type="radio" name="theme-radios" class="radio theme-controller" value="spring"> </label> </div> <div class="form-control"> <label class="label cursor-pointer gap-4"> <span class="label-text">夏</span> <input type="radio" name="theme-radios" class="radio theme-controller" value="summer"> </label> </div> <div class="form-control"> <label class="label cursor-pointer gap-4"> <span class="label-text">秋</span> <input type="radio" name="theme-radios" class="radio theme-controller" value="autumn"> </label> </div> <div class="form-control"> <label class="label cursor-pointer gap-4"> <span class="label-text">冬</span> <input type="radio" name="theme-radios" class="radio theme-controller" value="winter"> </label> </div> </div> </div>  </div> </div> <!-- 右侧列表或者内容 --> <div class="w-4/6 mb-4"> <div class="ml-4"><a href="/blog/2024-03-29-react-2/doc/index.html" title="(使用一年React后的回顾) React 常用 Hooks"><div class="card bg-color cursor-pointer	 postCard rounded-lg w-full mb-4 shadow-xl flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"><time datetime="Mon Apr 01 2024 23:27:24 GMT+0800 (中国标准时间)">2024/4/1</time></div><div class="text-sm mr-6">0.3K字</div><div class="text-sm">122 天前</div></div></div><div class="flex justify-between items-center mt-2"><div class="w-5/6"><div class="text-2xl font-medium title line-clamp-1 leading-relaxed">(使用一年React后的回顾) React 常用 Hooks</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed"> 
+# useState
+
+**useState** 是一个 React 的 hook ，它的作用是让你向组件添加一个状态变量。
+
+```jsx
+const [state, setState] = useState(initialState);
+```
+
+useState 有两个参数
+
+1. useState 返回的第一个参数，为我们需要展示或者使用的最新的值
+2. useState 的第二个参数，这个函数是一个 set 函数，可以传入任意变量，让其 state 返回新的值。
+
+```jsx
+function App() {
+    const [num, setNum] = useState(1);
+    return (
+        &lt;div className=&quot;App&quot;&gt;
+            &lt;button onClick={() =&gt; setNum(num + 1)}&gt;{num}&lt;/button&gt;
+        &lt;/div&gt;
+    );
+}
+```
+
+# useEffect
+
+useEffect ，是副作用，副作用是指在组件在渲染期间发生的操作，如数据获取，订阅事件，手动操作 dom 等，在函数组件中，由于没有生命周期方法，我们无法再特定的时间执行这些操作，useEffect 正好解决了这个问题
+
+```jsx
+async function getData() {
+    return await new Promise((resolve, reject) =&gt; {
+        setTimeout(() =&gt; {
+            resolve(666);
+        }, 3000);
+    });
+}
+
+function App() {
+    const [num, setNum] = useState(1);
+
+    useEffect(() =&gt; {
+        getData().then((data: any) =&gt; {
+            setNum(data);
+        });
+    }, []);
+
+    return (
+        &lt;div className=&quot;App&quot;&gt;
+            &lt;button onClick={() =&gt; setNum((prevNum) =&gt; prevNum + 1)}&gt;
+                {num}
+            &lt;/button&gt;
+        &lt;/div&gt;
+    );
+}
+```
+
+# useLayoutEffect
+
+在 react 中 useLayoutEffect 和 useEffect 是差不都的，在绝大多数情况下，但是事实上是有一定的区别
+
+useEffect 会在渲染内容更新到 dom 上后执行，不会阻塞 dom 的更新
+useLayoutEffect 会在渲染更新到 dom 之前就执行，会阻塞 dom 的更新
+
+# useReducer
+
+用 useState 是直接修改值，如果想在修改值之前，执行一些操作，可以使用 useReducer
+
+```jsx
+function App() {
+
+  interface Data {
+    result: number,
+  }
+
+  interface Action {
+    type: &#39;add&#39; | &#39;minus&#39;,
+    num: number
+  }
+
+  function reducer(state: Data, action: Action) {
+    switch (action.type) {
+      case &#39;add&#39;:
+        return {
+          result: state.result + action.num
+        }
+      case &#39;minus&#39;:
+        return {
+          result: state.result - action.num
+        }
+    }
+    return state
+  }
+
+  const [res, dispatch] = useReducer&lt;Reducer&lt;Data,Action&gt;&gt;(reducer, { result: 0 })
+
+  return (
+    &lt;div className=&quot;App&quot;&gt;
+      &lt;button onClick={() =&gt; {
+        dispatch({ type: &#39;add&#39;, num: 1 })
+      }}&gt;{res.result }&lt;/button&gt;
+    &lt;/div&gt;
+  );
+}
+
+export default App;
+```
+
+# useRef
+
+useRef 用来获取 dom 节点，或者获取组件的实例
+
+```jsx
+function App() {
+    const inputRef = useRef &lt; HTMLInputElement &gt; null;
+
+    useEffect(() =&gt; {
+        inputRef.current?.focus();
+    }, []);
+
+    return (
+        &lt;div className=&quot;App&quot;&gt;
+            &lt;input type=&quot;text&quot; ref={inputRef} /&gt;
+        &lt;/div&gt;
+    );
+}
+```
+
+# forwardRef + useImperativeHandle
+
+如果想把子组件的 ref 传递给父组件使用，可以使用 forwardRef 和 useImperativeHandle
+
+比如
+
+```jsx
+import React, { useRef } from &quot;react&quot;;
+import &quot;./App.css&quot;;
+
+const childrenComponent: React.ForwardRefRenderFunction&lt;HTMLInputElement&gt; = (
+    props,
+    ref
+) =&gt; {
+    return (
+        &lt;div&gt;
+            &lt;input ref={ref}&gt;&lt;/input&gt;
+        &lt;/div&gt;
+    );
+};
+
+const Wraped = React.forwardRef(childrenComponent);
+
+function App() {
+    const ref = useRef &lt; HTMLInputElement &gt; null;
+
+    return (
+        &lt;div&gt;
+            &lt;Wraped ref={ref} /&gt;
+        &lt;/div&gt;
+    );
+}
+
+export default App;
+```
+
+
+![切图01](http://img.blog.loli.wang/2024-03-29-react-2/01.png)
+
+
+# useContext 
+
+跨任意组件传递数据，一般都会使用useContext来完成
+
+```jsx
+import React, { createContext, useContext } from &#39;react&#39;;
+import &#39;./App.css&#39;;
+
+const Context = createContext(&quot;test&quot;)
+
+const Components:React.FC = () =&gt; {
+  const value = useContext(Context)
+ return &lt;div&gt;Context的值是 {value}&lt;/div&gt;
+}
+
+function App() {
+  return &lt;Context.Provider value=&#39;222&#39;&gt;
+    &lt;div&gt;&lt;Components/&gt;&lt;/div&gt;
+  &lt;/Context.Provider&gt; 
+}
+
+export default App;
+
+```
+![切图02](http://img.blog.loli.wang/2024-03-29-react-2/02.png)
+
+![切图03](http://img.blog.loli.wang/2024-03-29-react-2/03.png)
+
+
+# memo + useMemo + useCallback
+memo : 只有组件的props发生变化的时候，才会触发组件的重新渲染，否则总是返回缓存中的结果
+
+useMemo : 一般通过减少不必要的复杂计算来优化性能,类似于计算属性
+
+useCallback : 一般用于给子组件传递回调函数时，减少子组件的渲染次数，从而优化性能。</div></div><div><img src="http://img.blog.loli.wang/2024-03-29-react-2/01.png" class="w-[500px] h-[200px] rounded-r-lg object-cover" style="clip-path:polygon(0 0,100% 0,100% 100%,20% 100%)"></div></div></div></a></div><div class="ml-4 "><a href="/blog/2024-03-25-vite-https/doc/index.html" title="Windows情况下，Vite配置https证书"><div class="card bg-color postCard mb-4 rounded-lg w-full shadow-xl cursor-pointer	 flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div><img src="http://img.blog.loli.wang/2024-03-25-vite-https/13.png" class="w-[500px] h-[200px] rounded-l-lg" style="clip-path:polygon(0 0,88% 0,100% 100%,0 100%)"></div><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"> <time datetime="Mon Mar 25 2024 23:27:24 GMT+0800 (中国标准时间)">2024/3/25</time> </div><div class="text-sm mr-6">0.3K字</div><div class="text-sm">129 天前</div></div></div><div class="flex justify-between items-center mt-2"><div><div class="text-2xl font-medium title">Windows情况下，Vite配置https证书</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed">
+# 出现问题 
+
+和往常一样，工作日工作没做完，默默地的周六来公司加班修改项目代码，周末写没人打扰写代码真的是太爽了！，感觉一切顺顺利利没什么问题。下班走的时候还心里想像 **我写的代码就是诗** 
+
+直到周一，同事问我开发环境有BUG，我还在想我写的代码怎么可能会有Bug，迅速查看问题，发现问题
+
+```jsx
+crypto.randomUUID()
+```
+
+![切图1](http://img.blog.loli.wang/2024-03-25-vite-https/01.png)
+
+我只是生成个UUID，有什么问题？？？
+
+本地开发环境下看上去也没问题啊，我对我同事产生了质疑，我以为是他浏览器的问题，但是我发现开发环境没问题，发现localhost环境地址上确实没问题，内网地址上确实这个问题，
+
+打开MDN 翻看API兼容程度，以及正常的使用操作
+
+tips
+![切图2](http://img.blog.loli.wang/2024-03-25-vite-https/02.png)
+
+我明白了问题所在，但是又不想使用第三方库，考虑在本地配置下Https
+
+
+## vite 修改 
+
+Vite 默认使用的是http 需要修改下
+
+``` bash
+# vite.config.ts
+server: {
+    https:true
+}
+```
+
+``` bash
+# package.json
+&quot;scripts&quot;:{
+    &quot;dev&quot;: &quot;vite --host&quot;
+}
+```
+
+## mkcert
+
+**mkcert** 是一个创建自签名证书的工具
+
+``` bash
+# 全局安装mkcert
+npm install -g mkcert
+```
+
+编写相应的sh脚本,方便初始化证书
+
+```sh
+#!/bin/bash
+
+DIR=&quot;./cert&quot;
+
+echo &quot;开始执行portmax cert脚本&quot;
+
+if [ ! -e $DIR ]
+then 
+     mkdir -p $DIR
+fi
+
+cd $DIR
+
+mkcert create-ca 
+
+mkcert create-cert --domains localhost 127.0.0.1 192.168.0.61
+```
+![切图3](http://img.blog.loli.wang/2024-03-25-vite-https/03.png) 
+
+##  windows 安装证书
+
+打开 cert文件夹 ，双击ca.crt 和 cert.crt , 点开后选择 **&quot;安装证书&quot;**
+
+![切图4](http://img.blog.loli.wang/2024-03-25-vite-https/04.png) 
+![切图5](http://img.blog.loli.wang/2024-03-25-vite-https/05.png) 
+
+
+但是看我们生成的证书 windows 还是不受信任的，我们需要将此证书启用信任
+
+
+
+### windows 将CA证书启用信任
+
+使用 &quot; win+R &quot; 打开运行对话框。输入 &quot;mmc&quot; 然后回车
+
+选择 左上角 &quot;文件&quot;，选择管理或删除管理单元
+
+![切图6](http://img.blog.loli.wang/2024-03-25-vite-https/06.png) 
+
+在 **&quot;管理或删除管理单元&quot;** 选择证书，并**添加证书**，回到**mmc**控制台
+
+![切图7](http://img.blog.loli.wang/2024-03-25-vite-https/07.png) 
+
+![切图8](http://img.blog.loli.wang/2024-03-25-vite-https/08.png) 
+
+选择 **受信任的根证书颁发机构**，然后选择**证书**, 右键选择**任务**， 导入我们项目文件里的证书
+
+
+![切图9](http://img.blog.loli.wang/2024-03-25-vite-https/09.png) 
+
+![切图10](http://img.blog.loli.wang/2024-03-25-vite-https/10.png) 
+
+接下来就重回上面的步骤 双击ca.crt 和 cert.crt ，然后点击安装证书，可以看到当前证书是受信任的了，导入选择 **本地计算机**
+
+![切图11](http://img.blog.loli.wang/2024-03-25-vite-https/11.png) 
+
+
+
+### vite中验证证书是否生效
+
+修改 vite.config.ts
+
+```tsx
+server: { 
+ https: {
+   cert: fs.readFileSync(path.join(__dirname, &#39;keys/cert.crt&#39;)),
+   key: fs.readFileSync(path.join(__dirname, &#39;keys/cert.key&#39;)),
+ },
+}
+
+```
+
+
+
+![切图12](http://img.blog.loli.wang/2024-03-25-vite-https/12.png)
+
+
+验证成功
+
+![切图13](http://img.blog.loli.wang/2024-03-25-vite-https/13.png)
+![切图14](http://img.blog.loli.wang/2024-03-25-vite-https/14.png)
+
+
+### 后续。
+
+虽然可以本地可以https了，但是去同事那边访问，也要去他那边导入证书 这样会显得很麻烦，因为是开发环境，做不了什么很好的操作，所以还是不用浏览器的生成 UUID的API了 。
+
+还有，如果是为了本地测试，并且是Vite的话，完全没必要使用 **mkcert** , 有相关的Vite插件。
+
+  [vite-plugin-basic-ssl](https://github.com/vitejs/vite-plugin-basic-ssl) 
+
+
+
+### 相关资料
+  [vite-plugin-basic-ssl](https://github.com/vitejs/vite-plugin-basic-ssl) 
+  [mkcert](https://www.npmjs.com/package/mkcert#create-a-certificate) 
+</div></div></div></div></a></div><div class="ml-4"><a href="/blog/2024-02-04-iconifycss/doc/index.html" title="tailwindcss中iconify的使用"><div class="card bg-color cursor-pointer	 postCard rounded-lg w-full mb-4 shadow-xl flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"><time datetime="Sun Feb 04 2024 23:27:24 GMT+0800 (中国标准时间)">2024/2/4</time></div><div class="text-sm mr-6">0.1K字</div><div class="text-sm">179 天前</div></div></div><div class="flex justify-between items-center mt-2"><div class="w-5/6"><div class="text-2xl font-medium title line-clamp-1 leading-relaxed">tailwindcss中iconify的使用</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed"> 
+## 起因
+
+最近正在业余时间编写 Vue 的组件库, 设计完按钮组件后正准备设计 Icon 组件，看大佬 antfu 巨佬的支持过的 iconify 组件库，发现 iconify 的使用方法和我之前使用的 iconfont、font-awesome 等图标库的使用方法完全一致，于是决定使用 iconify 来替换 iconfont、font-awesome 等图标库。
+
+## iconify 的介绍
+
+iconify 是基于 SVG 的图标库，可以使用 iconify 来替换 iconfont、font-awesome 等图标库。拥有市面上所有的流行图标库。
+
+## 个人使用场景
+
+`tailwindcss` 和 `vue3`
+
+## 使用
+
+安装
+
+```bash
+pnpm add @iconify-json/mdi-light --D
+```
+
+安装 tailwind 插件
+
+```bash
+pnpm add @iconify/tailwind -D
+```
+
+tailwindcss 中使用
+
+```cjs
+import { addDynamicIconSelectors } from &#39;@iconify/tailwind&#39;
+
+{
+    &quot;plugins&quot;: [
+        addDynamicIconSelectors()
+    ]
+}
+```
+
+代码中使用
+
+```jsx
+
+ &lt;span class=&quot;icon-[mdi-light--home]&quot; /&gt;
+
+```
+
+
+成功演示 
+
+![切图2](http://img.blog.loli.wang/2024-02-04-iconifycss/02.png)
+
+
+### 如果你不喜欢 tailwindcss 的插件，也可以使用原生的代码或者vue代码使用
+
+```jsx
+// vue代码
+import { Icon } from &#39;@iconify/vue&#39;
+
+&lt;Icon icon=&quot;mdi-light:home&quot; /&gt;
+```
+
+
+## 相关资料
+
+
+  [iconify 官方文档](https://iconify.design/)
+  [tailwindcss 如何使用 入口文档](https://github.com/iconify/iconify/tree/main/plugins/tailwind)</div></div><div><img src="http://img.blog.loli.wang/2024-02-04-iconifycss/01.png" class="w-[500px] h-[200px] rounded-r-lg object-cover" style="clip-path:polygon(0 0,100% 0,100% 100%,20% 100%)"></div></div></div></a></div><div class="ml-4 "><a href="/blog/2024-01-24-vuecomponentserrorisce/doc/index.html" title="Vue3 打包组件库出错 Cannot read properties of null (reading 'isCE')"><div class="card bg-color postCard mb-4 rounded-lg w-full shadow-xl cursor-pointer	 flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div><img src="http://img.blog.loli.wang/2024-01-24-vueComponentsErrorIsCe/01.png" class="w-[500px] h-[200px] rounded-l-lg" style="clip-path:polygon(0 0,88% 0,100% 100%,0 100%)"></div><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"> <time datetime="Wed Jan 24 2024 23:27:24 GMT+0800 (中国标准时间)">2024/1/24</time> </div><div class="text-sm mr-6">0.0K字</div><div class="text-sm">190 天前</div></div></div><div class="flex justify-between items-center mt-2"><div><div class="text-2xl font-medium title">Vue3 打包组件库出错 Cannot read properties of null (reading &#39;isCE&#39;)</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed">
+写了套 React 的组件库后，觉着无法满足自己的需求，又删了重写了。。 从搭建 Monorepo，到编写组件测试的时候就发现了问题。
+
+![切图1](http://img.blog.loli.wang/2024-01-24-vueComponentsErrorIsCe/01.png)
+
+原因
+
+造成这个问题是因为又 2 个不同的 vue 版本，因为我打包的组件库内有个 vue 的版本，而靶场用例上也有个 vue 版本，2 个 vue 版本产生冲突，导致这个错误
+
+解决方案
+
+组件库内部屏蔽 vue 导出,修改 vite.config.ts
+
+```bash
+# vite.config.ts
+
+rollupOptions: {
+    external: [&#39;vue&#39;],
+    output: {
+      globals: {
+        vue: &#39;Vue&#39;,
+      },
+    },
+ },
+
+```
+
+
+成功解决</div></div></div></div></a></div><div class="ml-4"><a href="/blog/2024-01-20-typeofkeyof/doc/index.html" title="TS 中 keyof 和 typeof"><div class="card bg-color cursor-pointer	 postCard rounded-lg w-full mb-4 shadow-xl flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"><time datetime="Sun Jan 21 2024 23:27:24 GMT+0800 (中国标准时间)">2024/1/21</time></div><div class="text-sm mr-6">0.1K字</div><div class="text-sm">193 天前</div></div></div><div class="flex justify-between items-center mt-2"><div class="w-5/6"><div class="text-2xl font-medium title line-clamp-1 leading-relaxed">TS 中 keyof 和 typeof</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed"> 
+### keyof
+
+`keyof` 是一个类型操作符, 用于获取一个类型所有的键值(属性名的)联合类型
+
+```tsx
+interface Todo {
+  name:string,
+  age:number,
+  address:string
+}
+
+// 通过keyof 获取类型的key
+type todoKeys = keyof Todo
+
+// 获得类型的key
+const todoKeys:todoKeys = &#39;name&#39;
+
+// todoKeys的类型为 &#39;naem&#39; | &#39;age&#39; | &#39;address&#39;
+
+```
+
+
+
+## typeof 
+
+`typeof` 是一个是一个类型查询操作符,用于获取一个值,或者表达式,用于获取已有数据的数据类型
+
+```tsx
+const todo = {
+  title: &#39;Todo&#39;,
+  dataIndex: &#39;todo&#39;,
+  key: &#39;todo&#39;,
+}
+
+// 等于复制了 todo 的类型
+type TodoType = typeof todo
+
+```
+
+
+![切图1](http://img.blog.loli.wang/2024-01-20-typeofkeyof/01.png)</div></div><div><img src="http://img.blog.loli.wang/2024-01-18-tspickomit/bg.png" class="w-[500px] h-[200px] rounded-r-lg object-cover" style="clip-path:polygon(0 0,100% 0,100% 100%,20% 100%)"></div></div></div></a></div><div class="ml-4 "><a href="/blog/2024-01-20-typescriptuitls/doc/index.html" title="TS 中的常用类型 (经常需要使用的)"><div class="card bg-color postCard mb-4 rounded-lg w-full shadow-xl cursor-pointer	 flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div><img src="http://img.blog.loli.wang/2024-01-18-tspickomit/bg.png" class="w-[500px] h-[200px] rounded-l-lg" style="clip-path:polygon(0 0,88% 0,100% 100%,0 100%)"></div><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"> <time datetime="Sat Jan 20 2024 23:27:24 GMT+0800 (中国标准时间)">2024/1/20</time> </div><div class="text-sm mr-6">0.3K字</div><div class="text-sm">194 天前</div></div></div><div class="flex justify-between items-center mt-2"><div><div class="text-2xl font-medium title">TS 中的常用类型 (经常需要使用的)</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed">
+### 前言
+
+本篇介绍的是 Typescript 中经常使用的一些类型,这些类型一般都是做一个项目中经常需要用上的.
+
+### Required&lt;Type&gt;
+
+将类型`非必填`改为`必填`
+
+```tsx
+interface Todo {
+    username?: string;
+    age?: number;
+    address?: string;
+}
+
+// 正常使用情况
+const todo: Todo = {};
+
+// 整个类型都必须填写
+const todoa: Required&lt;Todo&gt; = {};
+
+// 配合Pick(选取) 选取单个属性必须填写
+const todob: Required&lt;Pick&lt;Todo, &quot;username&quot;&gt;&gt; = {};
+```
+
+![切图1](http://img.blog.loli.wang/2024-01-20-typescriptUitls/01.png)
+
+### Readonly&lt;Type&gt;
+
+将类型改为`只读`,类型中所有属性都无法被重新分配
+
+```tsx
+interface Todo {
+    title: string;
+}
+// todo 改为了只读属性
+const todo: Readonly&lt;Todo&gt; = {
+    title: &quot;魔王Blog - 一个前端程序员的个人博客&quot;,
+};
+
+// 如果重新分配将会报错
+todo.title = &quot;魔王Blog - 一个前端程序员的个人博客&quot;;
+```
+
+![切图2](http://img.blog.loli.wang/2024-01-20-typescriptUitls/02.png)
+
+### Record&lt;Keys, Type&gt;
+
+构建一个`对象类型` ,属性键名为`Keys`,属性值为`Type`
+
+```tsx
+// 简单实用 对象结构为 key value 并且类型都为string
+const value: Record&lt;string, string&gt; = {
+    name: &quot;魔王&quot;,
+    age: &quot;18&quot;,
+    address: &quot;地狱&quot;,
+};
+
+interface Info {
+    name: string;
+    age: number;
+    address: string;
+}
+
+type CityName = &quot;北京&quot; | &quot;上海&quot; | &quot;广州&quot; | &quot;深圳&quot;;
+
+// 复杂实用 对象结构为 key value 并且类型都为Info 且key只能为CityName
+const info: Record&lt;CityName, Info&gt; = {
+    北京: {
+        name: &quot;魔王&quot;,
+        age: 18,
+        address: &quot;地狱&quot;,
+    },
+    上海: {
+        name: &quot;魔王&quot;,
+        age: 18,
+        address: &quot;地狱&quot;,
+    },
+    广州: {
+        name: &quot;魔王&quot;,
+        age: 18,
+        address: &quot;地狱&quot;,
+    },
+    深圳: {
+        name: &quot;魔王&quot;,
+        age: 18,
+        address: &quot;地狱&quot;,
+    },
+};
+```
+
+![切图3](http://img.blog.loli.wang/2024-01-20-typescriptUitls/03.png)
+
+### Pick(选取,选择) 看上一篇文章
+
+https://blog.loli.wang/blog/2024-01-18-tspickomit/doc/index.html
+
+### Omit(排除) 上一篇文章
+
+https://blog.loli.wang/blog/2024-01-18-tspickomit/doc/index.html
+
+### Exclude&lt;UnionType, ExcludedMembers&gt; (排除联合类型中指定类型)
+
+Exclude 是一个工具类型,用于`排除` `联合类型`指定的类型,得到新的类型
+
+```tsx
+// 原始联合类型
+type CityName = &quot;北京&quot; | &quot;上海&quot; | &quot;广州&quot; | &quot;深圳&quot;;
+
+// 通过Exclude排除类型 &#39;北京&#39; | &#39;上海&#39;  得到新的联合类型
+type City = Exclude&lt;CityName, &quot;北京&quot; | &quot;上海&quot;&gt;;
+
+// 如果实用原有的联合类型已排除过的 会报错
+const city: City = &quot;北京&quot;;
+
+// 如果使用未排除的联合类型 会正常
+const cityName: CityName = &quot;北京&quot;;
+```
+
+![切图4](http://img.blog.loli.wang/2024-01-20-typescriptUitls/04.png)
+
+如果联合类型比较复杂 是对象类型的,也同样
+
+```tsx
+type Shape =
+  | { kind: &quot;circle&quot;; radius: number }
+  | { kind: &quot;square&quot;; x: number }
+  | { kind: &quot;triangle&quot;; x: number; y: number };
+ 
+type T3 = Exclude&lt;Shape, { kind: &quot;circle&quot; }&gt;
+```
+
+### ReturnType&lt;Type&gt;
+
+构造一个由 `function` 的返回的数据组成的`类型`, 用来指定函数返回的数据类型为什么格式
+
+```tsx
+// 指定返回值类型为 string
+type Fun = ReturnType&lt;() =&gt; string&gt;
+
+// 正常写法
+function fn(): Fun {
+  return &quot;123&quot;
+}
+
+// 错误写法
+function fn2(): Fun {
+  return 123
+}
+
+// 指定返回值类型为对象
+type Fun2 = ReturnType&lt;()=&gt;{
+  name:string,
+  age:number
+}&gt;
+
+// 正常写法
+function fn3(): Fun2 {
+  return {
+    name:&quot;123&quot;,
+    age:123
+  }
+}
+
+
+```
+
+
+![切图5](http://img.blog.loli.wang/2024-01-20-typescriptUitls/05.png)
+
+
+### 字符串操作类型
+
+#### Uppercase&lt;StringType&gt; 
+
+用于将字符串类型的所有字符转换为大写。
+
+```tsx
+type UppercaseString = Uppercase&lt;&#39;hello&#39;&gt;; // 类型为 &#39;HELLO&#39;
+```
+
+#### Lowercase&lt;StringType&gt;
+用于将字符串类型的所有字符转换为小写。
+
+
+```tsx
+type LowercaseString = Lowercase&lt;&#39;WORLD&#39;&gt;; // 类型为 &#39;world&#39;
+```
+
+
+#### Capitalize&lt;StringType&gt;
+
+用于将字符串类型的首字母转换为大写。
+
+```tsx
+type CapitalizedString = Capitalize&lt;&#39;typescript&#39;&gt;; // 类型为 &#39;Typescript&#39;
+```
+
+#### Uncapitalize&lt;StringType&gt;
+
+用于将字符串类型的首字母转换为小写。
+
+```tsx
+type UncapitalizedString = Uncapitalize&lt;&#39;JavaScript&#39;&gt;; // 类型为 &#39;javaScript&#39;
+
+```
+
+
+#### 相关参考文档
+
+
+
+### 相关文档
+
+[typescriptlang](https://www.typescriptlang.org/docs/handbook/utility-types.html#omittype-keys)</div></div></div></div></a></div><div class="ml-4"><a href="/blog/2024-01-18-tspickomit/doc/index.html" title="TS 中的 Pick 和 Omit"><div class="card bg-color cursor-pointer	 postCard rounded-lg w-full mb-4 shadow-xl flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"><time datetime="Thu Jan 18 2024 23:27:24 GMT+0800 (中国标准时间)">2024/1/18</time></div><div class="text-sm mr-6">0.1K字</div><div class="text-sm">196 天前</div></div></div><div class="flex justify-between items-center mt-2"><div class="w-5/6"><div class="text-2xl font-medium title line-clamp-1 leading-relaxed">TS 中的 Pick 和 Omit</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed"> 
+### Pick （选取）
+
+官方介绍 : `通过从 interface 中选取属性集 Keys  来构造类型指定的Type。`
+
+示例
+
+```tsx
+// 原接口
+interface Todo {
+  title: string,
+  description: string,
+  date: string
+}
+
+// 构建的新接口 只选取目标接口中的title 和 date
+type TodoNewPreView = Pick&lt;Todo, &quot;title&quot; | &quot;date&quot;&gt;
+
+const Todo: TodoNewPreView = {
+  title: &quot;魔王のBlog&quot;,
+  date: &quot;2023-01-01&quot;,
+}
+
+```
+
+证明我们从 Todo 这个接口中选取了 `title` 和 `date` 这两个属性,形成了新的类型接口
+
+![切图1](http://img.blog.loli.wang/2024-01-18-tspickomit/01.png)
+![切图2](http://img.blog.loli.wang/2024-01-18-tspickomit/02.png)
+
+
+
+### Omit （排除,省略）
+
+`Omit` 和 `Pick` 是相反的,是这个接口中使用的过程中,有不想使用的参数,可以进行屏蔽掉
+
+![切图3](http://img.blog.loli.wang/2024-01-18-tspickomit/03.png)
+
+可以看到,我们这里Todo这个类型接口,有个必须接收的`username`这个参数,如果我们需要用到这个类型,并且不想改变原有的使用类型的话,就需要使用Omit
+
+![切图4](http://img.blog.loli.wang/2024-01-18-tspickomit/04.png)
+
+
+总结,`Pick` 和 `Omit` 都是比较Ts中比较实用的工具,使用和利用好会给自己带来更大的收获
+
+
+
+### 相关文档
+
+[typescriptlang](https://www.typescriptlang.org/docs/handbook/utility-types.html#omittype-keys)</div></div><div><img src="http://img.blog.loli.wang/2024-01-18-tspickomit/bg.png" class="w-[500px] h-[200px] rounded-r-lg object-cover" style="clip-path:polygon(0 0,100% 0,100% 100%,20% 100%)"></div></div></div></a></div><div class="ml-4 "><a href="/blog/2024-01-08-draksass/doc/index.html" title="dart-sass 和 node-sass 的区别以及使用"><div class="card bg-color postCard mb-4 rounded-lg w-full shadow-xl cursor-pointer	 flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div><img src="http://img.blog.loli.wang/2024-01-08-draksass/02.png" class="w-[500px] h-[200px] rounded-l-lg" style="clip-path:polygon(0 0,88% 0,100% 100%,0 100%)"></div><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"> <time datetime="Mon Jan 08 2024 23:27:24 GMT+0800 (中国标准时间)">2024/1/8</time> </div><div class="text-sm mr-6">0.1K字</div><div class="text-sm">206 天前</div></div></div><div class="flex justify-between items-center mt-2"><div><div class="text-2xl font-medium title">dart-sass 和 node-sass 的区别以及使用</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed">
+### 序
+
+在我们开发场景中，如果在`node`环境中使用`node-sass`，经常会有`python`版本安装问题，也有和`node版本`是否和`node-sass`版本有关联关系，还强制安装NET Framework版本，总而言之会出现各种问题，尤其是老项目居多...
+
+
+![切图1](http://img.blog.loli.wang/2024-01-08-draksass/01.png)
+
+### 什么是Dart Sass
+ 
+`Dart Sass` 是官方力推的 `sass` 继任者。官网主推项目，用来替代`node-sass`，由`dart`开发，对css新特性支持的更加全面，最大的好处是没有`node版本之间的依赖关系`。
+
+
+### node-sass 和 dart-sass的区别
+
+ - node-sass
+        node-sass 是顺应前端工程化而出现的node包，是使用c++实现的libSass的封装，因为使用c++编译，所以速度比较快，前期支撑住了前端工程化的潮流。前端工程化项目的大功臣，遗留缺点有很多，比如硬性要求对应node版本之类的奇怪的错误
+ - dart-sass
+        dart-sass 是基于dart开发的，他的速度更快， 更易于安装，并且可以编译成纯JavaScript，并且对css新特性获得了更好的支持
+
+
+
+### 总结
+
+    后面使用预处理器，直接使用dart-sass啦。毕竟要适应新的时代
+
+
+</div></div></div></div></a></div><div class="ml-4"><a href="/blog/2023-12-30-tsup/doc/index.html" title="简单使用 tsup 进行打包"><div class="card bg-color cursor-pointer	 postCard rounded-lg w-full mb-4 shadow-xl flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"><time datetime="Sat Dec 30 2023 23:27:24 GMT+0800 (中国标准时间)">2023/12/30</time></div><div class="text-sm mr-6">0.1K字</div><div class="text-sm">215 天前</div></div></div><div class="flex justify-between items-center mt-2"><div class="w-5/6"><div class="text-2xl font-medium title line-clamp-1 leading-relaxed">简单使用 tsup 进行打包</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed"> 
+### 起因。
+
+最近在编写自己的组件库，使用`monorepo`模式进行开发,`monorepo`开发将utils单独作为工具库，原本打算使用tsc编译出去的，无意中发现了打包工具。
+
+### 介绍
+
+tsup 是一个基于 ESBuild 实现在零配置的情况下快速打包 Typescript 模块的库，支持 .ts、.tsx的转换。它基于esbuild，但是同时也选择融合其他的构建工具共同参与，弥补了esbuild的不足。
+
+
+### 安装使用
+``` bash
+# pnpm 安装 同样也可以npm yarn 等
+pnpm add tsup -D
+
+```
+
+packages.json 文件中声明
+
+```json
+{
+    &quot;build&quot;:&quot;tsup&quot;
+}
+```
+
+简单使用可以在命令后面加输出路径等 也可以添加配置文件去使用
+
+```json
+{
+    &quot;build&quot;:&quot;tsup src/index.ts src/cli.ts&quot;
+}
+```
+
+也可以使用配置文件，根目录下面新建一个 `tsup.config.ts` 文件
+
+```jsx
+
+import { defineConfig } from &#39;tsup&#39;
+
+export default defineConfig({
+  entry: [&#39;./src/index.ts&#39;], // 打包入口
+  splitting: false,
+  sourcemap: true,
+  clean: true,
+})
+
+```
+
+```json
+&quot;scripts&quot;: {
+    &quot;build&quot;: &quot;tsup --format esm,cjs,iife --config tsup.config.ts&quot;
+},
+```
+
+这里也可以定义打包目录之类的，详情查看官网。配置信息比较完全
+https://tsup.egoist.dev/#what-can-it-bundle
+
+
+
+
+
+
+
+</div></div><div><img src="http://img.blog.loli.wang/2023-12-30-tsup/01.png" class="w-[500px] h-[200px] rounded-r-lg object-cover" style="clip-path:polygon(0 0,100% 0,100% 100%,20% 100%)"></div></div></div></a></div><div class="ml-4 "><a href="/blog/2023-12-28-uniapppackage/doc/index.html" title="UNI-APP 离线打包配置"><div class="card bg-color postCard mb-4 rounded-lg w-full shadow-xl cursor-pointer	 flex relative hover:shadow-md transition ease-in-out delay duration-300 hover:scale-95"><div class="flex"><div><img src="http://img.blog.loli.wang/2023-12-28-uniappPackage/01.jpg" class="w-[500px] h-[200px] rounded-l-lg" style="clip-path:polygon(0 0,88% 0,100% 100%,0 100%)"></div><div class="w-full p-4"><div class="flex justify-between"><div></div><div class="flex tools"><div class="text-sm mr-6"> <time datetime="Thu Dec 28 2023 23:27:24 GMT+0800 (中国标准时间)">2023/12/28</time> </div><div class="text-sm mr-6">0.3K字</div><div class="text-sm">217 天前</div></div></div><div class="flex justify-between items-center mt-2"><div><div class="text-2xl font-medium title">UNI-APP 离线打包配置</div></div><div class="text-sm text-gray-500">日常生活</div></div><div class="text-sm text-gray-500 mt-3 line-clamp-4 leading-relaxed">
+### 起因
+
+公司有2款不同的PDA设备`霍尼韦尔`，`SUNMI` 这2款pda设备，在有一次项目升级后，发现`SUNMI`这种设备型号的PDA设备热更新失败，准确的说不是热更新是失败 是热更新下来的APK 安装时无法兼容
+
+如图
+
+![切图1](http://img.blog.loli.wang/2023-12-28-uniappPackage/01.jpg)
+ 
+### 引发原因
+
+项目一直是用的离线打包，`Hbuilder X` 这款开发工具，之前使用云打包的时候会自动调用本地的离线打包，可是有次开发工具更新后，云打包不触发离线打包了。本来并不在意这件事情，毕竟就是打包个安卓包而已，并不在意，打完包就发布了。。
+
+后续就出现问题了，`霍尼韦尔`设备正常，`SUNMI`设备异常，前者设备安卓版本9.0, 后者安卓设备版本7.0，版本不兼容了。低版本的无法安装。
+
+本地模拟器同样的也是这个问题，低版本的无法安装，安装上也是白屏。
+
+经过排查，使用离线打包的就没有问题。
+
+### 如何配置离线打包
+
+开始准备
+- [安装 jdk 8](https://www.java.com/zh-CN/download/)
+- [安装 Android Studio](https://developer.android.google.cn/studio?hl=zh-cn)
+- [下载 UNIAPP 离线 SDK](https://nativesupport.dcloud.net.cn/AppDocs/download/android.html) (注意，下载的SDK版本必须和HubilderX版本对应上)
+- [UNIAPP 开发者中心账号](https://dev.dcloud.net.cn/pages/app/list) (注意，提前实名认证啥破玩意都整完)
+
+
+
+#### 获取配置信息
+
+在UNIAPP项目中有个 `mainifest.json` 文件 ，里面会看到一些基础配置信息，其中有个` UNIAPP 引用标识 `, 这个也同样是APPID, 也关系到开发中心对应的项目编号。
+
+
+![切图2](http://img.blog.loli.wang/2023-12-28-uniappPackage/02.png)
+
+
+#### 生成本地打包资源
+
+生成本地打包资源备用 后续放置到 Android Studio 内使用
+
+![切图3](http://img.blog.loli.wang/2023-12-28-uniappPackage/03.png)
+
+![切图4](http://img.blog.loli.wang/2023-12-28-uniappPackage/04.png)
+
+#### 将本地资源文件夹移动至离线SDK中
+
+将本地资源包复制到该目录下
+
+HBuilder-Integrate-AS\simpleDemo\src\main\assets\apps
+
+![切图4](http://img.blog.loli.wang/2023-12-28-uniappPackage/05.png)
+
+#### Android Studio 导入SDK的示例项目
+
+![切图4](http://img.blog.loli.wang/2023-12-28-uniappPackage/06.png)
+
+
+#### 修改dcloud_control.xml 中的 appid
+
+在新打开的编辑器中 , 找到 simpleDemo/src/main/assets/data/dcloud_control.xml
+
+进行修改
+
+![切图7](http://img.blog.loli.wang/2023-12-28-uniappPackage/07.png)
+
+修改为之前 `mainifest.json` 定义的APPID，还有当前准备发布的 `版本号`
+
+#### 生成安卓签名
+
+安卓打正式包必须要的，参考官方文档 
+
+https://ask.dcloud.net.cn/article/35777
+
+#### 前往开发者中心生成AppKey 
+
+在我们使用 HbuilderX 后获取Appid后，登录账号,会在后台系统生成相应的应用，进入UNIAPP的开发者中心,选择相应的应用，获取离线的APPKEY
+
+![切图8](http://img.blog.loli.wang/2023-12-28-uniappPackage/08.png)
+
+![切图9](http://img.blog.loli.wang/2023-12-28-uniappPackage/09.png)
+
+
+#### 修改包名 配置appKey
+
+在 AndroidManifest.xml 中修改包名，在`开发者中心`可以看到相关的包名，一般都是uni.xxx 开头的
+
+![切图10](http://img.blog.loli.wang/2023-12-28-uniappPackage/10.png)
+
+在下方找到
+
+``` xml
+ &lt;meta-data
+            android:name=&quot;dcloud_appkey&quot;
+            android:value=&quot;239898****************b2d9dbcbf2bc&quot; /&gt;
+```
+
+android:value 修改成自己的离线 appKey 即可
+
+
+#### 修改原有的默认APP图标还有打包出来的应用名
+
+修改应用名 /simpleDemo/src/main/res/values/strings.xml
+
+```xml
+&lt;resources&gt;
+    &lt;string name=&quot;app_name&quot;&gt;修改自己的应用名&lt;/string&gt;
+&lt;/resources&gt;
+
+```
+
+icon 启动图替换 /simpleDemo/src/main/res/drawable 中的 icon.png push.png splash.png 图片进行替换就好
+
+![切图10](http://img.blog.loli.wang/2023-12-28-uniappPackage/11.png)
+
+### 最后尝试构建 
+
+![切图12](http://img.blog.loli.wang/2023-12-28-uniappPackage/12.png)
+![切图13](http://img.blog.loli.wang/2023-12-28-uniappPackage/13.png)
+![切图14](http://img.blog.loli.wang/2023-12-28-uniappPackage/14.png)
+![切图15](http://img.blog.loli.wang/2023-12-28-uniappPackage/15.png)
+![切图16](http://img.blog.loli.wang/2023-12-28-uniappPackage/16.png)
+
+
+    完成 ，，，总而言之，写UNIAPP的坑很多，如果不是赶时间的话，建议去使用Flutter 等框架，（--）</div></div></div></div></a></div><div class="pagination-container page-bar flex items-center justify-between bg-white p-4 rounded-md shadow-md"> <a href="/page/2/" class="prev text-blue-500 hover:text-blue-700 transition-colors duration-200" title="上一页">
+上一页
+</a> <span class="pagination-info text-gray-700">
+第 3 页 / 共 7 页
+</span> <a href="/page/4/" class="next text-blue-500 hover:text-blue-700 transition-colors duration-200" title="下一页">
+下一页
+</a> </div> </div> </div> </div>  </div> <footer data-astro-cid-sz7xmlte>
+&copy; 2024 Your name here. All rights reserved.
+<div class="social-links" data-astro-cid-sz7xmlte> <a href="https://m.webtoo.ls/@astro" target="_blank" data-astro-cid-sz7xmlte> <span class="sr-only" data-astro-cid-sz7xmlte>Follow Astro on Mastodon</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/mastodon" data-astro-cid-sz7xmlte><path fill="currentColor" d="M11.19 12.195c2.016-.24 3.77-1.475 3.99-2.603.348-1.778.32-4.339.32-4.339 0-3.47-2.286-4.488-2.286-4.488C12.062.238 10.083.017 8.027 0h-.05C5.92.017 3.942.238 2.79.765c0 0-2.285 1.017-2.285 4.488l-.002.662c-.004.64-.007 1.35.011 2.091.083 3.394.626 6.74 3.78 7.57 1.454.383 2.703.463 3.709.408 1.823-.1 2.847-.647 2.847-.647l-.06-1.317s-1.303.41-2.767.36c-1.45-.05-2.98-.156-3.215-1.928a3.614 3.614 0 0 1-.033-.496s1.424.346 3.228.428c1.103.05 2.137-.064 3.188-.189zm1.613-2.47H11.13v-4.08c0-.859-.364-1.295-1.091-1.295-.804 0-1.207.517-1.207 1.541v2.233H7.168V5.89c0-1.024-.403-1.541-1.207-1.541-.727 0-1.091.436-1.091 1.296v4.079H3.197V5.522c0-.859.22-1.541.66-2.046.456-.505 1.052-.764 1.793-.764.856 0 1.504.328 1.933.983L8 4.39l.417-.695c.429-.655 1.077-.983 1.934-.983.74 0 1.336.259 1.791.764.442.505.661 1.187.661 2.046v4.203z" data-astro-cid-sz7xmlte></path></svg> </a> <a href="https://twitter.com/astrodotbuild" target="_blank" data-astro-cid-sz7xmlte> <span class="sr-only" data-astro-cid-sz7xmlte>Follow Astro on Twitter</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/twitter" data-astro-cid-sz7xmlte><path fill="currentColor" d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" data-astro-cid-sz7xmlte></path></svg> </a> <a href="https://github.com/withastro/astro" target="_blank" data-astro-cid-sz7xmlte> <span class="sr-only" data-astro-cid-sz7xmlte>Go to Astro's GitHub repo</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/github" data-astro-cid-sz7xmlte><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" data-astro-cid-sz7xmlte></path></svg> </a> </div> </footer>  </div> </div> </main> </body></html>

@@ -30,11 +30,11 @@ export const page_fun = {
         return wordCountInK;
     },
     calculateTimeAgo: (date: Date) => {
-        const now = new Date();
-        const target = new Date(date);
+        const now = new Date() as any;
+        const target = new Date(date) as any;
 
         // 计算两个日期之间的时间差（以毫秒为单位）
-        const timeDifference = now - target;
+        const timeDifference = (now - target);
 
         // 将时间差转换为天和小时
         const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
