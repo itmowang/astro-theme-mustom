@@ -54,15 +54,15 @@
 </div>
 
 <script>
-  // const themeRadios = document.querySelectorAll(".theme-controller");
-  // themeRadios.forEach((radio) => {
-  //   radio.addEventListener("change", function () {
-  //     if (this.checked) {
-  //       localStorage.setItem("theme", this.value);
-  //       applyTheme(this.value);
-  //     }
-  //   });
-  // });
+  const themeRadios = document.querySelectorAll(".theme-controller");
+  themeRadios.forEach((radio) => {
+    radio.addEventListener("change", function (e:any) { 
+      if (e.target.checked) {
+        localStorage.setItem("theme", e.target.checked);
+        applyTheme(e.target.checked);
+      }
+    });
+  });
 
   function applyTheme(theme: string) {
     console.log("已经切换主题", theme);
