@@ -20,7 +20,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			<div class="container mx-auto ">
 				<div class="flex pt-[120px] ">
 					<!-- 左侧信息 -->
-					<div class="w-2/6">
+					<div class="hidden lg:w-2/6  lg:block">
 						<My />
 						<div class="mt-6">
 							<TagCloud />
@@ -30,7 +30,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 						</div>
 					</div>
 					<!-- 右侧列表或者内容 -->
-					<div class="w-4/6 mb-4">
+					<div class=" lg:w-full mb-4">
 						<PostPage/>
 						
 					</div>

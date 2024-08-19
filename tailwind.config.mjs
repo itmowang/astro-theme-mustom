@@ -1,13 +1,20 @@
 import daisyui from "daisyui"
+import defaultTheme from "tailwindcss/defaultTheme"
+
+console.log(defaultTheme.screens);
 
 
 /** @type {import('tailwindcss').Config} */
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-
+		screens: {
+			xs: "360px",
+			...defaultTheme.screens,
+			"3xl": "1650px",
+		  }
 	},
-	plugins: [daisyui],
+	plugins: [daisyui], 
 	daisyui: {
 		themes: [{
 			spring: {
